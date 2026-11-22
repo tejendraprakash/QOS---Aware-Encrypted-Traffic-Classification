@@ -1,0 +1,380 @@
+{
+  "track_a": {
+    "protocol": "StratifiedGroupKFold",
+    "n_splits": 3,
+    "rationale": "Browsing only possesses 3 capture groups (email_1a, email_1b, email_2a). Exactly 3 folds ensures every validation fold contains exactly 1 distinct Browsing group with 0% group leakage and 100% class coverage.",
+    "folds": {
+      "fold_0": {
+        "train_samples": 15992,
+        "val_samples": 1625,
+        "train_groups": [
+          "GRP_EMAIL_1",
+          "GRP_EMAIL_2",
+          "GRP_FB_AUDIO_1",
+          "GRP_FB_VIDEO_1",
+          "GRP_FTPS_DOWN_1",
+          "GRP_HANGOUTS_VIDEO_1",
+          "GRP_NETFLIX_1",
+          "GRP_SCP_2",
+          "GRP_SCP_3",
+          "GRP_SCP_4",
+          "GRP_SCP_5",
+          "GRP_SKYPE_AUDIO_1",
+          "GRP_SPOTIFY_1",
+          "GRP_VOIPBUSTER_1",
+          "GRP_VPN_FB_AUDIO_2",
+          "GRP_VPN_FTPS_A",
+          "GRP_VPN_FTPS_B",
+          "GRP_VPN_HANGOUTS_AUDIO_1",
+          "GRP_VPN_NETFLIX_A",
+          "GRP_VPN_SKYPE_AUDIO_1",
+          "GRP_VPN_SPOTIFY_A",
+          "GRP_VPN_VIMEO_A",
+          "GRP_VPN_VOIPBUSTER_1",
+          "GRP_VPN_YOUTUBE_A",
+          "GRP_YOUTUBE_1"
+        ],
+        "val_groups": [
+          "GRP_FTPS_UP_2",
+          "GRP_HANGOUTS_AUDIO_1",
+          "GRP_SCP_1",
+          "GRP_SCP_6",
+          "GRP_SKYPE_VIDEO_1",
+          "GRP_VIMEO_1",
+          "GRP_VPN_EMAIL_2"
+        ],
+        "val_class_distribution": {
+          "Real-Time": 966,
+          "Browsing": 305,
+          "Bulk Data": 224,
+          "Streaming": 130
+        },
+        "val_class_coverage_ratio": "4/4",
+        "leakage_free": true
+      },
+      "fold_1": {
+        "train_samples": 5940,
+        "val_samples": 11677,
+        "train_groups": [
+          "GRP_EMAIL_2",
+          "GRP_FB_VIDEO_1",
+          "GRP_FTPS_DOWN_1",
+          "GRP_FTPS_UP_2",
+          "GRP_HANGOUTS_AUDIO_1",
+          "GRP_HANGOUTS_VIDEO_1",
+          "GRP_SCP_1",
+          "GRP_SCP_3",
+          "GRP_SCP_4",
+          "GRP_SCP_5",
+          "GRP_SCP_6",
+          "GRP_SKYPE_AUDIO_1",
+          "GRP_SKYPE_VIDEO_1",
+          "GRP_SPOTIFY_1",
+          "GRP_VIMEO_1",
+          "GRP_VPN_EMAIL_2",
+          "GRP_VPN_FTPS_A",
+          "GRP_VPN_FTPS_B",
+          "GRP_VPN_NETFLIX_A",
+          "GRP_VPN_SKYPE_AUDIO_1",
+          "GRP_VPN_VIMEO_A",
+          "GRP_VPN_VOIPBUSTER_1",
+          "GRP_YOUTUBE_1"
+        ],
+        "val_groups": [
+          "GRP_EMAIL_1",
+          "GRP_FB_AUDIO_1",
+          "GRP_NETFLIX_1",
+          "GRP_SCP_2",
+          "GRP_VOIPBUSTER_1",
+          "GRP_VPN_FB_AUDIO_2",
+          "GRP_VPN_HANGOUTS_AUDIO_1",
+          "GRP_VPN_SPOTIFY_A",
+          "GRP_VPN_YOUTUBE_A"
+        ],
+        "val_class_distribution": {
+          "Browsing": 5870,
+          "Real-Time": 5321,
+          "Streaming": 475,
+          "Bulk Data": 11
+        },
+        "val_class_coverage_ratio": "4/4",
+        "leakage_free": true
+      },
+      "fold_2": {
+        "train_samples": 13302,
+        "val_samples": 4315,
+        "train_groups": [
+          "GRP_EMAIL_1",
+          "GRP_FB_AUDIO_1",
+          "GRP_FTPS_UP_2",
+          "GRP_HANGOUTS_AUDIO_1",
+          "GRP_NETFLIX_1",
+          "GRP_SCP_1",
+          "GRP_SCP_2",
+          "GRP_SCP_6",
+          "GRP_SKYPE_VIDEO_1",
+          "GRP_VIMEO_1",
+          "GRP_VOIPBUSTER_1",
+          "GRP_VPN_EMAIL_2",
+          "GRP_VPN_FB_AUDIO_2",
+          "GRP_VPN_HANGOUTS_AUDIO_1",
+          "GRP_VPN_SPOTIFY_A",
+          "GRP_VPN_YOUTUBE_A"
+        ],
+        "val_groups": [
+          "GRP_EMAIL_2",
+          "GRP_FB_VIDEO_1",
+          "GRP_FTPS_DOWN_1",
+          "GRP_HANGOUTS_VIDEO_1",
+          "GRP_SCP_3",
+          "GRP_SCP_4",
+          "GRP_SCP_5",
+          "GRP_SKYPE_AUDIO_1",
+          "GRP_SPOTIFY_1",
+          "GRP_VPN_FTPS_A",
+          "GRP_VPN_FTPS_B",
+          "GRP_VPN_NETFLIX_A",
+          "GRP_VPN_SKYPE_AUDIO_1",
+          "GRP_VPN_VIMEO_A",
+          "GRP_VPN_VOIPBUSTER_1",
+          "GRP_YOUTUBE_1"
+        ],
+        "val_class_distribution": {
+          "Real-Time": 1845,
+          "Bulk Data": 1113,
+          "Streaming": 685,
+          "Browsing": 672
+        },
+        "val_class_coverage_ratio": "4/4",
+        "leakage_free": true
+      }
+    }
+  },
+  "track_b": {
+    "protocol": "StratifiedGroupKFold",
+    "n_splits": 5,
+    "rationale": "With Browsing removed, the remaining 3 classes (Bulk Data, Streaming, Real-Time) have 29 capture groups (10, 9, 10). A standard 5-fold StratifiedGroupKFold provides robust cross-validation with 0% group leakage and 100% class coverage in every fold.",
+    "folds": {
+      "fold_0": {
+        "train_samples": 9047,
+        "val_samples": 1723,
+        "train_groups": [
+          "GRP_FB_AUDIO_1",
+          "GRP_FB_VIDEO_1",
+          "GRP_FTPS_DOWN_1",
+          "GRP_HANGOUTS_AUDIO_1",
+          "GRP_SCP_1",
+          "GRP_SCP_2",
+          "GRP_SCP_3",
+          "GRP_SCP_4",
+          "GRP_SCP_5",
+          "GRP_SKYPE_AUDIO_1",
+          "GRP_SPOTIFY_1",
+          "GRP_VOIPBUSTER_1",
+          "GRP_VPN_FB_AUDIO_2",
+          "GRP_VPN_FTPS_A",
+          "GRP_VPN_FTPS_B",
+          "GRP_VPN_HANGOUTS_AUDIO_1",
+          "GRP_VPN_NETFLIX_A",
+          "GRP_VPN_SPOTIFY_A",
+          "GRP_VPN_VIMEO_A",
+          "GRP_VPN_VOIPBUSTER_1",
+          "GRP_VPN_YOUTUBE_A"
+        ],
+        "val_groups": [
+          "GRP_FTPS_UP_2",
+          "GRP_HANGOUTS_VIDEO_1",
+          "GRP_NETFLIX_1",
+          "GRP_SCP_6",
+          "GRP_SKYPE_VIDEO_1",
+          "GRP_VIMEO_1",
+          "GRP_VPN_SKYPE_AUDIO_1",
+          "GRP_YOUTUBE_1"
+        ],
+        "val_class_distribution": {
+          "Real-Time": 1101,
+          "Streaming": 412,
+          "Bulk Data": 210
+        },
+        "val_class_coverage_ratio": "3/3",
+        "leakage_free": true
+      },
+      "fold_1": {
+        "train_samples": 9373,
+        "val_samples": 1397,
+        "train_groups": [
+          "GRP_FB_AUDIO_1",
+          "GRP_FB_VIDEO_1",
+          "GRP_FTPS_DOWN_1",
+          "GRP_FTPS_UP_2",
+          "GRP_HANGOUTS_VIDEO_1",
+          "GRP_NETFLIX_1",
+          "GRP_SCP_1",
+          "GRP_SCP_2",
+          "GRP_SCP_3",
+          "GRP_SCP_4",
+          "GRP_SCP_5",
+          "GRP_SCP_6",
+          "GRP_SKYPE_AUDIO_1",
+          "GRP_SKYPE_VIDEO_1",
+          "GRP_SPOTIFY_1",
+          "GRP_VIMEO_1",
+          "GRP_VOIPBUSTER_1",
+          "GRP_VPN_FB_AUDIO_2",
+          "GRP_VPN_FTPS_B",
+          "GRP_VPN_HANGOUTS_AUDIO_1",
+          "GRP_VPN_SKYPE_AUDIO_1",
+          "GRP_VPN_SPOTIFY_A",
+          "GRP_VPN_VOIPBUSTER_1",
+          "GRP_YOUTUBE_1"
+        ],
+        "val_groups": [
+          "GRP_HANGOUTS_AUDIO_1",
+          "GRP_VPN_FTPS_A",
+          "GRP_VPN_NETFLIX_A",
+          "GRP_VPN_VIMEO_A",
+          "GRP_VPN_YOUTUBE_A"
+        ],
+        "val_class_distribution": {
+          "Real-Time": 907,
+          "Streaming": 416,
+          "Bulk Data": 74
+        },
+        "val_class_coverage_ratio": "3/3",
+        "leakage_free": true
+      },
+      "fold_2": {
+        "train_samples": 6513,
+        "val_samples": 4257,
+        "train_groups": [
+          "GRP_FB_VIDEO_1",
+          "GRP_FTPS_DOWN_1",
+          "GRP_FTPS_UP_2",
+          "GRP_HANGOUTS_AUDIO_1",
+          "GRP_HANGOUTS_VIDEO_1",
+          "GRP_NETFLIX_1",
+          "GRP_SCP_1",
+          "GRP_SCP_2",
+          "GRP_SCP_4",
+          "GRP_SCP_5",
+          "GRP_SCP_6",
+          "GRP_SKYPE_AUDIO_1",
+          "GRP_SKYPE_VIDEO_1",
+          "GRP_VIMEO_1",
+          "GRP_VOIPBUSTER_1",
+          "GRP_VPN_FB_AUDIO_2",
+          "GRP_VPN_FTPS_A",
+          "GRP_VPN_NETFLIX_A",
+          "GRP_VPN_SKYPE_AUDIO_1",
+          "GRP_VPN_SPOTIFY_A",
+          "GRP_VPN_VIMEO_A",
+          "GRP_VPN_YOUTUBE_A",
+          "GRP_YOUTUBE_1"
+        ],
+        "val_groups": [
+          "GRP_FB_AUDIO_1",
+          "GRP_SCP_3",
+          "GRP_SPOTIFY_1",
+          "GRP_VPN_FTPS_B",
+          "GRP_VPN_HANGOUTS_AUDIO_1",
+          "GRP_VPN_VOIPBUSTER_1"
+        ],
+        "val_class_distribution": {
+          "Real-Time": 4078,
+          "Streaming": 116,
+          "Bulk Data": 63
+        },
+        "val_class_coverage_ratio": "3/3",
+        "leakage_free": true
+      },
+      "fold_3": {
+        "train_samples": 8638,
+        "val_samples": 2132,
+        "train_groups": [
+          "GRP_FB_AUDIO_1",
+          "GRP_FB_VIDEO_1",
+          "GRP_FTPS_DOWN_1",
+          "GRP_FTPS_UP_2",
+          "GRP_HANGOUTS_AUDIO_1",
+          "GRP_HANGOUTS_VIDEO_1",
+          "GRP_NETFLIX_1",
+          "GRP_SCP_2",
+          "GRP_SCP_3",
+          "GRP_SCP_4",
+          "GRP_SCP_6",
+          "GRP_SKYPE_AUDIO_1",
+          "GRP_SKYPE_VIDEO_1",
+          "GRP_SPOTIFY_1",
+          "GRP_VIMEO_1",
+          "GRP_VPN_FTPS_A",
+          "GRP_VPN_FTPS_B",
+          "GRP_VPN_HANGOUTS_AUDIO_1",
+          "GRP_VPN_NETFLIX_A",
+          "GRP_VPN_SKYPE_AUDIO_1",
+          "GRP_VPN_VIMEO_A",
+          "GRP_VPN_VOIPBUSTER_1",
+          "GRP_VPN_YOUTUBE_A",
+          "GRP_YOUTUBE_1"
+        ],
+        "val_groups": [
+          "GRP_SCP_1",
+          "GRP_SCP_5",
+          "GRP_VOIPBUSTER_1",
+          "GRP_VPN_FB_AUDIO_2",
+          "GRP_VPN_SPOTIFY_A"
+        ],
+        "val_class_distribution": {
+          "Real-Time": 1943,
+          "Streaming": 159,
+          "Bulk Data": 30
+        },
+        "val_class_coverage_ratio": "3/3",
+        "leakage_free": true
+      },
+      "fold_4": {
+        "train_samples": 9509,
+        "val_samples": 1261,
+        "train_groups": [
+          "GRP_FB_AUDIO_1",
+          "GRP_FTPS_UP_2",
+          "GRP_HANGOUTS_AUDIO_1",
+          "GRP_HANGOUTS_VIDEO_1",
+          "GRP_NETFLIX_1",
+          "GRP_SCP_1",
+          "GRP_SCP_3",
+          "GRP_SCP_5",
+          "GRP_SCP_6",
+          "GRP_SKYPE_VIDEO_1",
+          "GRP_SPOTIFY_1",
+          "GRP_VIMEO_1",
+          "GRP_VOIPBUSTER_1",
+          "GRP_VPN_FB_AUDIO_2",
+          "GRP_VPN_FTPS_A",
+          "GRP_VPN_FTPS_B",
+          "GRP_VPN_HANGOUTS_AUDIO_1",
+          "GRP_VPN_NETFLIX_A",
+          "GRP_VPN_SKYPE_AUDIO_1",
+          "GRP_VPN_SPOTIFY_A",
+          "GRP_VPN_VIMEO_A",
+          "GRP_VPN_VOIPBUSTER_1",
+          "GRP_VPN_YOUTUBE_A",
+          "GRP_YOUTUBE_1"
+        ],
+        "val_groups": [
+          "GRP_FB_VIDEO_1",
+          "GRP_FTPS_DOWN_1",
+          "GRP_SCP_2",
+          "GRP_SCP_4",
+          "GRP_SKYPE_AUDIO_1"
+        ],
+        "val_class_distribution": {
+          "Bulk Data": 971,
+          "Streaming": 187,
+          "Real-Time": 103
+        },
+        "val_class_coverage_ratio": "3/3",
+        "leakage_free": true
+      }
+    }
+  }
+}

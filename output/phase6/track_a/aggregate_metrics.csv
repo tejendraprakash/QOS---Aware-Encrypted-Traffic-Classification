@@ -1,0 +1,4 @@
+track,model,num_folds,mean_macro_f1,std_macro_f1,mean_balanced_accuracy,std_balanced_accuracy,mean_accuracy,std_accuracy,mean_weighted_f1,std_weighted_f1,pooled_macro_f1,pooled_balanced_accuracy,pooled_accuracy,pooled_weighted_f1
+track_a,Random_Forest,3,0.3428,0.1083,0.4734,0.0965,0.3565,0.0835,0.3477,0.0828,0.2864,0.37,0.3633,0.3257
+track_a,XGBoost,3,0.3809,0.1405,0.5476,0.0791,0.3766,0.076,0.3695,0.1048,0.3163,0.438,0.3621,0.3269
+track_a,P_MLP,3,0.3135,0.077,0.4244,0.0455,0.328,0.0577,0.3057,0.0714,0.3707,0.4929,0.3455,0.2963

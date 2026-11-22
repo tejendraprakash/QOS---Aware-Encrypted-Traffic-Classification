@@ -1,0 +1,21 @@
+{
+  "track_code": "track_b",
+  "track_name": "Track B (Primary 3-Class Benchmark)",
+  "flows_file": "C:\\Users\\saipr\\OneDrive\\Desktop\\EncryptedTrafficResearch\\output\\phase5\\track_b_flows.csv",
+  "folds_file": "C:\\Users\\saipr\\OneDrive\\Desktop\\EncryptedTrafficResearch\\output\\phase5\\track_b_folds.csv",
+  "total_flows": 10770,
+  "classes": [
+    "Bulk Data",
+    "Real-Time",
+    "Streaming"
+  ],
+  "num_folds": 5,
+  "candidate_features_count": 79,
+  "models_evaluated": [
+    "Random_Forest",
+    "XGBoost",
+    "P_MLP"
+  ],
+  "reproducibility_seed": 42,
+  "hardware": "CPU (12 logical cores)"
+}

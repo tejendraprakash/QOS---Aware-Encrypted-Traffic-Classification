@@ -1,0 +1,56 @@
+================================================================================
+         FLOW FORMATION & FEATURE EXTRACTION SUMMARY REPORT
+Project: QoS-Aware Encrypted Network Traffic Classification for Next-Gen Networks
+Generated: 2026-11-21 14:12:22 UTC
+================================================================================
+
+1. EXTRACTION EXECUTION OVERVIEW
+--------------------------------------------------
+Total Captures Processed   : 37
+Failed Captures            : 0
+Total Packets Processed    : 11,981,359
+Total Bidirectional Flows  : 17,617
+Inactivity Timeout         : 60.0 seconds
+Min Packets per Flow       : 2
+Total Processing Time      : 102.45 seconds
+
+2. FLOW DISTRIBUTION BY QoS CLASS
+--------------------------------------------------
+  - Real-Time           :  8,132 flows (46.16%)
+  - Browsing            :  6,847 flows (38.87%)
+  - Bulk Data           :  1,348 flows ( 7.65%)
+  - Streaming           :  1,290 flows ( 7.32%)
+
+3. FLOW DISTRIBUTION BY APPLICATION
+--------------------------------------------------
+  - Email               :  6,847 flows (38.87%)
+  - Hangouts Audio      :  4,115 flows (23.36%)
+  - Facebook Audio      :  1,681 flows ( 9.54%)
+  - VoIP Buster         :  1,132 flows ( 6.43%)
+  - Skype Audio         :  1,055 flows ( 5.99%)
+  - FTPS Download       :    945 flows ( 5.36%)
+  - YouTube             :    360 flows ( 2.04%)
+  - Netflix             :    281 flows ( 1.60%)
+  - Spotify             :    275 flows ( 1.56%)
+  - FTPS Upload         :    193 flows ( 1.10%)
+  - Facebook Video      :    187 flows ( 1.06%)
+  - Vimeo               :    187 flows ( 1.06%)
+  - FTPS                :    123 flows ( 0.70%)
+  - Hangouts Video      :     90 flows ( 0.51%)
+  - SCP Download        :     87 flows ( 0.49%)
+  - Skype Video         :     59 flows ( 0.33%)
+
+4. FLOW DISTRIBUTION BY ENCAPSULATION
+--------------------------------------------------
+  - VPN = No            : 10,243 flows (58.14%)
+  - VPN = Yes           :  7,374 flows (41.86%)
+
+5. KEY METHODOLOGICAL NOTES & SAFETY
+--------------------------------------------------
+  - Flow Definition: Canonical 5-tuple (min(IP:port), max(IP:port), proto).
+  - Inactivity Timeout: Flows inactive > 60s are split to reflect independent sessions.
+  - Feature Safety: IP addresses, MACs, and port numbers are strictly isolated as
+    audit metadata and MUST NOT be used as ML training inputs.
+  - Group-Based Validation: Model evaluation must group captures by 'capture_group'
+    to prevent synthetic data leakage across dual-ended captures.
+================================================================================

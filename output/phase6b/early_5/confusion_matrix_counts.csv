@@ -1,0 +1,28 @@
+horizon,model,true_class,pred_class,count
+early_5,Random_Forest,Bulk Data,Bulk Data,510
+early_5,Random_Forest,Bulk Data,Real-Time,773
+early_5,Random_Forest,Bulk Data,Streaming,65
+early_5,Random_Forest,Real-Time,Bulk Data,1030
+early_5,Random_Forest,Real-Time,Real-Time,5278
+early_5,Random_Forest,Real-Time,Streaming,1824
+early_5,Random_Forest,Streaming,Bulk Data,112
+early_5,Random_Forest,Streaming,Real-Time,539
+early_5,Random_Forest,Streaming,Streaming,639
+early_5,XGBoost,Bulk Data,Bulk Data,884
+early_5,XGBoost,Bulk Data,Real-Time,336
+early_5,XGBoost,Bulk Data,Streaming,128
+early_5,XGBoost,Real-Time,Bulk Data,1340
+early_5,XGBoost,Real-Time,Real-Time,4786
+early_5,XGBoost,Real-Time,Streaming,2006
+early_5,XGBoost,Streaming,Bulk Data,95
+early_5,XGBoost,Streaming,Real-Time,314
+early_5,XGBoost,Streaming,Streaming,881
+early_5,P_MLP,Bulk Data,Bulk Data,222
+early_5,P_MLP,Bulk Data,Real-Time,854
+early_5,P_MLP,Bulk Data,Streaming,272
+early_5,P_MLP,Real-Time,Bulk Data,3421
+early_5,P_MLP,Real-Time,Real-Time,3461
+early_5,P_MLP,Real-Time,Streaming,1250
+early_5,P_MLP,Streaming,Bulk Data,202
+early_5,P_MLP,Streaming,Real-Time,224
+early_5,P_MLP,Streaming,Streaming,864

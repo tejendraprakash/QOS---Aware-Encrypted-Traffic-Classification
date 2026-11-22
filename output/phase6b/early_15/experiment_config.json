@@ -1,0 +1,36 @@
+{
+  "horizon": "early_15",
+  "features": [
+    "early_5_complete",
+    "early_5_duration",
+    "early_5_bytes",
+    "early_5_fwd_pkts",
+    "early_5_bwd_pkts",
+    "early_5_avg_size",
+    "early_10_complete",
+    "early_10_duration",
+    "early_10_bytes",
+    "early_10_fwd_pkts",
+    "early_10_bwd_pkts",
+    "early_10_avg_size",
+    "early_15_complete",
+    "early_15_duration",
+    "early_15_bytes",
+    "early_15_fwd_pkts",
+    "early_15_bwd_pkts",
+    "early_15_avg_size"
+  ],
+  "feature_count": 18,
+  "total_flows": 10770,
+  "classes": [
+    "Bulk Data",
+    "Real-Time",
+    "Streaming"
+  ],
+  "models_evaluated": [
+    "Random_Forest",
+    "XGBoost",
+    "P_MLP"
+  ],
+  "reproducibility_seed": 42
+}

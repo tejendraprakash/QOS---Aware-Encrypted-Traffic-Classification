@@ -1,0 +1,5 @@
+horizon,feature_count,mean_macro_f1,std_macro_f1,pooled_macro_f1,pooled_balanced_acc,pooled_accuracy,bulk_recall,realtime_recall,streaming_recall,train_time_sec
+early_5,6,0.4245,0.0527,0.5479,0.6468,0.6326,0.6595,0.6243,0.6566,2.46
+early_10,12,0.4154,0.0488,0.5381,0.6359,0.6244,0.6409,0.6178,0.6488,2.53
+early_15,18,0.4188,0.0386,0.544,0.6406,0.6317,0.6818,0.6262,0.614,2.62
+early_20,24,0.4175,0.0503,0.5331,0.6231,0.6226,0.6135,0.6224,0.6333,3.62

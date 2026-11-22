@@ -1,0 +1,3 @@
+Dataset,Location,Total_Captures,Standard_PCAP,PCAPNG,Total_Bytes,Total_Size_GB,Total_Packets,TCP_Packets,UDP_Packets,Other_Packets,Extracted_Flows,Extracted_Features,NonVPN_Captures,VPN_Captures,Unique_Applications,Capture_Groups,ARFF_Files,CSV_Files
+Dataset 1 (Active Research Subset),data/raw/ & Dataset/,37,35,2,14172826857,13.2,11981359,9831885,2117233,32241,17617,103,25,12,11,32,0,0
+Dataset 2 (Full ISCX VPN-NonVPN 2016),ISCX dataset/PCAPs/ & ARFF/,140,102,38,28350645000,26.4,Est. ~35M packets,Est. ~80%,Est. ~19%,Est. ~1%,"18,758 (15s ARFF) / Est. ~60,000+ (PCAP)",23 (in ARFF),109,31,17,Est. ~115 groups,20,0

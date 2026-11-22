@@ -1,0 +1,24 @@
+{
+  "horizon": "early_5",
+  "features": [
+    "early_5_complete",
+    "early_5_duration",
+    "early_5_bytes",
+    "early_5_fwd_pkts",
+    "early_5_bwd_pkts",
+    "early_5_avg_size"
+  ],
+  "feature_count": 6,
+  "total_flows": 10770,
+  "classes": [
+    "Bulk Data",
+    "Real-Time",
+    "Streaming"
+  ],
+  "models_evaluated": [
+    "Random_Forest",
+    "XGBoost",
+    "P_MLP"
+  ],
+  "reproducibility_seed": 42
+}

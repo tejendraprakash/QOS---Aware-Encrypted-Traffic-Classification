@@ -1,0 +1,118 @@
+{
+  "pipeline_version": "1.0.0",
+  "phase": "Phase 5 - Baseline Experiment Preparation",
+  "project": "QoS-Aware Encrypted Traffic Classification for Next-Generation Networks",
+  "leak_free_guarantees": {
+    "group_kfold": "StratifiedGroupKFold partitions groups strictly. No capture group exists in both train and validation folds.",
+    "preprocessing": "Imputation, VarianceThreshold, Collinearity elimination, and StandardScaler must be fitted exclusively on the training fold, then transformed on the validation fold.",
+    "oversampling_policy": "NO oversampling or SMOTE is permitted in baseline preparation. Class imbalance is handled via loss weighting and algorithm-native class_weight parameters.",
+    "hyperparameter_policy": "Hyperparameter tuning must occur strictly inside nested cross-validation or on training partitions only."
+  },
+  "data_preprocessing_pipeline": {
+    "step_1_variance_threshold": {
+      "name": "Zero-Variance Feature Dropper",
+      "method": "sklearn.feature_selection.VarianceThreshold(threshold=0.0)",
+      "rationale": "Removes features with zero variance on the training fold (e.g., tcp_urg_count with std=0.0).",
+      "fitted_on": "train_fold_only"
+    },
+    "step_2_collinearity_filter": {
+      "name": "Perfect Collinearity Filter",
+      "method": "Pairwise Pearson correlation threshold |r| >= 0.999",
+      "rationale": "Drops redundant duplicate features (e.g., bwd_burst_count which has r=1.0000 with fwd_burst_count).",
+      "fitted_on": "train_fold_only"
+    },
+    "step_3_scaling": {
+      "name": "Standard Scaler",
+      "method": "sklearn.preprocessing.StandardScaler()",
+      "rationale": "Standardizes features by removing the mean and scaling to unit variance.",
+      "fitted_on": "train_fold_only"
+    }
+  },
+  "model_specifications": {
+    "random_forest": {
+      "model_name": "Random Forest Baseline",
+      "family": "Ensemble Decision Trees",
+      "implementation": "sklearn.ensemble.RandomForestClassifier",
+      "parameters": {
+        "n_estimators": 100,
+        "criterion": "gini",
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "class_weight": "balanced",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "handling_class_imbalance": "class_weight='balanced' weights inversely proportional to class frequencies.",
+      "input_requirements": "Requires unscaled or scaled features; robust to monotonic transformations."
+    },
+    "xgboost": {
+      "model_name": "XGBoost Gradient Boosted Trees",
+      "family": "Gradient Boosted Decision Trees",
+      "implementation": "xgboost.XGBClassifier",
+      "parameters": {
+        "n_estimators": 100,
+        "learning_rate": 0.1,
+        "max_depth": 6,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "objective": "multi:softprob",
+        "eval_metric": "mlogloss",
+        "random_state": 42,
+        "n_jobs": -1
+      },
+      "handling_class_imbalance": "Per-sample weights computed on the training fold as w_c = N / (K * N_c) and passed to fit(sample_weight=...).",
+      "input_requirements": "Requires numeric features; handles non-linear relationships."
+    },
+    "p_mlp": {
+      "model_name": "Packet Multi-Layer Perceptron (P-MLP)",
+      "family": "Deep Feedforward Neural Network",
+      "framework": "PyTorch / Torchvision",
+      "architecture": {
+        "input_layer": "Linear(in_features, 128)",
+        "block_1": ["BatchNorm1d(128)", "ReLU()", "Dropout(0.3)"],
+        "hidden_layer_1": "Linear(128, 64)",
+        "block_2": ["BatchNorm1d(64)", "ReLU()", "Dropout(0.3)"],
+        "hidden_layer_2": "Linear(64, 32)",
+        "block_3": ["BatchNorm1d(32)", "ReLU()", "Dropout(0.2)"],
+        "output_layer": "Linear(32, num_classes)"
+      },
+      "loss_function": "torch.nn.CrossEntropyLoss(weight=class_weights_tensor)",
+      "optimizer": {
+        "type": "Adam",
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      },
+      "scheduler": {
+        "type": "ReduceLROnPlateau",
+        "mode": "min",
+        "factor": 0.5,
+        "patience": 5
+      },
+      "training_hyperparameters": {
+        "batch_size": 64,
+        "max_epochs": 100,
+        "early_stopping_patience": 15,
+        "monitor": "val_loss"
+      },
+      "differentiation_from_huang_2021": "Huang et al. (2021) deployed raw byte-level 1D-CNN and LSTM architectures directly on payload byte slices. Our QoS-aware P-MLP strictly respects end-to-end payload encryption and privacy by operating exclusively on flow-level statistical and temporal packet dynamics without payload inspection."
+    }
+  },
+  "evaluation_metrics": {
+    "primary": {
+      "metric": "Macro F1-Score",
+      "justification": "Primary metric due to class imbalance (6.3:1 in Track A, 6.3:1 in Track B). Treats each class with equal importance, preventing majority class bias."
+    },
+    "secondary": {
+      "metric": "Balanced Accuracy",
+      "justification": "Calculates macro-average of recall across all classes, avoiding optimistic accuracy illusions on skewed distributions."
+    },
+    "supplementary": [
+      "Per-Class Precision, Recall, and F1-Score",
+      "Confusion Matrix",
+      "Cohen's Kappa Score",
+      "Weighted F1-Score",
+      "Inference Latency (microseconds per flow)"
+    ]
+  }
+}

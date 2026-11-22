@@ -1,0 +1,10 @@
+true_class,pred_class,count,normalized_rate
+Bulk Data,Bulk Data,889,0.6595
+Bulk Data,Real-Time,360,0.2671
+Bulk Data,Streaming,99,0.0734
+Real-Time,Bulk Data,1332,0.1638
+Real-Time,Real-Time,5077,0.6243
+Real-Time,Streaming,1723,0.2119
+Streaming,Bulk Data,85,0.0659
+Streaming,Real-Time,358,0.2775
+Streaming,Streaming,847,0.6566

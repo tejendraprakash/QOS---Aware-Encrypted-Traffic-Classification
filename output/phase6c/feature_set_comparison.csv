@@ -1,0 +1,5 @@
+feature_config,feature_count,mean_macro_f1,std_macro_f1,pooled_macro_f1,pooled_balanced_acc,bulk_recall,realtime_recall,streaming_recall,runtime_sec
+Config_A_Baseline_6,6,0.4358,0.0619,0.5408,0.6541,0.6936,0.5905,0.6783,2.51
+Config_B_Reduced_4,4,0.4016,0.0686,0.5172,0.6199,0.569,0.59,0.7008,2.6
+Config_C_Domain_9,9,0.4243,0.0633,0.5229,0.6188,0.6172,0.6034,0.6357,2.71
+Config_D_Refined_8,8,0.4167,0.0588,0.5189,0.6178,0.6402,0.5937,0.6194,2.94

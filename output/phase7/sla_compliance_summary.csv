@@ -1,0 +1,10 @@
+Scenario,Congestion_Regime,Replications,Real_Time_SLA_Compliance_Pct,Streaming_SLA_Compliance_Pct,Bulk_Data_SLA_Compliance_Pct,Composite_SLA_Compliance_Pct
+Baseline_FIFO,High,5,0.0,0.0,0.0,0.0
+Baseline_FIFO,Low,5,0.0,0.0,0.0,0.0
+Baseline_FIFO,Moderate,5,0.0,0.0,0.0,0.0
+Oracle_QoS,High,5,100.0,0.0,100.0,70.0
+Oracle_QoS,Low,5,100.0,0.0,100.0,70.0
+Oracle_QoS,Moderate,5,100.0,0.0,100.0,70.0
+Predicted_QoS,High,5,40.0,0.0,0.0,20.0
+Predicted_QoS,Low,5,100.0,0.0,40.0,58.0
+Predicted_QoS,Moderate,5,80.0,0.0,0.0,40.0

@@ -1,0 +1,22 @@
+{
+  "track_code": "track_a",
+  "track_name": "Track A (Exploratory 4-Class Baseline)",
+  "flows_file": "C:\\Users\\saipr\\OneDrive\\Desktop\\EncryptedTrafficResearch\\output\\phase5\\track_a_flows.csv",
+  "folds_file": "C:\\Users\\saipr\\OneDrive\\Desktop\\EncryptedTrafficResearch\\output\\phase5\\track_a_folds.csv",
+  "total_flows": 17617,
+  "classes": [
+    "Browsing",
+    "Bulk Data",
+    "Real-Time",
+    "Streaming"
+  ],
+  "num_folds": 3,
+  "candidate_features_count": 79,
+  "models_evaluated": [
+    "Random_Forest",
+    "XGBoost",
+    "P_MLP"
+  ],
+  "reproducibility_seed": 42,
+  "hardware": "CPU (12 logical cores)"
+}

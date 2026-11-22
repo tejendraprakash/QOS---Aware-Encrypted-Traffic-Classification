@@ -1,0 +1,49 @@
+track,model,true_class,pred_class,normalized_rate
+track_a,Random_Forest,Browsing,Browsing,0.0774
+track_a,Random_Forest,Browsing,Bulk Data,0.2476
+track_a,Random_Forest,Browsing,Real-Time,0.6401
+track_a,Random_Forest,Browsing,Streaming,0.0349
+track_a,Random_Forest,Bulk Data,Browsing,0.0764
+track_a,Random_Forest,Bulk Data,Bulk Data,0.2923
+track_a,Random_Forest,Bulk Data,Real-Time,0.5668
+track_a,Random_Forest,Bulk Data,Streaming,0.0645
+track_a,Random_Forest,Real-Time,Browsing,0.0861
+track_a,Random_Forest,Real-Time,Bulk Data,0.0542
+track_a,Random_Forest,Real-Time,Real-Time,0.5911
+track_a,Random_Forest,Real-Time,Streaming,0.2686
+track_a,Random_Forest,Streaming,Browsing,0.0163
+track_a,Random_Forest,Streaming,Bulk Data,0.0434
+track_a,Random_Forest,Streaming,Real-Time,0.4209
+track_a,Random_Forest,Streaming,Streaming,0.5194
+track_a,XGBoost,Browsing,Browsing,0.0808
+track_a,XGBoost,Browsing,Bulk Data,0.2459
+track_a,XGBoost,Browsing,Real-Time,0.6255
+track_a,XGBoost,Browsing,Streaming,0.0478
+track_a,XGBoost,Bulk Data,Browsing,0.0779
+track_a,XGBoost,Bulk Data,Bulk Data,0.4955
+track_a,XGBoost,Bulk Data,Real-Time,0.3635
+track_a,XGBoost,Bulk Data,Streaming,0.0631
+track_a,XGBoost,Real-Time,Browsing,0.0844
+track_a,XGBoost,Real-Time,Bulk Data,0.0456
+track_a,XGBoost,Real-Time,Real-Time,0.5322
+track_a,XGBoost,Real-Time,Streaming,0.3378
+track_a,XGBoost,Streaming,Browsing,0.024
+track_a,XGBoost,Streaming,Bulk Data,0.0333
+track_a,XGBoost,Streaming,Real-Time,0.2992
+track_a,XGBoost,Streaming,Streaming,0.6434
+track_a,P_MLP,Browsing,Browsing,0.0263
+track_a,P_MLP,Browsing,Bulk Data,0.0041
+track_a,P_MLP,Browsing,Real-Time,0.8202
+track_a,P_MLP,Browsing,Streaming,0.1494
+track_a,P_MLP,Bulk Data,Browsing,0.0668
+track_a,P_MLP,Bulk Data,Bulk Data,0.7426
+track_a,P_MLP,Bulk Data,Real-Time,0.0712
+track_a,P_MLP,Bulk Data,Streaming,0.1194
+track_a,P_MLP,Real-Time,Browsing,0.1177
+track_a,P_MLP,Real-Time,Bulk Data,0.0465
+track_a,P_MLP,Real-Time,Real-Time,0.4902
+track_a,P_MLP,Real-Time,Streaming,0.3457
+track_a,P_MLP,Streaming,Browsing,0.0264
+track_a,P_MLP,Streaming,Bulk Data,0.0783
+track_a,P_MLP,Streaming,Real-Time,0.1829
+track_a,P_MLP,Streaming,Streaming,0.7124

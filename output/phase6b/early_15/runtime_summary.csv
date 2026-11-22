@@ -1,0 +1,16 @@
+horizon,model,fold,train_time_sec,pred_time_sec,latency_us_per_sample
+early_15,Random_Forest,0,0.3366,0.0462,26.82
+early_15,Random_Forest,1,0.3744,0.0613,43.88
+early_15,Random_Forest,2,0.4247,0.0783,18.4
+early_15,Random_Forest,3,0.4353,0.0708,33.21
+early_15,Random_Forest,4,0.3831,0.0641,50.83
+early_15,XGBoost,0,0.8191,0.0047,2.72
+early_15,XGBoost,1,0.6279,0.0052,3.69
+early_15,XGBoost,2,0.579,0.009,2.1
+early_15,XGBoost,3,0.7461,0.008,3.77
+early_15,XGBoost,4,0.605,0.0035,2.76
+early_15,P_MLP,0,17.4226,0.0029,1.67
+early_15,P_MLP,1,41.5884,0.0028,1.97
+early_15,P_MLP,2,16.0012,0.0044,1.02
+early_15,P_MLP,3,22.9398,0.0042,1.97
+early_15,P_MLP,4,29.3499,0.002,1.58

@@ -1,0 +1,60 @@
+================================================================================
+      PCAP DATASET AUDIT AND ANALYSIS SUMMARY REPORT
+Project: QoS-Aware Encrypted Network Traffic Classification for Next-Gen Networks
+Generated: 2026-11-21 14:00:02 UTC
+================================================================================
+
+1. INVENTORY OVERVIEW
+----------------------------------------
+Total Files Scanned       : 37
+Successfully Analyzed     : 37
+Failed / Corrupted Files  : 0
+Total Dataset Volume      : 14,172,826,857 bytes (13.199 GB)
+Total Packets Analyzed    : 11,981,359
+  - TCP Packets           : 9,831,885 (82.06%)
+  - UDP Packets           : 2,117,233 (17.67%)
+  - Other Packets         : 32,241 (0.27%)
+  - IPv4 Packets          : 11,943,519
+  - IPv6 Packets          : 7,494
+
+2. CAPTURE ENCAPSULATION BREAKDOWN
+----------------------------------------
+Non-VPN Captures          : 25
+VPN Encapsulated Captures : 12
+
+3. APPLICATION DISTRIBUTION (FILE COUNTS)
+----------------------------------------
+  - Email               :  6 files
+  - FTPS                :  6 files
+  - SCP                 :  6 files
+  - Facebook            :  3 files
+  - Hangouts            :  3 files
+  - Skype               :  3 files
+  - Netflix             :  2 files
+  - Spotify             :  2 files
+  - Vimeo               :  2 files
+  - VoIP Buster         :  2 files
+  - YouTube             :  2 files
+
+4. POTENTIAL DATASET ISSUES & AMBIGUITIES
+----------------------------------------
+  - Severe Volume Skew: FTPS captures (ftps_down_1a, ftps_down_1b) account for >10 GB
+    (over 75% of total dataset byte volume), risking overwhelming bulk class representation.
+  - Packet Size Anomaly: scpDown4.pcap is only 96 KB (~620 packets), indicating an early
+    aborted transfer or handshake session.
+  - Ambiguous QoS Semantics:
+    * Email captures contain mixed transactions (bulk file attachments vs interactive IMAP headers).
+    * Multi-modal services (Facebook, Skype, Hangouts) have separate audio and video captures
+      that require strict QoS differentiation (Streaming vs Real-Time conversational).
+  - Potential Symmetric Capture Duplicates: Paired capture suffixes (_1a / _1b, _2a / _2b)
+    indicate multi-angle or client/server vantage points rather than independent network sessions.
+  - Link-Layer Diversity: VPN captures use DLT_RAW (linktype 101/12), while standard captures
+    use DLT_EN10MB (linktype 1) and two captures use PCAPNG format.
+
+5. DEFINITIONS AND LIMITATIONS
+----------------------------------------
+  - 5-Tuple Definition: Unique bidirectional tuple of (min(IP:Port), max(IP:Port), Proto).
+  - Scientific Limitation: 5-tuples are NOT equivalent to application-layer sessions.
+    A single application execution initiates multiple parallel and sequential 5-tuples
+    (e.g., DNS queries, telemetry, CDN media chunks, and control handshakes).
+================================================================================

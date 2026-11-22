@@ -1,0 +1,12 @@
+Metric,QoS_Class,Baseline_FIFO,Predicted_QoS,Oracle_QoS,Improvement_Pct,Hedges_g,Wilcoxon_p_value
+Real-Time P95 Latency (ms),Real-Time,70.057,51.761,20.12,26.11,8.28,0.0625
+Real-Time P99 Latency (ms),Real-Time,70.084,68.721,20.128,1.95,1.08,0.0625
+Real-Time Jitter (ms),Real-Time,0.042,4.599,0.076,-10954.81,-8.36,0.0625
+Real-Time Packet Loss (%),Real-Time,8.031,1.045,0.008,86.99,8.07,0.0625
+Real-Time Goodput (Mbps),Real-Time,11.482,12.487,12.644,8.75,-1.35,0.0625
+Streaming P95 Latency (ms),Streaming,70.091,71.058,65.149,-1.38,-1.78,0.0625
+Streaming Packet Loss (%),Streaming,65.698,68.767,75.149,-4.67,-0.78,0.0625
+Streaming Goodput (Mbps),Streaming,84.343,75.945,57.722,-9.96,2.42,0.0625
+Bulk Data P95 Latency (ms),Bulk Data,70.083,60.827,64.633,13.21,4.2,0.0625
+Bulk Data Packet Loss (%),Bulk Data,57.262,10.515,0.587,81.64,7.41,0.0625
+Bulk Data Goodput (Mbps),Bulk Data,1.656,8.559,27.644,416.89,-5.24,0.0625

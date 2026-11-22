@@ -1,0 +1,40 @@
+{
+  "source_file": "output/flow_features.csv",
+  "total_source_flows": 17617,
+  "total_columns": 117,
+  "track_a": {
+    "name": "Track A - Exploratory 4-Class",
+    "description": "Exploratory baseline containing Bulk Data, Browsing, Streaming, Real-Time. Browsing is derived from Email captures and contains background noise (LLMNR/NetBIOS).",
+    "file": "output/phase5/track_a_flows.csv",
+    "total_flows": 17617,
+    "class_distribution": {
+      "Real-Time": 8132,
+      "Browsing": 6847,
+      "Bulk Data": 1348,
+      "Streaming": 1290
+    },
+    "unique_capture_groups": 32,
+    "imbalance_ratio": 6.303875968992248,
+    "vpn_distribution": {
+      "No": 10243,
+      "Yes": 7374
+    }
+  },
+  "track_b": {
+    "name": "Track B - Primary 3-Class",
+    "description": "Primary benchmark baseline excluding contaminated Browsing/Email. Classes: Bulk Data, Streaming, Real-Time.",
+    "file": "output/phase5/track_b_flows.csv",
+    "total_flows": 10770,
+    "class_distribution": {
+      "Real-Time": 8132,
+      "Bulk Data": 1348,
+      "Streaming": 1290
+    },
+    "unique_capture_groups": 29,
+    "imbalance_ratio": 6.303875968992248,
+    "vpn_distribution": {
+      "Yes": 7069,
+      "No": 3701
+    }
+  }
+}

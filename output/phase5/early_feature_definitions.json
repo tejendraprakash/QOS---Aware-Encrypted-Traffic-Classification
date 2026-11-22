@@ -1,0 +1,124 @@
+{
+  "protocol_version": "1.0.0",
+  "phase": "Phase 5 - Baseline Experiment Preparation",
+  "protocol_name": "Early-Stage Encrypted Traffic Classification Protocol",
+  "motivation": "Next-generation network switches and SDN controllers must enforce QoS policies (queuing, bandwidth reservation, routing priority) within the first few packets of a flow to avoid buffering delays and head-of-line blocking.",
+  "packet_windows": [5, 10, 15, 20],
+  "feature_definitions_per_window": {
+    "early_N_complete": {
+      "type": "boolean",
+      "description": "Indicator of whether the flow reached at least N packets during its lifetime."
+    },
+    "early_N_duration": {
+      "type": "float (seconds)",
+      "description": "Elapsed duration from flow start to the arrival of the N-th packet (or end of flow if total packets < N)."
+    },
+    "early_N_bytes": {
+      "type": "integer (bytes)",
+      "description": "Cumulative bytes transmitted across both forward and backward directions in the first N packets."
+    },
+    "early_N_fwd_pkts": {
+      "type": "integer",
+      "description": "Number of forward packets transmitted in the first N packets."
+    },
+    "early_N_bwd_pkts": {
+      "type": "integer",
+      "description": "Number of backward packets transmitted in the first N packets."
+    },
+    "early_N_avg_size": {
+      "type": "float (bytes)",
+      "description": "Average packet size across the first N packets (early_N_bytes / actual_early_pkts)."
+    }
+  },
+  "evaluated_feature_subsets": {
+    "Early-5": {
+      "feature_count": 6,
+      "features": [
+        "early_5_complete",
+        "early_5_duration",
+        "early_5_bytes",
+        "early_5_fwd_pkts",
+        "early_5_bwd_pkts",
+        "early_5_avg_size"
+      ],
+      "operational_latency": "Sub-millisecond to ~5ms. Ideal for immediate hardware QoS queue assignment."
+    },
+    "Early-10": {
+      "feature_count": 12,
+      "features": [
+        "early_5_complete",
+        "early_5_duration",
+        "early_5_bytes",
+        "early_5_fwd_pkts",
+        "early_5_bwd_pkts",
+        "early_5_avg_size",
+        "early_10_complete",
+        "early_10_duration",
+        "early_10_bytes",
+        "early_10_fwd_pkts",
+        "early_10_bwd_pkts",
+        "early_10_avg_size"
+      ],
+      "operational_latency": "Low latency (~10-25ms). Captures initial TCP/TLS handshake negotiation."
+    },
+    "Early-15": {
+      "feature_count": 18,
+      "features": [
+        "early_5_complete",
+        "early_5_duration",
+        "early_5_bytes",
+        "early_5_fwd_pkts",
+        "early_5_bwd_pkts",
+        "early_5_avg_size",
+        "early_10_complete",
+        "early_10_duration",
+        "early_10_bytes",
+        "early_10_fwd_pkts",
+        "early_10_bwd_pkts",
+        "early_10_avg_size",
+        "early_15_complete",
+        "early_15_duration",
+        "early_15_bytes",
+        "early_15_fwd_pkts",
+        "early_15_bwd_pkts",
+        "early_15_avg_size"
+      ],
+      "operational_latency": "Medium latency (~25-50ms). Covers early post-handshake application exchange."
+    },
+    "Early-20": {
+      "feature_count": 24,
+      "features": [
+        "early_5_complete",
+        "early_5_duration",
+        "early_5_bytes",
+        "early_5_fwd_pkts",
+        "early_5_bwd_pkts",
+        "early_5_avg_size",
+        "early_10_complete",
+        "early_10_duration",
+        "early_10_bytes",
+        "early_10_fwd_pkts",
+        "early_10_bwd_pkts",
+        "early_10_avg_size",
+        "early_15_complete",
+        "early_15_duration",
+        "early_15_bytes",
+        "early_15_fwd_pkts",
+        "early_15_bwd_pkts",
+        "early_15_avg_size",
+        "early_20_complete",
+        "early_20_duration",
+        "early_20_bytes",
+        "early_20_fwd_pkts",
+        "early_20_bwd_pkts",
+        "early_20_avg_size"
+      ],
+      "operational_latency": "Upper bound for early classification (~50-100ms)."
+    },
+    "Full-Flow": {
+      "feature_count": 78,
+      "features_description": "Full 78 ML-safe behavioral features (excluding constant tcp_urg_count). Evaluated after flow completion.",
+      "operational_latency": "Post-flow (entire session duration). Used as the theoretical upper bound / performance ceiling."
+    }
+  }
+}

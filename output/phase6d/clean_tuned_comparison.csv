@@ -1,0 +1,6 @@
+model_variant,mean_macro_f1,std_macro_f1,pooled_macro_f1,pooled_balanced_acc,pooled_accuracy,bulk_recall,realtime_recall,streaming_recall,bulk_precision,realtime_precision,streaming_precision,train_time_sec,latency_us_per_sample
+XGBoost_Clean_Balanced,0.4676,0.1677,0.5348,0.549,0.5357,0.4902,0.517,0.6399,0.5618,0.564,0.469,1.18,5.79
+XGBoost_Clean_RT_Shield (RT=1.5x),0.4837,0.1764,0.5337,0.5418,0.5405,0.446,0.5594,0.6198,0.5879,0.561,0.4684,1.49,6.7
+"Extra_Trees_Clean (n=100, balanced)",0.4312,0.1372,0.5054,0.5061,0.5141,0.4333,0.55,0.5351,0.457,0.5433,0.515,1.53,54.21
+Extra_Trees_Clean_RT (RT=1.5x),0.4296,0.153,0.5006,0.4999,0.51,0.4197,0.5528,0.5273,0.4587,0.5334,0.5141,1.61,53.13
+HistGradientBoosting_Clean,0.474,0.1713,0.5227,0.5284,0.53,0.4477,0.5523,0.5853,0.5323,0.5536,0.4821,7.42,44.65

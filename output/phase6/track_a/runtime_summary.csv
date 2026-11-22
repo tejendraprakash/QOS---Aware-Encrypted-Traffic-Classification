@@ -1,0 +1,10 @@
+track,model,fold,train_time_sec,pred_time_sec,latency_us_per_sample
+track_a,Random_Forest,0,0.4988,0.0311,19.15
+track_a,Random_Forest,1,0.285,0.0428,3.67
+track_a,Random_Forest,2,0.3503,0.0547,12.67
+track_a,XGBoost,0,1.717,0.0043,2.65
+track_a,XGBoost,1,1.2361,0.0219,1.88
+track_a,XGBoost,2,1.3796,0.008,1.86
+track_a,P_MLP,0,62.6982,0.0081,4.96
+track_a,P_MLP,1,32.9325,0.0141,1.21
+track_a,P_MLP,2,37.467,0.0052,1.21

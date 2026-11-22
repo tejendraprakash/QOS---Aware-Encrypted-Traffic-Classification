@@ -1,0 +1,4 @@
+horizon,model,feature_count,num_folds,mean_macro_f1,std_macro_f1,mean_balanced_accuracy,std_balanced_accuracy,mean_accuracy,std_accuracy,mean_weighted_f1,std_weighted_f1,pooled_macro_f1,pooled_balanced_accuracy,pooled_accuracy,pooled_weighted_f1
+early_15,Random_Forest,18,5,0.4001,0.1495,0.5635,0.1733,0.4985,0.2213,0.5393,0.2219,0.4513,0.4921,0.5826,0.6102
+early_15,XGBoost,18,5,0.4231,0.07,0.6219,0.1514,0.5438,0.1316,0.5886,0.1716,0.5214,0.6217,0.603,0.6357
+early_15,P_MLP,18,5,0.3494,0.1478,0.4449,0.1474,0.4349,0.2302,0.5041,0.2386,0.3695,0.4253,0.4209,0.4768

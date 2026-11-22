@@ -1,0 +1,118 @@
+Column_Name,Category,Data_Type,Missing_Count,Infinite_Count,Unique_Values,Min,Max,Mean,Std,Is_Constant,Max_Correlation,Top_Correlated_Feature,Audit_Status
+flow_id,Metadata,object,0,0,17617,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+capture_filename,Metadata,object,0,0,37,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+capture_group,Metadata,object,0,0,32,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+application,Metadata,object,0,0,16,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+is_vpn,Metadata,object,0,0,2,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+qos_class,Metadata,object,0,0,4,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+label_confidence,Metadata,object,0,0,2,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+src_ip,Metadata,object,0,0,655,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+src_port,Metadata,int64,0,0,8722,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+dst_ip,Metadata,object,0,0,1000,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+dst_port,Metadata,int64,0,0,647,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+protocol_name,Metadata,object,0,0,5,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+flow_start_time,Metadata,object,0,0,17610,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+flow_end_time,Metadata,object,0,0,17610,N/A,N/A,N/A,N/A,False,0.0,N/A,Audit/Metadata (Non-ML)
+protocol,Full-Flow Behavioral,int64,0,0,5,1.0,58.0,15.3217,4.1075,False,0.9749,is_udp,Valid
+flow_duration,Full-Flow Behavioral,float64,0,0,11258,1.6e-05,4116.135039,18.9062,139.602,False,0.4861,early_20_duration,Valid
+total_packets,Full-Flow Behavioral,int64,0,0,414,2.0,2429639.0,678.2135,23490.2118,False,0.9874,bwd_packets,Valid
+fwd_packets,Full-Flow Behavioral,int64,0,0,353,1.0,814966.0,271.4013,8041.3794,False,0.958,fwd_burst_count,Valid
+bwd_packets,Full-Flow Behavioral,int64,0,0,336,0.0,1614673.0,406.8122,16064.527,False,0.9874,total_packets,Valid
+total_bytes,Full-Flow Behavioral,int64,0,0,1978,80.0,2396606852.0,535041.2111,21637064.2796,False,0.9982,bwd_bytes,Valid
+fwd_bytes,Full-Flow Behavioral,int64,0,0,1543,40.0,88826839.0,46399.5444,1352384.2157,False,0.6545,udp_byte_count,Valid
+bwd_bytes,Full-Flow Behavioral,int64,0,0,1454,0.0,2363992036.0,488641.6667,21224342.3564,False,0.9982,total_bytes,Valid
+packet_rate,Full-Flow Behavioral,float64,0,0,7949,0.025,125000.0,1337.5774,3846.869,False,0.534,byte_rate,Valid
+byte_rate,Full-Flow Behavioral,float64,0,0,14003,1.5251,46741190.4776,268341.8318,1248088.294,False,0.534,packet_rate,Valid
+fwd_pkt_ratio,Full-Flow Behavioral,float64,0,0,512,0.0732,1.0,0.6932,0.2426,False,0.9221,fwd_byte_ratio,Valid
+fwd_byte_ratio,Full-Flow Behavioral,float64,0,0,1749,0.0033,1.0,0.5778,0.3647,False,0.9221,fwd_pkt_ratio,Valid
+fwd_to_bwd_pkt_ratio,Full-Flow Behavioral,float64,0,0,586,0.079,744000000.0,1549242.8706,13265843.3894,False,0.9983,fwd_burst_pkts_mean,Valid
+fwd_to_bwd_byte_ratio,Full-Flow Behavioral,float64,0,0,2113,0.0033,62391000000.0,132871148.0244,1242880488.5007,False,0.9524,fwd_burst_bytes_mean,Valid
+bidir_pkt_size_mean,Full-Flow Behavioral,float64,0,0,1897,32.0,5729.3395,143.5446,164.7443,False,0.961,bidir_pkt_size_p75,Valid
+bidir_pkt_size_std,Full-Flow Behavioral,float64,0,0,1900,0.0,7345.5723,85.5167,197.7666,False,0.9219,bidir_pkt_size_mean,Valid
+bidir_pkt_size_min,Full-Flow Behavioral,float64,0,0,136,0.0,488.0,66.0955,28.6989,False,0.8063,fwd_pkt_size_min,Valid
+bidir_pkt_size_max,Full-Flow Behavioral,float64,0,0,571,32.0,64280.0,323.5087,1371.3427,False,0.8981,bwd_pkt_size_max,Valid
+bidir_pkt_size_median,Full-Flow Behavioral,float64,0,0,470,31.0,2728.0,136.5195,166.8356,False,0.7354,bidir_pkt_size_mean,Valid
+bidir_pkt_size_p25,Full-Flow Behavioral,float64,0,0,420,0.0,1360.0,90.9469,51.0252,False,0.7699,bwd_pkt_size_min,Valid
+bidir_pkt_size_p75,Full-Flow Behavioral,float64,0,0,833,32.0,14532.0,180.8631,286.1152,False,0.961,bidir_pkt_size_mean,Valid
+fwd_pkt_size_mean,Full-Flow Behavioral,float64,0,0,1470,32.0,11607.088,90.581,167.8198,False,0.9789,fwd_pkt_size_p75,Valid
+fwd_pkt_size_std,Full-Flow Behavioral,float64,0,0,1437,0.0,6359.6987,22.0102,105.4726,False,0.8194,fwd_pkt_size_p75,Valid
+fwd_pkt_size_min,Full-Flow Behavioral,float64,0,0,161,0.0,925.0,69.3818,34.1307,False,0.8063,bidir_pkt_size_min,Valid
+fwd_pkt_size_max,Full-Flow Behavioral,float64,0,0,511,32.0,64280.0,151.7475,653.3253,False,0.7215,bwd_burst_pkts_max,Valid
+fwd_pkt_size_median,Full-Flow Behavioral,float64,0,0,346,0.0,14532.0,84.8469,188.9594,False,0.9764,fwd_pkt_size_mean,Valid
+fwd_pkt_size_p25,Full-Flow Behavioral,float64,0,0,314,0.0,6348.0,78.4856,115.2219,False,0.861,fwd_pkt_size_mean,Valid
+fwd_pkt_size_p75,Full-Flow Behavioral,float64,0,0,574,0.0,16484.0,94.4164,227.7237,False,0.9789,fwd_pkt_size_mean,Valid
+bwd_pkt_size_mean,Full-Flow Behavioral,float64,0,0,1460,0.0,9953.4275,166.3738,261.096,False,0.9651,bwd_pkt_size_p75,Valid
+bwd_pkt_size_std,Full-Flow Behavioral,float64,0,0,1323,0.0,7739.4641,30.5708,182.0357,False,0.8011,bidir_pkt_size_std,Valid
+bwd_pkt_size_min,Full-Flow Behavioral,float64,0,0,248,0.0,1378.0,132.6035,156.549,False,0.8147,fwd_byte_ratio,Valid
+bwd_pkt_size_max,Full-Flow Behavioral,float64,0,0,488,0.0,48220.0,262.9511,1232.8645,False,0.8981,bidir_pkt_size_max,Valid
+bwd_pkt_size_median,Full-Flow Behavioral,float64,0,0,411,0.0,5844.0,156.9142,242.4474,False,0.9517,bwd_pkt_size_mean,Valid
+bwd_pkt_size_p25,Full-Flow Behavioral,float64,0,0,389,0.0,4396.0,148.1421,207.5554,False,0.9299,bwd_pkt_size_median,Valid
+bwd_pkt_size_p75,Full-Flow Behavioral,float64,0,0,662,0.0,15980.0,176.3315,332.1828,False,0.9651,bwd_pkt_size_mean,Valid
+bidir_iat_mean,Full-Flow Behavioral,float64,0,0,3865,0.0,59.9998,1.1608,4.3081,False,0.9047,fwd_iat_mean,Valid
+bidir_iat_std,Full-Flow Behavioral,float64,0,0,2653,0.0,29.8425,1.0807,3.8687,False,0.8841,bidir_iat_max,Valid
+bidir_iat_min,Full-Flow Behavioral,float64,0,0,2183,0.0,59.9998,0.4856,3.2629,False,0.9902,bidir_iat_p25,Valid
+bidir_iat_max,Full-Flow Behavioral,float64,0,0,4255,0.0,59.9998,3.8191,11.5999,False,0.9985,fwd_iat_max,Valid
+bidir_iat_median,Full-Flow Behavioral,float64,0,0,2603,0.0,59.9998,0.5769,3.4903,False,0.9873,bidir_iat_p25,Valid
+bidir_iat_p25,Full-Flow Behavioral,float64,0,0,2370,0.0,59.9998,0.5228,3.3458,False,0.9902,bidir_iat_min,Valid
+bidir_iat_p75,Full-Flow Behavioral,float64,0,0,3369,0.0,59.9998,1.4983,6.4604,False,0.9336,fwd_iat_median,Valid
+fwd_iat_mean,Full-Flow Behavioral,float64,0,0,3028,0.0,64.106,1.8291,6.7673,False,0.9621,fwd_iat_median,Valid
+fwd_iat_std,Full-Flow Behavioral,float64,0,0,2338,0.0,29.9295,0.9522,3.626,False,0.8665,bwd_iat_std,Valid
+fwd_iat_min,Full-Flow Behavioral,float64,0,0,1528,0.0,64.0111,0.9868,5.2998,False,0.8769,fwd_iat_p25,Valid
+fwd_iat_max,Full-Flow Behavioral,float64,0,0,3012,0.0,64.4359,3.8012,11.6326,False,0.9985,bidir_iat_max,Valid
+fwd_iat_median,Full-Flow Behavioral,float64,0,0,2220,0.0,64.0111,1.6181,7.1065,False,0.9622,fwd_iat_p25,Valid
+fwd_iat_p25,Full-Flow Behavioral,float64,0,0,2012,0.0,64.0111,1.3477,6.2543,False,0.9622,fwd_iat_median,Valid
+fwd_iat_p75,Full-Flow Behavioral,float64,0,0,2586,0.0,64.1245,2.1553,8.2355,False,0.9583,fwd_iat_mean,Valid
+bwd_iat_mean,Full-Flow Behavioral,float64,0,0,2123,0.0,107.9807,1.2824,6.1017,False,0.9592,bwd_iat_median,Valid
+bwd_iat_std,Full-Flow Behavioral,float64,0,0,1928,0.0,29.93,0.7297,3.2673,False,0.8665,fwd_iat_std,Valid
+bwd_iat_min,Full-Flow Behavioral,float64,0,0,757,0.0,107.9807,0.6776,4.8752,False,0.9384,bwd_iat_p25,Valid
+bwd_iat_max,Full-Flow Behavioral,float64,0,0,2257,0.0,107.9807,2.8632,10.7336,False,0.8894,bidir_iat_max,Valid
+bwd_iat_median,Full-Flow Behavioral,float64,0,0,1443,0.0,107.9807,1.1145,6.3591,False,0.9592,bwd_iat_mean,Valid
+bwd_iat_p25,Full-Flow Behavioral,float64,0,0,1195,0.0,107.9807,0.8773,5.5535,False,0.9401,bwd_iat_median,Valid
+bwd_iat_p75,Full-Flow Behavioral,float64,0,0,1819,0.0,107.9807,1.5753,7.5474,False,0.9491,bwd_iat_mean,Valid
+tcp_syn_count,Full-Flow Behavioral,int64,0,0,7,0.0,7.0,0.1643,0.5576,False,0.7952,tcp_win_max,Valid
+tcp_ack_count,Full-Flow Behavioral,int64,0,0,376,0.0,2429638.0,557.9306,22729.4524,False,0.9683,bwd_packets,Valid
+tcp_fin_count,Full-Flow Behavioral,int64,0,0,8,0.0,10.0,0.1935,0.5991,False,0.7707,is_udp,Valid
+tcp_rst_count,Full-Flow Behavioral,int64,0,0,10,0.0,10.0,0.0819,0.4785,False,0.521,tcp_fin_count,Valid
+tcp_psh_count,Full-Flow Behavioral,int64,0,0,210,0.0,71047.0,24.8006,840.5594,False,0.8745,bwd_packets,Valid
+tcp_urg_count,Full-Flow Behavioral,int64,0,0,1,0.0,0.0,0.0,0.0,True,,nan,Constant Feature (Zero Variance)
+tcp_win_min,Full-Flow Behavioral,float64,0,0,322,0.0,65535.0,934.801,6383.2202,False,0.9188,tcp_win_mean,Valid
+tcp_win_max,Full-Flow Behavioral,float64,0,0,289,0.0,65535.0,4384.0841,14159.9124,False,0.8787,tcp_win_std,Valid
+tcp_win_mean,Full-Flow Behavioral,float64,0,0,1439,0.0,65535.0,1716.8416,8266.314,False,0.9188,tcp_win_min,Valid
+tcp_win_std,Full-Flow Behavioral,float64,0,0,1408,0.0,32579.3333,972.0053,3442.7457,False,0.8787,tcp_win_max,Valid
+is_udp,Full-Flow Behavioral,int64,0,0,2,0.0,1.0,0.8506,0.3565,False,0.9749,protocol,Valid
+udp_packet_count,Full-Flow Behavioral,int64,0,0,100,0.0,393264.0,120.0738,5940.9814,False,0.712,udp_byte_count,Valid
+udp_byte_count,Full-Flow Behavioral,int64,0,0,664,0.0,335332840.0,43972.8028,2899035.4411,False,0.712,udp_packet_count,Valid
+fwd_burst_count,Full-Flow Behavioral,int64,0,0,303,1.0,809148.0,193.8597,7484.776,False,1.0,bwd_burst_count,Collinear with bwd_burst_count (r=1.0000)
+bwd_burst_count,Full-Flow Behavioral,int64,0,0,311,0.0,809148.0,193.4014,7484.7781,False,1.0,fwd_burst_count,Collinear with fwd_burst_count (r=1.0000)
+fwd_burst_pkts_mean,Full-Flow Behavioral,float64,0,0,537,1.0,744.0,2.253,13.2056,False,0.9983,fwd_to_bwd_pkt_ratio,Valid
+bwd_burst_pkts_mean,Full-Flow Behavioral,float64,0,0,487,0.0,15.424,0.7043,0.625,False,0.887,early_5_bwd_pkts,Valid
+fwd_burst_bytes_mean,Full-Flow Behavioral,float64,0,0,1655,40.0,62391.0,224.5696,1294.6654,False,0.9524,fwd_to_bwd_byte_ratio,Valid
+bwd_burst_bytes_mean,Full-Flow Behavioral,float64,0,0,1575,0.0,17308.8394,192.5647,393.3302,False,0.8955,bwd_pkt_size_mean,Valid
+fwd_burst_pkts_max,Full-Flow Behavioral,int64,0,0,95,1.0,1682.0,3.064,26.3593,False,0.5327,fwd_burst_bytes_max,Valid
+bwd_burst_pkts_max,Full-Flow Behavioral,int64,0,0,76,0.0,1330.0,1.205,11.3001,False,0.7215,fwd_pkt_size_max,Valid
+fwd_burst_bytes_max,Full-Flow Behavioral,int64,0,0,953,40.0,254684.0,454.3443,3870.7402,False,0.5327,fwd_burst_pkts_max,Valid
+bwd_burst_bytes_max,Full-Flow Behavioral,int64,0,0,762,0.0,520813.0,447.4605,6244.3467,False,0.5391,bwd_burst_bytes_mean,Valid
+early_5_complete,Early-Packet,int64,0,0,2,0.0,1.0,0.1578,0.3646,False,0.8807,early_15_fwd_pkts,Valid
+early_5_duration,Early-Packet,float64,0,0,11142,1.6e-05,156.147255,3.4523,14.95,False,0.9458,early_10_duration,Valid
+early_5_bytes,Early-Packet,int64,0,0,780,80.0,14985.0,344.4699,459.5475,False,0.8845,early_5_avg_size,Valid
+early_5_fwd_pkts,Early-Packet,int64,0,0,5,1.0,5.0,1.7725,0.9008,False,0.9134,early_10_fwd_pkts,Valid
+early_5_bwd_pkts,Early-Packet,int64,0,0,5,0.0,4.0,0.7829,0.7221,False,0.887,bwd_burst_pkts_mean,Valid
+early_5_avg_size,Early-Packet,float64,0,0,846,30.0,2997.0,129.9089,105.9538,False,0.8845,early_5_bytes,Valid
+early_10_complete,Early-Packet,int64,0,0,2,0.0,1.0,0.1223,0.3276,False,0.8835,early_20_fwd_pkts,Valid
+early_10_duration,Early-Packet,float64,0,0,11219,1.6e-05,342.047268,5.7272,26.9703,False,0.9741,early_15_duration,Valid
+early_10_bytes,Early-Packet,int64,0,0,1172,80.0,23846.0,540.024,1031.1999,False,0.9502,early_15_bytes,Valid
+early_10_fwd_pkts,Early-Packet,int64,0,0,10,1.0,10.0,2.1553,1.755,False,0.9673,early_15_fwd_pkts,Valid
+early_10_bwd_pkts,Early-Packet,int64,0,0,8,0.0,7.0,1.0798,1.3987,False,0.9664,early_15_bwd_pkts,Valid
+early_10_avg_size,Early-Packet,float64,0,0,1131,30.0,2384.6,138.4988,111.7287,False,0.9625,early_15_avg_size,Valid
+early_15_complete,Early-Packet,int64,0,0,2,0.0,1.0,0.0929,0.2903,False,0.9339,early_20_complete,Valid
+early_15_duration,Early-Packet,float64,0,0,11248,1.6e-05,532.157631,6.987,35.4085,False,0.9833,early_20_duration,Valid
+early_15_bytes,Early-Packet,int64,0,0,1386,80.0,41500.0,667.5636,1516.2453,False,0.9765,early_20_bytes,Valid
+early_15_fwd_pkts,Early-Packet,int64,0,0,15,1.0,15.0,2.4615,2.5459,False,0.9884,early_20_fwd_pkts,Valid
+early_15_bwd_pkts,Early-Packet,int64,0,0,11,0.0,10.0,1.2838,1.9503,False,0.9817,early_20_bwd_pkts,Valid
+early_15_avg_size,Early-Packet,float64,0,0,1333,28.2,2766.6667,138.096,110.7594,False,0.9833,early_20_avg_size,Valid
+early_20_complete,Early-Packet,int64,0,0,2,0.0,1.0,0.082,0.2743,False,0.9339,early_15_complete,Valid
+early_20_duration,Early-Packet,float64,0,0,11245,1.6e-05,623.787465,8.1039,42.6868,False,0.9833,early_15_duration,Valid
+early_20_bytes,Early-Packet,int64,0,0,1546,80.0,52464.0,787.5002,2066.6843,False,0.9765,early_15_bytes,Valid
+early_20_fwd_pkts,Early-Packet,int64,0,0,20,1.0,20.0,2.6772,3.183,False,0.9884,early_15_fwd_pkts,Valid
+early_20_bwd_pkts,Early-Packet,int64,0,0,14,0.0,13.0,1.4982,2.5878,False,0.9817,early_15_bwd_pkts,Valid
+early_20_avg_size,Early-Packet,float64,0,0,1458,27.15,2623.2,138.0578,113.7049,False,0.9833,early_15_avg_size,Valid

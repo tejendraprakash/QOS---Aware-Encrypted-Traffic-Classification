@@ -1,0 +1,39 @@
+Capture_Filename,Application,QoS_Class,Is_VPN,Capture_Group,Relationship_Notes,Confidence
+email1a.pcap,Email,Browsing,No,GRP_EMAIL_1,"Simultaneous capture pair with email1b.pcap (same start timestamp 2015-05-25 ~16:52). Dual vantage points. High leakage risk if split.",High
+email1b.pcap,Email,Browsing,No,GRP_EMAIL_1,"Simultaneous capture pair with email1a.pcap. Must remain in same cross-validation fold as email1a.",High
+email2a.pcap,Email,Browsing,No,GRP_EMAIL_2,"Simultaneous capture pair with email2b.pcap (same start timestamp 2015-06-05 ~18:14). Dual vantage points.",High
+email2b.pcap,Email,Browsing,No,GRP_EMAIL_2,"Simultaneous capture pair with email2a.pcap. Must remain in same cross-validation fold as email2a.",High
+vpn_email2a.pcap,Email,Browsing,Yes,GRP_VPN_EMAIL_2,"VPN encapsulation of email session 2. Coincides with email2 campaign. Encapsulated in Raw IP tunnel.",High
+vpn_email2b.pcap,Email,Browsing,Yes,GRP_VPN_EMAIL_2,"VPN encapsulation pair with vpn_email2a.pcap. Must remain in same fold.",High
+facebook_audio1a.pcap,Facebook Audio,Real-Time,No,GRP_FB_AUDIO_1,"Independent capture of Facebook Messenger voice call.",High
+vpn_facebook_audio2.pcap,Facebook Audio,Real-Time,Yes,GRP_VPN_FB_AUDIO_2,"Facebook Messenger voice call over OpenVPN/VPN tunnel.",High
+facebook_video1a.pcap,Facebook Video,Streaming,No,GRP_FB_VIDEO_1,"Facebook video playback session. High UDP traffic volume (WebRTC/QUIC or media chunking).",Medium
+ftps_down_1a.pcap,FTPS Download,Bulk Data,No,GRP_FTPS_DOWN_1,"Massive bulk download (5.43 GB). Simultaneous capture pair with ftps_down_1b.pcap (start 2015-05-01 14:37). Extreme leakage risk.",High
+ftps_down_1b.pcap,FTPS Download,Bulk Data,No,GRP_FTPS_DOWN_1,"Massive bulk download (4.23 GB). Complementary vantage point of ftps_down_1a.pcap. Must remain in GRP_FTPS_DOWN_1.",High
+ftps_up_2a.pcap,FTPS Up
+load,Bulk Data,No,GRP_FTPS_UP_2,"FTPS file upload (86 MB). Simultaneous capture pair with ftps_up_2b.pcap (start 2015-05-01 16:24).",High
+ftps_up_2b.pcap,FTPS Upload,Bulk Data,No,GRP_FTPS_UP_2,"FTPS file upload complementary vantage point of ftps_up_2a.pcap. Must remain in GRP_FTPS_UP_2.",High
+vpn_ftps_A.pcap,FTPS,Bulk Data,Yes,GRP_VPN_FTPS_A,"FTP over TLS through VPN tunnel session A.",High
+vpn_ftps_B.pcap,FTPS,Bulk Data,Yes,GRP_VPN_FTPS_B,"FTP over TLS through VPN tunnel session B.",High
+hangouts_audio1a.pcap,Hangouts Audio,Real-Time,No,GRP_HANGOUTS_AUDIO_1,"Google Hangouts real-time audio conversation.",High
+vpn_hangouts_audio1.pcap,Hangouts Audio,Real-Time,Yes,GRP_VPN_HANGOUTS_AUDIO_1,"Google Hangouts real-time voice call encapsulated in VPN.",High
+hangouts_video1b.pcapng,Hangouts Video,Real-Time,No,GRP_HANGOUTS_VIDEO_1,"Google Hangouts two-way videoconference (PCAPNG format).",High
+netflix1.pcap,Netflix,Streaming,No,GRP_NETFLIX_1,"Netflix on-demand video streaming session.",High
+vpn_netflix_A.pcap,Netflix,Streaming,Yes,GRP_VPN_NETFLIX_A,"Netflix video streaming encapsulated inside VPN tunnel.",High
+scpDown1.pcap,SCP Download,Bulk Data,No,GRP_SCP_1,"SCP file download session 1 (10 MB). SSH file transfer.",High
+scpDown2.pcap,SCP Download,Bulk Data,No,GRP_SCP_2,"SCP file download session 2 (8 MB).",High
+scpDown3.pcap,SCP Download,Bulk Data,No,GRP_SCP_3,"SCP file download session 3 (83 MB).",High
+scpDown4.pcap,SCP Download,Bulk Data,No,GRP_SCP_4,"Aborted or dropped transfer session (only 96 KB, 166 packets). Anomaly flag.",Medium
+scpDown5.pcap,SCP Download,Bulk Data,No,GRP_SCP_5,"SCP file download session 5 (365 MB).",High
+scpDown6.pcap,SCP Download,Bulk Data,No,GRP_SCP_6,"SCP file download session 6 (392 MB).",High
+skype_audio1a.pcap,Skype Audio,Real-Time,No,GRP_SKYPE_AUDIO_1,"Skype voice call capture session 1a.",High
+vpn_skype_audio1.pcap,Skype Audio,Real-Time,Yes,GRP_VPN_SKYPE_AUDIO_1,"Skype voice call encapsulated in VPN.",High
+skype_video1a.pcap,Skype Video,Real-Time,No,GRP_SKYPE_VIDEO_1,"Skype interactive video call capture.",High
+spotify1.pcap,Spotify,Streaming,No,GRP_SPOTIFY_1,"Spotify audio streaming session.",High
+vpn_spotify_A.pcap,Spotify,Streaming,Yes,GRP_VPN_SPOTIFY_A,"Spotify audio streaming encapsulated in VPN.",High
+vimeo1.pcap,Vimeo,Streaming,No,GRP_VIMEO_1,"Vimeo video on demand streaming capture.",High
+vpn_vimeo_A.pcap,Vimeo,Streaming,Yes,GRP_VPN_VIMEO_A,"Vimeo streaming encapsulated in VPN.",High
+voipbuster1b.pcapng,VoIP Buster,Real-Time,No,GRP_VOIPBUSTER_1,"VoIP Buster voice call capture (PCAPNG format).",High
+vpn_voipbuster1a.pcap,VoIP Buster,Real-Time,Yes,GRP_VPN_VOIPBUSTER_1,"VoIP Buster call encapsulated in VPN.",High
+youtube1.pcap,YouTube,Streaming,No,GRP_YOUTUBE_1,"YouTube adaptive bitrate video streaming.",High
+vpn_youtube_A.pcap,YouTube,Streaming,Yes,GRP_VPN_YOUTUBE_A,"YouTube streaming encapsulated in VPN tunnel.",High
