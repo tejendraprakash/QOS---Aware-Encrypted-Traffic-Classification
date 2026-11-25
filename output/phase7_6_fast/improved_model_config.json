@@ -1,0 +1,38 @@
+{
+  "experiment_name": "Exp 3: Targeted Class Weighting (Bulk Boost 1.35x on 6 feats)",
+  "macro_f1": 0.5802004286944176,
+  "baseline_macro_f1": 0.5734,
+  "features": [
+    "early_5_complete",
+    "early_5_duration",
+    "early_5_bytes",
+    "early_5_fwd_pkts",
+    "early_5_bwd_pkts",
+    "early_5_avg_size"
+  ],
+  "num_classes": 3,
+  "classes": [
+    "Bulk Data",
+    "Real-Time",
+    "Streaming"
+  ],
+  "evaluated_folds": 29,
+  "validation_protocol": "Leave-One-Group-Out (LOGO)",
+  "confusion_matrix": [
+    [
+      0.550552251486831,
+      0.405267629566695,
+      0.044180118946474084
+    ],
+    [
+      0.2299717247879359,
+      0.5433553251649388,
+      0.22667295004712534
+    ],
+    [
+      0.03121516164994426,
+      0.2697881828316611,
+      0.6989966555183946
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Feature Ablation: Set D: All Causal 14 Features",
+  "family": "Feature Ablation",
+  "params": {
+    "description": "Set C + bwd_ratio + pkt_count"
+  },
+  "metrics": {
+    "macro_f1": 0.5794,
+    "balanced_acc": 0.596,
+    "overall_acc": 0.5806
+  }
+}

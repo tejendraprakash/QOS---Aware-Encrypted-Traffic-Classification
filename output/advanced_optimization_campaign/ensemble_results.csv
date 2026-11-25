@@ -1,0 +1,6 @@
+Ensemble_Model,Type,Macro_F1,Balanced_Accuracy,Accuracy,Bulk_Data_Recall,Real_Time_Recall,Streaming_Recall
+Soft Voting Multi-Family (5 Models),Ensemble (Soft Voting),0.5531,0.5594,0.5672,0.3628,0.631,0.6845
+Soft Voting Ensemble (SVM + CatBoost + HistGBDT),Ensemble (Soft Voting),0.532,0.5356,0.5515,0.3271,0.6376,0.6421
+Soft Voting Ensemble (SVM + CatBoost + XGBoost),Ensemble (Soft Voting),0.5294,0.5383,0.5465,0.3169,0.6169,0.6812
+Stacking Meta-Classifier (Logistic Regression on OOF Probabilities),Ensemble (Stacking),0.5116,0.5058,0.5653,0.2642,0.7648,0.4883
+"Weighted Soft Voting (45% SVM, 35% CatBoost, 20% XGBoost)",Ensemble (Weighted Voting),0.4961,0.5085,0.5234,0.2302,0.623,0.6722

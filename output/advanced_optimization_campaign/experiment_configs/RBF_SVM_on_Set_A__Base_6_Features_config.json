@@ -1,0 +1,21 @@
+{
+  "name": "RBF SVM on Set A: Base 6 Features",
+  "family": "Feature Ablation (SVM)",
+  "params": {
+    "C": 10.0,
+    "kernel": "rbf",
+    "features": [
+      "early_5_complete",
+      "early_5_duration",
+      "early_5_bytes",
+      "early_5_fwd_pkts",
+      "early_5_bwd_pkts",
+      "early_5_avg_size"
+    ]
+  },
+  "metrics": {
+    "macro_f1": 0.4389,
+    "balanced_acc": 0.5025,
+    "overall_acc": 0.4683
+  }
+}

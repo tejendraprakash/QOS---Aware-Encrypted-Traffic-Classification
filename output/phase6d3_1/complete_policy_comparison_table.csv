@@ -1,0 +1,13 @@
+Congestion_Regime,Policy,RT_Mean_Delay_ms,RT_P95_Delay_ms,RT_Loss_Pct,RT_Goodput_Mbps,RT_Jitter_ms,Streaming_Mean_Delay_ms,Streaming_P95_Delay_ms,Streaming_Loss_Pct,Streaming_Goodput_Mbps,Streaming_Jitter_ms,Bulk_Mean_Delay_ms,Bulk_P95_Delay_ms,Bulk_Loss_Pct,Bulk_Goodput_Mbps,Bulk_Jitter_ms,Acceptance_Rate,SLA_Status
+Low,Baseline_FIFO,44.79,70.01,1.888,5.11,0.06,51.8,70.07,26.41,71.19,0.06,32.85,69.02,9.737,3.52,0.86,100.0%,"PARTIAL (Delay Met, Loss Violated)"
+Low,Clean_Predicted_QoS,24.41,52.22,0.821,5.17,5.0,37.71,62.84,45.453,51.4,4.88,23.0,40.68,1.788,15.69,0.43,100.0%,"PARTIAL (Delay Met, Loss Violated)"
+Low,Confidence_Aware_QoS,25.67,54.22,1.018,5.16,6.02,39.17,61.91,43.446,53.6,3.69,22.92,40.94,1.519,16.79,0.64,88.2%,"PARTIAL (Delay Met, Loss Violated)"
+Low,Oracle_QoS,20.07,20.12,0.002,5.22,0.06,44.23,59.87,40.644,56.39,0.09,24.17,47.35,0.204,22.29,0.14,100.0%,FULL_COMPLIANCE
+Moderate,Baseline_FIFO,61.06,70.05,5.447,8.16,0.05,63.31,70.09,52.338,85.67,0.05,49.35,70.07,41.062,1.57,1.37,100.0%,"PARTIAL (Delay Met, Loss Violated)"
+Moderate,Clean_Predicted_QoS,28.29,62.98,2.232,8.48,9.68,46.3,70.1,61.834,66.43,8.18,24.51,49.53,2.809,17.61,0.77,100.0%,"PARTIAL (Delay Met, Loss Violated)"
+Moderate,Confidence_Aware_QoS,29.85,63.25,2.695,8.43,10.92,47.54,69.49,61.75,66.78,6.48,24.31,49.05,2.555,18.7,1.09,88.2%,"PARTIAL (Delay Met, Loss Violated)"
+Moderate,Oracle_QoS,20.08,20.12,0.006,8.71,0.07,52.97,62.49,64.548,62.0,0.09,26.27,57.28,0.313,25.39,0.2,100.0%,FULL_COMPLIANCE
+High,Baseline_FIFO,65.82,70.06,8.031,11.48,0.04,66.91,70.09,65.698,84.34,0.05,53.1,70.08,57.262,1.66,0.75,100.0%,"PARTIAL (Delay Met, Loss Violated)"
+High,Clean_Predicted_QoS,30.61,69.62,3.434,12.14,11.48,49.39,74.03,72.527,64.21,13.81,26.25,56.92,5.344,19.73,0.72,100.0%,"PARTIAL (Delay Met, Loss Violated)"
+High,Confidence_Aware_QoS,32.22,69.44,4.182,12.04,12.51,50.75,73.39,72.708,64.28,10.87,25.6,55.13,4.86,20.46,1.04,88.2%,"PARTIAL (Delay Met, Loss Violated)"
+High,Oracle_QoS,20.09,20.12,0.008,12.64,0.08,58.42,65.15,75.149,57.72,0.1,29.84,64.63,0.587,27.64,0.23,100.0%,FULL_COMPLIANCE

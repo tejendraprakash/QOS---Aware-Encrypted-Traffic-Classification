@@ -1,0 +1,19 @@
+{
+  "name": "MLP Causal 9-Feature (64-32)",
+  "family": "Neural Network (MLP)",
+  "params": {
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "alpha": 0.05,
+    "max_iter": 300,
+    "early_stopping": true,
+    "random_state": 42
+  },
+  "metrics": {
+    "macro_f1": 0.3886,
+    "balanced_acc": 0.4144,
+    "overall_acc": 0.455
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "manifest_version": "1.0.0",
+  "phase": "PHASE_6D.3",
+  "environment": {
+    "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "win32",
+    "cpu_count": 12,
+    "packages": {
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "scipy": "1.17.1",
+      "sklearn": "1.5.2",
+      "xgboost": "3.2.0",
+      "scapy": "2.6.1",
+      "matplotlib": "3.9.2",
+      "seaborn": "0.13.2"
+    }
+  },
+  "audit_criteria": {
+    "item_01_dataset_provenance": {
+      "status": "VERIFIED",
+      "evidence": "UNB ISCX VPN-nonVPN 2016 archive (37 PCAPs, 13.2 GB, 11.98M pkts) verified against CIC Canadian Institute for Cybersecurity."
+    },
+    "item_02_flow_reconciliation": {
+      "status": "VERIFIED",
+      "evidence": "10,770 raw flows - 6,574 removed = 4,196 clean flows. 6,961 rule hits - 387 overlaps (LLMNR/SSDP/IGMP multicast) = 6,574 unique removed."
+    },
+    "item_03_filtering_hygiene": {
+      "status": "VERIFIED",
+      "evidence": "Filters standard L3/L4 OS infrastructure chatter (DNS, LLMNR, NetBIOS, SSDP, Multicast). Legitimate application media preserved."
+    },
+    "item_04_causal_feature_integrity": {
+      "status": "VERIFIED",
+      "evidence": "Early-5 features strictly adhere to packet arrival sequence (packets 1..5); zero future packet timestamps or sizes utilized."
+    },
+    "item_05_capture_group_independence": {
+      "status": "VERIFIED",
+      "evidence": "29 capture groups verified. Max folds per group = 1 across all splits (zero train/test group leakage)."
+    },
+    "item_06_group_imbalance_analysis": {
+      "status": "VERIFIED",
+      "evidence": "GRP_FTPS_DOWN_1 identified as holding 74.00% of Bulk Data. Re-evaluated LOGO without FTPS Down (Macro F1 = 0.5110)."
+    },
+    "item_07_fold_support_defect_resolution": {
+      "status": "VERIFIED",
+      "evidence": "Historical Fold 4 empty Bulk support discovered. Resolved via 29-fold LOGO (0.5734) and balanced 5-fold Seed 157 (0.5954)."
+    },
+    "item_08_ml_reproducibility": {
+      "status": "VERIFIED",
+      "evidence": "All 6 baseline architectures reproduced bit-exact down to 0.000000 difference across all metrics."
+    },
+    "item_09_early_horizon_optimality": {
+      "status": "VERIFIED",
+      "evidence": "Early-5 proved superior under LOGO (0.5734) compared to Early-10 (0.5591), Early-15 (0.5457), and Early-20 (0.5465)."
+    },
+    "item_10_calibration_shift_discovery": {
+      "status": "VERIFIED",
+      "evidence": "Post-hoc Platt and Isotonic calibrators overfit training capture conditions under domain shift (Brier score degrades from 0.628 to 0.691)."
+    },
+    "item_11_confidence_aware_scheduling": {
+      "status": "VERIFIED",
+      "evidence": "Confidence threshold tau=0.55 selected from OOF CDF; demotes low-confidence flows to DRR queue, boosting Bulk goodput to 20.46 Mbps."
+    },
+    "item_12_closed_loop_qos_simulation": {
+      "status": "VERIFIED",
+      "evidence": "Simulated across Low (50%), Moderate (85%), and High (125%) congestion; delay halved (65.8ms -> 30.6ms) and starvation eliminated (1.66 -> 19.7Mbps)."
+    },
+    "item_13_multi_seed_robustness": {
+      "status": "VERIFIED",
+      "evidence": "Statistical tests evaluated across 15 paired seeds; Shapiro-Wilk normality verified; Cohen's d effect sizes with 95% CIs reported."
+    },
+    "item_14_dual_metric_sla_audit": {
+      "status": "VERIFIED",
+      "evidence": "3GPP TS 23.501 origins labeled. Delay SLA met (<100ms), but 125% overload violates 1% loss SLA (3.43%), proving partial SLA compliance."
+    },
+    "item_15_novelty_and_literature": {
+      "status": "VERIFIED",
+      "evidence": "Compared against 5 landmark prior works (Huang 2021, Draper-Gil 2016, Lotfollahi 2020, Aceto 2019, Taylor 2016); verified novelty positioning."
+    }
+  },
+  "file_checksums": {
+    "output/phase5/track_b_flows.csv": {
+      "sha256": "f816d28b4eefe89ff3d848c6c211ef70069629be446843bc6a1e2071f3eb0a8b",
+      "size_bytes": 7263792
+    },
+    "output/phase5/track_b_folds.csv": {
+      "sha256": "7814b3f05056ad9fb4a5d4bd80e0d2956af7e1ec65b9ca28c1655e9e4f1ec110",
+      "size_bytes": 853823
+    },
+    "output/phase6d/clean_track_b_flows.csv": {
+      "sha256": "2ebcd37d9f57021416d174780da35c0c3963612646bcaa5d45b466361e5759d4",
+      "size_bytes": 3060110
+    },
+    "output/phase6d/clean_track_b_folds.csv": {
+      "sha256": "85b94edb17bf6ea9a6ea97789c35bbf60db7e1070b36b31ab63a4bb45636ea64",
+      "size_bytes": 306864
+    },
+    "output/phase6d/clean_baseline_comparison.csv": {
+      "sha256": "6fde06aa1e3d69696b9f554c928ff900567527eb40c5c1c0749388fab5b4ae6b",
+      "size_bytes": 826
+    },
+    "output/phase6d/clean_best_confusion_matrix.csv": {
+      "sha256": "66ba91543acf1c19cc771a07c4e5c4de95bc169f45b58ed3304e7cea87f58a4e",
+      "size_bytes": 328
+    },
+    "output/phase6d/clean_horizon_comparison.csv": {
+      "sha256": "4320c0218cac191364ff250c52103723472f23452690f7737aed4d5ccf81fb69",
+      "size_bytes": 450
+    },
+    "output/phase6d/clean_qos_simulation_run_metrics.csv": {
+      "sha256": "ef8f3852a61ef772c068799b8fc5960dc769cd0a00f969a08437a4fd6447a555",
+      "size_bytes": 1938
+    },
+    "output/phase6d/clean_predicted_qos_all_regimes.csv": {
+      "sha256": "df56631d3a1958d9e1ec5b521e6ccdacf6681bb9832ddb528e66b9474e436daa",
+      "size_bytes": 5365
+    },
+    "output/phase6d/clean_simulation_statistical_audit.csv": {
+      "sha256": "256a78212b96e10c940d7e79ca420d767965f8be48e27930ddb7b147052c8d32",
+      "size_bytes": 4425
+    },
+    "output/phase6d2/balanced_5fold_splits.csv": {
+      "sha256": "58e61b3e0679f3d2fc582ce0226c4f898cbad11aea6e80d37b5104097e655dcb",
+      "size_bytes": 241998
+    },
+    "output/phase6d2/calibration_comparison.csv": {
+      "sha256": "101a61d309f6de0d0e34623010e5538c6626f9bbe1c46f2e24af41b1f24a05b3",
+      "size_bytes": 102
+    },
+    "output/phase6d2/confidence_aware_policy_tradeoffs.csv": {
+      "sha256": "9d9568b306466f92708b8646091f1d0535b6424d5257f96c38e71d815b560924",
+      "size_bytes": 413
+    },
+    "output/phase6d2/logo_confusion_matrix_normalized.csv": {
+      "sha256": "fe27b189b1f4f83c26aec147756b739242168dd11581051be18d72facec68670",
+      "size_bytes": 242
+    },
+    "output/phase6d2/logo_per_group_performance.csv": {
+      "sha256": "dab9a89186425f5ffa04eff26745f71bf2b1a7e5ca3ecd0a51eda466574a91e3",
+      "size_bytes": 2378
+    },
+    "output/phase6d2/clean_flows_with_logo_predictions.csv": {
+      "sha256": "3baf0e452a7943749354bdf1a9b1ea69f7f7040af6df2e755782520fb415cec6",
+      "size_bytes": 3439017
+    },
+    "output/phase6d2/confidence_aware_simulation_run_metrics.csv": {
+      "sha256": "a520489d0c840543d0e9b2a2663946281cc831355de05b13b1034915160dc45d",
+      "size_bytes": 1955
+    },
+    "output/phase6d3/audit1_logo_horizon_comparison.csv": {
+      "sha256": "7af1133b8c117034ba85ccb8850048cec4531c7d9477cdd3a4448b1a9bff7151",
+      "size_bytes": 618
+    },
+    "output/phase6d3/audit2_per_group_performance.csv": {
+      "sha256": "a8d952ac0c9bef41029a8b15ee341a70389f9314f910be15c6eb8485256c1f13",
+      "size_bytes": 1871
+    },
+    "output/phase6d3/audit2_ftps_dominance_comparison.csv": {
+      "sha256": "a5b7d6d8d36c36701e157d00d9f46f38a181b5c92a94d4e080153527b3e0f229",
+      "size_bytes": 225
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Weighted Soft Voting (45% SVM, 35% CatBoost, 20% XGBoost)",
+  "family": "Ensemble (Weighted Voting)",
+  "params": {
+    "weights": {
+      "SVM": 0.45,
+      "CatBoost": 0.35,
+      "XGBoost": 0.2
+    }
+  },
+  "metrics": {
+    "macro_f1": 0.4961,
+    "balanced_acc": 0.5085,
+    "overall_acc": 0.5234
+  }
+}

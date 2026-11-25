@@ -1,0 +1,16 @@
+{
+  "name": "CatBoost + Bulk Boost 1.20x",
+  "family": "CatBoost",
+  "params": {
+    "iterations": 150,
+    "learning_rate": 0.08,
+    "depth": 5,
+    "l2_leaf_reg": 3.0,
+    "weights": "bulk_boost_1.20"
+  },
+  "metrics": {
+    "macro_f1": 0.5928,
+    "balanced_acc": 0.6146,
+    "overall_acc": 0.5887
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Poly SVM (degree=2, C=5.0, balanced)",
+  "family": "SVM (Polynomial)",
+  "params": {
+    "C": 5.0,
+    "kernel": "poly",
+    "degree": 2,
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "macro_f1": 0.4263,
+    "balanced_acc": 0.4965,
+    "overall_acc": 0.4576
+  }
+}

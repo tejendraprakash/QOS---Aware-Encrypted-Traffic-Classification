@@ -1,0 +1,106 @@
+Model,QoS_Class,Precision,Recall,F1_Score
+LightGBM Default,Bulk Data,0.5402,0.4741,0.505
+LightGBM Default,Real-Time,0.6071,0.5971,0.602
+LightGBM Default,Streaming,0.5539,0.6644,0.6042
+"LightGBM Tuned (Depth 5, Leaves 20)",Bulk Data,0.5735,0.514,0.5421
+"LightGBM Tuned (Depth 5, Leaves 20)",Real-Time,0.6203,0.5905,0.605
+"LightGBM Tuned (Depth 5, Leaves 20)",Streaming,0.5504,0.6878,0.6115
+LightGBM + Bulk Boost 1.20x,Bulk Data,0.5681,0.514,0.5397
+LightGBM + Bulk Boost 1.20x,Real-Time,0.6204,0.5862,0.6029
+LightGBM + Bulk Boost 1.20x,Streaming,0.5471,0.6867,0.609
+"LightGBM Shallow (Depth 3, Leaves 8)",Bulk Data,0.5042,0.4104,0.4525
+"LightGBM Shallow (Depth 3, Leaves 8)",Real-Time,0.5912,0.5669,0.5788
+"LightGBM Shallow (Depth 3, Leaves 8)",Streaming,0.5594,0.7503,0.641
+CatBoost Default,Bulk Data,0.5766,0.5438,0.5597
+CatBoost Default,Real-Time,0.6591,0.5778,0.6158
+CatBoost Default,Streaming,0.5563,0.7603,0.6425
+"CatBoost Tuned (Depth 5, Iter 150)",Bulk Data,0.5388,0.5489,0.5438
+"CatBoost Tuned (Depth 5, Iter 150)",Real-Time,0.6271,0.5382,0.5793
+"CatBoost Tuned (Depth 5, Iter 150)",Streaming,0.5621,0.7369,0.6377
+CatBoost + Bulk Boost 1.20x,Bulk Data,0.5345,0.5786,0.5557
+CatBoost + Bulk Boost 1.20x,Real-Time,0.6398,0.5339,0.5821
+CatBoost + Bulk Boost 1.20x,Streaming,0.5699,0.7313,0.6406
+"Random Forest Default (100 trees, balanced)",Bulk Data,0.4392,0.3866,0.4112
+"Random Forest Default (100 trees, balanced)",Real-Time,0.5803,0.6178,0.5985
+"Random Forest Default (100 trees, balanced)",Streaming,0.5683,0.5708,0.5695
+"Random Forest Regularized (150 trees, depth 10, leaf 3)",Bulk Data,0.5604,0.4928,0.5244
+"Random Forest Regularized (150 trees, depth 10, leaf 3)",Real-Time,0.6236,0.5683,0.5947
+"Random Forest Regularized (150 trees, depth 10, leaf 3)",Streaming,0.5355,0.7324,0.6186
+"Random Forest Conservative (100 trees, depth 7, leaf 5)",Bulk Data,0.4432,0.3246,0.3747
+"Random Forest Conservative (100 trees, depth 7, leaf 5)",Real-Time,0.572,0.5146,0.5418
+"Random Forest Conservative (100 trees, depth 7, leaf 5)",Streaming,0.4842,0.7692,0.5943
+Random Forest + Bulk Boost 1.20x,Bulk Data,0.5651,0.5234,0.5434
+Random Forest + Bulk Boost 1.20x,Real-Time,0.6289,0.5575,0.5911
+Random Forest + Bulk Boost 1.20x,Streaming,0.5339,0.7291,0.6164
+"Extra Trees Default (100 trees, balanced)",Bulk Data,0.4483,0.4274,0.4376
+"Extra Trees Default (100 trees, balanced)",Real-Time,0.5583,0.5598,0.5591
+"Extra Trees Default (100 trees, balanced)",Streaming,0.5518,0.5819,0.5665
+"Extra Trees Regularized (150 trees, depth 10, leaf 3)",Bulk Data,0.2844,0.1563,0.2018
+"Extra Trees Regularized (150 trees, depth 10, leaf 3)",Real-Time,0.5262,0.4303,0.4734
+"Extra Trees Regularized (150 trees, depth 10, leaf 3)",Streaming,0.441,0.8919,0.5902
+Extra Trees + Bulk Boost 1.20x,Bulk Data,0.4802,0.3815,0.4252
+Extra Trees + Bulk Boost 1.20x,Real-Time,0.6146,0.4194,0.4986
+Extra Trees + Bulk Boost 1.20x,Streaming,0.4418,0.893,0.5911
+"RBF SVM (C=1.0, balanced, in-fold scaled)",Bulk Data,0.2675,0.1461,0.189
+"RBF SVM (C=1.0, balanced, in-fold scaled)",Real-Time,0.5167,0.4293,0.469
+"RBF SVM (C=1.0, balanced, in-fold scaled)",Streaming,0.4408,0.8796,0.5873
+"RBF SVM (C=10.0, balanced, in-fold scaled)",Bulk Data,0.6388,0.7018,0.6688
+"RBF SVM (C=10.0, balanced, in-fold scaled)",Real-Time,0.8045,0.4694,0.5929
+"RBF SVM (C=10.0, balanced, in-fold scaled)",Streaming,0.4577,0.8495,0.5948
+"RBF SVM (C=0.5, balanced, in-fold scaled)",Bulk Data,0.2595,0.1444,0.1856
+"RBF SVM (C=0.5, balanced, in-fold scaled)",Real-Time,0.5147,0.4194,0.4622
+"RBF SVM (C=0.5, balanced, in-fold scaled)",Streaming,0.4393,0.8874,0.5877
+HistGBDT Default (max_iter 100),Bulk Data,0.5725,0.5098,0.5393
+HistGBDT Default (max_iter 100),Real-Time,0.6356,0.614,0.6246
+HistGBDT Default (max_iter 100),Streaming,0.5792,0.709,0.6376
+"HistGBDT Tuned (max_iter 120, depth 5, l2=1.0)",Bulk Data,0.5759,0.4996,0.535
+"HistGBDT Tuned (max_iter 120, depth 5, l2=1.0)",Real-Time,0.6205,0.5801,0.5996
+"HistGBDT Tuned (max_iter 120, depth 5, l2=1.0)",Streaming,0.5332,0.7079,0.6082
+HistGBDT + Bulk Boost 1.20x,Bulk Data,0.5602,0.4945,0.5253
+HistGBDT + Bulk Boost 1.20x,Real-Time,0.6147,0.5773,0.5954
+HistGBDT + Bulk Boost 1.20x,Streaming,0.5464,0.709,0.6172
+Feature Ablation: Set A: Baseline 6 Features,Bulk Data,0.5403,0.5217,0.5403
+Feature Ablation: Set A: Baseline 6 Features,Real-Time,0.5789,0.549,0.5789
+Feature Ablation: Set A: Baseline 6 Features,Streaming,0.616,0.7191,0.616
+Feature Ablation: Set B: Champion 8 Features,Bulk Data,0.5391,0.5183,0.5391
+Feature Ablation: Set B: Champion 8 Features,Real-Time,0.5887,0.5589,0.5887
+Feature Ablation: Set B: Champion 8 Features,Streaming,0.6219,0.728,0.6219
+Feature Ablation: Set B + early_5_is_bidir (9 Feats),Bulk Data,0.533,0.514,0.533
+Feature Ablation: Set B + early_5_is_bidir (9 Feats),Real-Time,0.6031,0.5801,0.6031
+Feature Ablation: Set B + early_5_is_bidir (9 Feats),Streaming,0.6284,0.7146,0.6284
+Feature Ablation: Set B + early_5_bwd_fwd_diff (9 Feats),Bulk Data,0.5076,0.4809,0.5076
+Feature Ablation: Set B + early_5_bwd_fwd_diff (9 Feats),Real-Time,0.5929,0.5754,0.5929
+Feature Ablation: Set B + early_5_bwd_fwd_diff (9 Feats),Streaming,0.6275,0.7146,0.6275
+Feature Ablation: Set B + Log Transforms (10 Feats),Bulk Data,0.5295,0.5106,0.5295
+Feature Ablation: Set B + Log Transforms (10 Feats),Real-Time,0.5846,0.5551,0.5846
+Feature Ablation: Set B + Log Transforms (10 Feats),Streaming,0.6185,0.7213,0.6185
+Feature Ablation: Set C: Extended Causal 12 Features,Bulk Data,0.5222,0.5047,0.5222
+Feature Ablation: Set C: Extended Causal 12 Features,Real-Time,0.5713,0.5401,0.5713
+Feature Ablation: Set C: Extended Causal 12 Features,Streaming,0.609,0.7146,0.609
+Feature Ablation: Set D: All Causal 14 Features,Bulk Data,0.5272,0.5064,0.5272
+Feature Ablation: Set D: All Causal 14 Features,Real-Time,0.5893,0.5636,0.5893
+Feature Ablation: Set D: All Causal 14 Features,Streaming,0.6216,0.7179,0.6216
+"XGBoost Champion Anchor (depth 5, lr 0.10, Bulk 1.20x)",Bulk Data,0.5617,0.5183,0.5391
+"XGBoost Champion Anchor (depth 5, lr 0.10, Bulk 1.20x)",Real-Time,0.6219,0.5589,0.5887
+"XGBoost Champion Anchor (depth 5, lr 0.10, Bulk 1.20x)",Streaming,0.5428,0.728,0.6219
+"XGBoost CFG-A: Deeper + L1/L2 Regularization (depth 6, lr 0.07)",Bulk Data,0.5389,0.4707,0.5025
+"XGBoost CFG-A: Deeper + L1/L2 Regularization (depth 6, lr 0.07)",Real-Time,0.6164,0.5839,0.5997
+"XGBoost CFG-A: Deeper + L1/L2 Regularization (depth 6, lr 0.07)",Streaming,0.5622,0.7258,0.6336
+"XGBoost CFG-B: Shallow & Robust (depth 4, lr 0.08, min_child 2)",Bulk Data,0.5783,0.5429,0.56
+"XGBoost CFG-B: Shallow & Robust (depth 4, lr 0.08, min_child 2)",Real-Time,0.626,0.549,0.585
+"XGBoost CFG-B: Shallow & Robust (depth 4, lr 0.08, min_child 2)",Streaming,0.5317,0.7291,0.615
+"XGBoost CFG-C: Low Learning Rate Ensemble (depth 5, lr 0.05, n_est 180)",Bulk Data,0.5584,0.5115,0.5339
+"XGBoost CFG-C: Low Learning Rate Ensemble (depth 5, lr 0.05, n_est 180)",Real-Time,0.6173,0.5556,0.5848
+"XGBoost CFG-C: Low Learning Rate Ensemble (depth 5, lr 0.05, n_est 180)",Streaming,0.5389,0.7258,0.6185
+XGBoost CFG-D: Bulk Boost Fine-Tuning (Bulk 1.15x),Bulk Data,0.5723,0.5344,0.5527
+XGBoost CFG-D: Bulk Boost Fine-Tuning (Bulk 1.15x),Real-Time,0.6367,0.5848,0.6097
+XGBoost CFG-D: Bulk Boost Fine-Tuning (Bulk 1.15x),Streaming,0.5645,0.7224,0.6337
+XGBoost CFG-E: Bulk Boost Aggressive (Bulk 1.30x),Bulk Data,0.5581,0.5302,0.5438
+XGBoost CFG-E: Bulk Boost Aggressive (Bulk 1.30x),Real-Time,0.6263,0.5561,0.5891
+XGBoost CFG-E: Bulk Boost Aggressive (Bulk 1.30x),Streaming,0.5452,0.7258,0.6227
+"XGBoost CFG-F: Conservative Shallow (depth 3, lr 0.10)",Bulk Data,0.5098,0.4639,0.4858
+"XGBoost CFG-F: Conservative Shallow (depth 3, lr 0.10)",Real-Time,0.5946,0.517,0.5531
+"XGBoost CFG-F: Conservative Shallow (depth 3, lr 0.10)",Streaming,0.525,0.7492,0.6174
+"XGBoost CFG-G: Gamma Regularized (gamma 0.2, subsample 0.75)",Bulk Data,0.5614,0.5166,0.5381
+"XGBoost CFG-G: Gamma Regularized (gamma 0.2, subsample 0.75)",Real-Time,0.6216,0.5566,0.5873
+"XGBoost CFG-G: Gamma Regularized (gamma 0.2, subsample 0.75)",Streaming,0.5375,0.7269,0.618

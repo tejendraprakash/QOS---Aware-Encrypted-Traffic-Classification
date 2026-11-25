@@ -1,0 +1,33 @@
+{
+  "name": "RBF SVM on Set E: All Causal 18 Features",
+  "family": "Feature Ablation (SVM)",
+  "params": {
+    "C": 10.0,
+    "kernel": "rbf",
+    "features": [
+      "early_5_complete",
+      "early_5_duration",
+      "early_5_bytes",
+      "early_5_fwd_pkts",
+      "early_5_bwd_pkts",
+      "early_5_avg_size",
+      "is_udp",
+      "early_5_fwd_ratio",
+      "early_5_is_bidir",
+      "early_5_bwd_fwd_diff",
+      "early_5_log_bytes",
+      "early_5_log_duration",
+      "early_5_bwd_ratio",
+      "early_5_pkt_count",
+      "early_5_byte_rate",
+      "early_5_is_pure_fwd",
+      "early_5_burst_indicator",
+      "early_5_bytes_per_fwd"
+    ]
+  },
+  "metrics": {
+    "macro_f1": 0.5145,
+    "balanced_acc": 0.561,
+    "overall_acc": 0.5226
+  }
+}

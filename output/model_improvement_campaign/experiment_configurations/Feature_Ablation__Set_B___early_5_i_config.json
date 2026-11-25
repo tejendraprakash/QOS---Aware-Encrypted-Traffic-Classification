@@ -1,0 +1,12 @@
+{
+  "name": "Feature Ablation: Set B + early_5_is_bidir (9 Feats)",
+  "family": "Feature Ablation",
+  "params": {
+    "description": "Set B + binary indicator of observed bidirectional traffic in early 5"
+  },
+  "metrics": {
+    "macro_f1": 0.5882,
+    "balanced_acc": 0.6029,
+    "overall_acc": 0.5903
+  }
+}

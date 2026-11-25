@@ -1,0 +1,17 @@
+{
+  "name": "Soft Voting Ensemble (SVM + CatBoost + HistGBDT)",
+  "family": "Ensemble (Soft Voting)",
+  "params": {
+    "models": [
+      "SVM",
+      "CatBoost",
+      "HistGBDT"
+    ],
+    "weights": "equal"
+  },
+  "metrics": {
+    "macro_f1": 0.532,
+    "balanced_acc": 0.5356,
+    "overall_acc": 0.5515
+  }
+}

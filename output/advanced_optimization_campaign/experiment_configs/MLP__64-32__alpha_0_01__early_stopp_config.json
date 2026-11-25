@@ -1,0 +1,19 @@
+{
+  "name": "MLP (64-32, alpha=0.01, early_stopping)",
+  "family": "Neural Network (MLP)",
+  "params": {
+    "hidden_layer_sizes": [
+      64,
+      32
+    ],
+    "alpha": 0.01,
+    "max_iter": 300,
+    "early_stopping": true,
+    "random_state": 42
+  },
+  "metrics": {
+    "macro_f1": 0.3868,
+    "balanced_acc": 0.4075,
+    "overall_acc": 0.4483
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Feature Ablation: Set C: Extended Causal 12 Features",
+  "family": "Feature Ablation",
+  "params": {
+    "description": "Set B + is_bidir + bwd_fwd_diff + log_bytes + log_duration"
+  },
+  "metrics": {
+    "macro_f1": 0.5675,
+    "balanced_acc": 0.5864,
+    "overall_acc": 0.5674
+  }
+}

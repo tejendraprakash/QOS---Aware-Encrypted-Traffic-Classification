@@ -1,0 +1,45 @@
+{
+  "project_title": "QoS-Aware Encrypted Traffic Classification for Next-Generation Networks",
+  "data_paths": {
+    "clean_dataset": "output/phase6d/clean_track_b_flows.csv",
+    "runtime_inferred_flows": "output/runtime_verification/inferred_flows.csv",
+    "runtime_e2e_metrics": "output/runtime_verification/e2e_simulation_metrics.csv",
+    "runtime_extracted_flows": "output/runtime_verification/extracted_flows/flow_features.csv",
+    "phase7_7_best_config": "output/phase7_7/best_model_config.json",
+    "phase7_7_experiment_comparison": "output/phase7_7/experiment_comparison.csv",
+    "phase7_7_per_class_metrics": "output/phase7_7/per_class_metrics.csv",
+    "phase7_7_confusion_matrix": "output/phase7_7/confusion_matrix.csv",
+    "phase7_7_feature_definitions": "output/phase7_7/feature_definitions.md",
+    "phase7_7_champion_model": "output/phase7_7/phase7_7_champion_model.json",
+    "phase7_full_simulation_runs": "output/phase7/run_metrics.csv",
+    "phase6d_qos_runs": "output/phase6d/clean_predicted_qos_all_regimes.csv",
+    "capture_groups": "research_notes/capture_groups.csv",
+    "raw_pcaps_dir": "data/raw"
+  },
+  "qos_classes": ["Bulk Data", "Real-Time", "Streaming"],
+  "sla_thresholds": {
+    "Real-Time": {"p95_delay_max_ms": 100.0, "loss_max_pct": 1.0, "cir_mbps": 25.0, "priority": "Queue 0 (Strict Priority)"},
+    "Streaming": {"p95_delay_max_ms": 300.0, "loss_max_pct": 0.01, "weight_pct": 60.0, "priority": "Queue 1 (DRR 60%)"},
+    "Bulk Data": {"p95_delay_max_ms": 300.0, "loss_max_pct": 1.0, "weight_pct": 40.0, "priority": "Queue 2 (DRR 40%)"}
+  },
+  "champion_features": [
+    "early_5_complete",
+    "early_5_duration",
+    "early_5_bytes",
+    "early_5_fwd_pkts",
+    "early_5_bwd_pkts",
+    "early_5_avg_size",
+    "is_udp",
+    "early_5_fwd_ratio"
+  ],
+  "verified_metrics": {
+    "baseline_macro_f1": 0.5734,
+    "baseline_balanced_acc": 0.5881,
+    "phase7_6_macro_f1": 0.5802,
+    "phase7_7_outer_macro_f1": 0.5895,
+    "phase7_7_nested_macro_f1": 0.5913,
+    "phase7_7_balanced_acc": 0.6054,
+    "phase7_7_nested_balanced_acc": 0.6077,
+    "phase7_7_overall_acc": 0.5922
+  }
+}

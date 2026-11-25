@@ -1,0 +1,15 @@
+{
+  "name": "Extra Trees + Bulk Boost 1.20x",
+  "family": "ExtraTrees",
+  "params": {
+    "n_estimators": 150,
+    "max_depth": 10,
+    "min_samples_leaf": 3,
+    "weights": "bulk_boost_1.20"
+  },
+  "metrics": {
+    "macro_f1": 0.505,
+    "balanced_acc": 0.5646,
+    "overall_acc": 0.51
+  }
+}

@@ -33,6 +33,7 @@ ISCX dataset/
 
 # Logs, Cache & Temporary files
 *.log
+catboost_info/
 scratch/
 .tmp/
 .DS_Store

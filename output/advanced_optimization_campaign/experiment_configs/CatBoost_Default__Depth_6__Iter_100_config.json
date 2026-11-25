@@ -1,0 +1,15 @@
+{
+  "name": "CatBoost Default (Depth 6, Iter 1000)",
+  "family": "CatBoost",
+  "params": {
+    "depth": 6,
+    "iterations": 500,
+    "verbose": 0,
+    "random_seed": 42
+  },
+  "metrics": {
+    "macro_f1": 0.53,
+    "balanced_acc": 0.5321,
+    "overall_acc": 0.5484
+  }
+}

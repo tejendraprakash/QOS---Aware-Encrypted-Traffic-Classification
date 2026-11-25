@@ -1,0 +1,15 @@
+{
+  "name": "Linear SVM (C=10.0, balanced, LinearSVC)",
+  "family": "SVM (Linear)",
+  "params": {
+    "C": 10.0,
+    "kernel": "linear",
+    "class_weight": "balanced",
+    "scaler": "StandardScaler"
+  },
+  "metrics": {
+    "macro_f1": 0.408,
+    "balanced_acc": 0.476,
+    "overall_acc": 0.4547
+  }
+}

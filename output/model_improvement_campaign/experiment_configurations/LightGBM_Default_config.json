@@ -1,0 +1,15 @@
+{
+  "name": "LightGBM Default",
+  "family": "LightGBM",
+  "params": {
+    "n_estimators": 100,
+    "learning_rate": 0.1,
+    "num_leaves": 31,
+    "weights": "standard"
+  },
+  "metrics": {
+    "macro_f1": 0.5704,
+    "balanced_acc": 0.5785,
+    "overall_acc": 0.577
+  }
+}

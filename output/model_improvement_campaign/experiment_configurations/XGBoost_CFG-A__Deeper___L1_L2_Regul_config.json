@@ -1,0 +1,17 @@
+{
+  "name": "XGBoost CFG-A: Deeper + L1/L2 Regularization (depth 6, lr 0.07)",
+  "family": "XGBoost",
+  "params": {
+    "n_estimators": 120,
+    "max_depth": 6,
+    "learning_rate": 0.07,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.5,
+    "boost": 1.2
+  },
+  "metrics": {
+    "macro_f1": 0.5786,
+    "balanced_acc": 0.5934,
+    "overall_acc": 0.5825
+  }
+}

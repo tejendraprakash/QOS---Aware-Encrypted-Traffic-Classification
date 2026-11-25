@@ -1,0 +1,17 @@
+{
+  "name": "XGBoost CFG-C: Low Learning Rate Ensemble (depth 5, lr 0.05, n_est 180)",
+  "family": "XGBoost",
+  "params": {
+    "n_estimators": 180,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "boost": 1.2
+  },
+  "metrics": {
+    "macro_f1": 0.5791,
+    "balanced_acc": 0.5976,
+    "overall_acc": 0.5796
+  }
+}

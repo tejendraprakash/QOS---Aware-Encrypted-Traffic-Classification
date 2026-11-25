@@ -1,0 +1,17 @@
+{
+  "name": "XGBoost CFG-G: Gamma Regularized (gamma 0.2, subsample 0.75)",
+  "family": "XGBoost",
+  "params": {
+    "n_estimators": 120,
+    "max_depth": 5,
+    "learning_rate": 0.08,
+    "gamma": 0.2,
+    "subsample": 0.75,
+    "boost": 1.2
+  },
+  "metrics": {
+    "macro_f1": 0.5811,
+    "balanced_acc": 0.6,
+    "overall_acc": 0.5817
+  }
+}

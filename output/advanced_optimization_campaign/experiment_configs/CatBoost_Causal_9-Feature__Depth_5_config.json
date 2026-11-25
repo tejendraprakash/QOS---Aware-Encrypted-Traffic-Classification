@@ -1,0 +1,16 @@
+{
+  "name": "CatBoost Causal 9-Feature (Depth 5, Iter 300)",
+  "family": "CatBoost",
+  "params": {
+    "depth": 5,
+    "iterations": 300,
+    "l2_leaf_reg": 3.0,
+    "verbose": 0,
+    "random_seed": 42
+  },
+  "metrics": {
+    "macro_f1": 0.5,
+    "balanced_acc": 0.5061,
+    "overall_acc": 0.5253
+  }
+}

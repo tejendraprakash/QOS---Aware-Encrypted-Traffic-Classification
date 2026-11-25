@@ -1,0 +1,37 @@
+================================================================================
+         FLOW FORMATION & FEATURE EXTRACTION SUMMARY REPORT
+Project: QoS-Aware Encrypted Network Traffic Classification for Next-Gen Networks
+Generated: 2026-11-24 13:52:53 UTC
+================================================================================
+
+1. EXTRACTION EXECUTION OVERVIEW
+--------------------------------------------------
+Total Captures Processed   : 1
+Failed Captures            : 0
+Total Packets Processed    : 166
+Total Bidirectional Flows  : 15
+Inactivity Timeout         : 60.0 seconds
+Min Packets per Flow       : 2
+Total Processing Time      : 0.07 seconds
+
+2. FLOW DISTRIBUTION BY QoS CLASS
+--------------------------------------------------
+  - Bulk Data           :     15 flows (100.00%)
+
+3. FLOW DISTRIBUTION BY APPLICATION
+--------------------------------------------------
+  - SCP Download        :     15 flows (100.00%)
+
+4. FLOW DISTRIBUTION BY ENCAPSULATION
+--------------------------------------------------
+  - VPN = No            :     15 flows (100.00%)
+
+5. KEY METHODOLOGICAL NOTES & SAFETY
+--------------------------------------------------
+  - Flow Definition: Canonical 5-tuple (min(IP:port), max(IP:port), proto).
+  - Inactivity Timeout: Flows inactive > 60s are split to reflect independent sessions.
+  - Feature Safety: IP addresses, MACs, and port numbers are strictly isolated as
+    audit metadata and MUST NOT be used as ML training inputs.
+  - Group-Based Validation: Model evaluation must group captures by 'capture_group'
+    to prevent synthetic data leakage across dual-ended captures.
+================================================================================

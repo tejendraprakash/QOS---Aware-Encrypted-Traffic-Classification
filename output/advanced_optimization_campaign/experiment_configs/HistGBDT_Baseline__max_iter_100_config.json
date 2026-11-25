@@ -1,0 +1,13 @@
+{
+  "name": "HistGBDT Baseline (max_iter 100)",
+  "family": "HistGBDT",
+  "params": {
+    "max_iter": 100,
+    "random_state": 42
+  },
+  "metrics": {
+    "macro_f1": 0.5281,
+    "balanced_acc": 0.529,
+    "overall_acc": 0.5455
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "RBF SVM (C=0.5, balanced, in-fold scaled)",
+  "family": "SVM",
+  "params": {
+    "C": 0.5,
+    "kernel": "rbf",
+    "gamma": "scale",
+    "scale": true,
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "macro_f1": 0.4118,
+    "balanced_acc": 0.4838,
+    "overall_acc": 0.4423
+  }
+}

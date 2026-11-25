@@ -1,0 +1,28 @@
+{
+  "name": "XGBoost on Set D: Extended 14 Features",
+  "family": "Feature Ablation (XGBoost)",
+  "params": {
+    "model": "XGBoost CFG-D",
+    "features": [
+      "early_5_complete",
+      "early_5_duration",
+      "early_5_bytes",
+      "early_5_fwd_pkts",
+      "early_5_bwd_pkts",
+      "early_5_avg_size",
+      "is_udp",
+      "early_5_fwd_ratio",
+      "early_5_is_bidir",
+      "early_5_bwd_fwd_diff",
+      "early_5_log_bytes",
+      "early_5_log_duration",
+      "early_5_bwd_ratio",
+      "early_5_pkt_count"
+    ]
+  },
+  "metrics": {
+    "macro_f1": 0.567,
+    "balanced_acc": 0.5906,
+    "overall_acc": 0.5663
+  }
+}

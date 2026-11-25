@@ -1,0 +1,16 @@
+{
+  "name": "RBF SVM (C=10.0, Causal 9-Feature, StandardScaler)",
+  "family": "SVM",
+  "params": {
+    "C": 10.0,
+    "kernel": "rbf",
+    "gamma": "scale",
+    "class_weight": "balanced",
+    "scaler": "StandardScaler"
+  },
+  "metrics": {
+    "macro_f1": 0.4352,
+    "balanced_acc": 0.4952,
+    "overall_acc": 0.4643
+  }
+}

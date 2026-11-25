@@ -1,0 +1,16 @@
+{
+  "name": "Random Forest Conservative (100 trees, depth 7, leaf 5)",
+  "family": "RandomForest",
+  "params": {
+    "n_estimators": 100,
+    "max_depth": 7,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "macro_f1": 0.5036,
+    "balanced_acc": 0.5361,
+    "overall_acc": 0.5157
+  }
+}

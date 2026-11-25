@@ -1,0 +1,4 @@
+Method,Brier_Score,ECE
+Uncalibrated,0.628,0.1913
+Platt_Sigmoid,0.691,0.2002
+Isotonic,0.696,0.2221

@@ -1,0 +1,12 @@
+{
+  "name": "Feature Ablation: Set A: Baseline 6 Features",
+  "family": "Feature Ablation",
+  "params": {
+    "description": "Baseline causal features (duration, bytes, fwd/bwd pkts, avg size, complete flag)"
+  },
+  "metrics": {
+    "macro_f1": 0.5784,
+    "balanced_acc": 0.5966,
+    "overall_acc": 0.5777
+  }
+}

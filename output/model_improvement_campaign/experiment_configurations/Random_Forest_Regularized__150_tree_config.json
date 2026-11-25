@@ -1,0 +1,16 @@
+{
+  "name": "Random Forest Regularized (150 trees, depth 10, leaf 3)",
+  "family": "RandomForest",
+  "params": {
+    "n_estimators": 150,
+    "max_depth": 10,
+    "min_samples_leaf": 3,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "macro_f1": 0.5792,
+    "balanced_acc": 0.5979,
+    "overall_acc": 0.5822
+  }
+}

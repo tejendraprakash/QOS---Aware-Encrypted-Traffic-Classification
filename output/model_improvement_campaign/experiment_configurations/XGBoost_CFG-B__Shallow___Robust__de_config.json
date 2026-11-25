@@ -1,0 +1,17 @@
+{
+  "name": "XGBoost CFG-B: Shallow & Robust (depth 4, lr 0.08, min_child 2)",
+  "family": "XGBoost",
+  "params": {
+    "n_estimators": 120,
+    "max_depth": 4,
+    "learning_rate": 0.08,
+    "reg_alpha": 0.2,
+    "reg_lambda": 1.2,
+    "boost": 1.2
+  },
+  "metrics": {
+    "macro_f1": 0.5867,
+    "balanced_acc": 0.607,
+    "overall_acc": 0.5858
+  }
+}

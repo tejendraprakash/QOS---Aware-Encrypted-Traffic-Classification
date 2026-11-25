@@ -1,0 +1,17 @@
+{
+  "name": "Stacking Meta-Classifier (Logistic Regression on OOF Probabilities)",
+  "family": "Ensemble (Stacking)",
+  "params": {
+    "meta_learner": "LogisticRegression(C=1.0)",
+    "base_models": [
+      "SVM",
+      "CatBoost",
+      "XGBoost"
+    ]
+  },
+  "metrics": {
+    "macro_f1": 0.5116,
+    "balanced_acc": 0.5058,
+    "overall_acc": 0.5653
+  }
+}

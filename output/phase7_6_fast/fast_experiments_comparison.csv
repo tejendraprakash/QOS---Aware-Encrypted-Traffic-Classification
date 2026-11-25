@@ -1,0 +1,7 @@
+Experiment,Feature_Count,Macro_F1,Delta_Macro_F1,Balanced_Accuracy,Overall_Accuracy,Bulk_Data_F1,Real_Time_F1,Streaming_F1,Bulk_Data_Recall,Real_Time_Recall,Streaming_Recall,Runtime_Sec
+"Baseline (6 feats, XGB depth=5, Standard Weights)",6,0.5734,0.0,0.5881,0.5758,0.5395,0.5849,0.5958,0.5021,0.5655,0.6968,4.9
+"Exp 1: Enhanced Causal Features (9 feats, XGB depth=5)",9,0.5635,-0.0099,0.5767,0.566,0.5224,0.5773,0.5908,0.4945,0.5589,0.6767,5.62
+"Exp 2: Regularized XGBoost (depth=3, lambda=1.5 on 6 feats)",6,0.5062,-0.0672,0.536,0.5086,0.4193,0.5101,0.5893,0.3798,0.4779,0.7503,3.73
+Exp 3: Targeted Class Weighting (Bulk Boost 1.35x on 6 feats),6,0.5802,0.0068,0.5976,0.5786,0.5536,0.5774,0.6096,0.5506,0.5434,0.699,4.7
+Exp 4: Alternative Model (Random Forest max_depth=8 on 6 feats),6,0.5513,-0.0221,0.5735,0.5539,0.4911,0.5626,0.6003,0.4545,0.5335,0.7324,9.93
+Exp 5: Combined Champion (Enhanced Features + Regularized XGB + Targeted Weights),9,0.5608,-0.0126,0.5869,0.5591,0.4948,0.5573,0.6304,0.4826,0.5156,0.7625,4.16

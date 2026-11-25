@@ -1,0 +1,4 @@
+QoS_Class,Precision,Recall,F1_Score,Support,Baseline_Recall,Delta_Recall
+Bulk Data,0.5815,0.5123,0.5447,1177,0.5021,0.0102
+Real-Time,0.628,0.5815,0.6039,2122,0.5655,0.016
+Streaming,0.5427,0.7224,0.6198,897,0.6968,0.0256

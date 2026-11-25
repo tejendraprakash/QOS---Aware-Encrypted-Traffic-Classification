@@ -1,0 +1,166 @@
+Model,QoS_Class,Precision,Recall,F1_Score
+"RBF SVM (C=0.1, gamma=scale, balanced, StandardScaler)",Bulk Data,0.2195,0.1147,0.1507
+"RBF SVM (C=0.1, gamma=scale, balanced, StandardScaler)",Real-Time,0.4879,0.3897,0.4333
+"RBF SVM (C=0.1, gamma=scale, balanced, StandardScaler)",Streaming,0.4263,0.8963,0.5778
+"RBF SVM (C=0.5, gamma=scale, balanced, StandardScaler)",Bulk Data,0.2595,0.1444,0.1856
+"RBF SVM (C=0.5, gamma=scale, balanced, StandardScaler)",Real-Time,0.5147,0.4194,0.4622
+"RBF SVM (C=0.5, gamma=scale, balanced, StandardScaler)",Streaming,0.4393,0.8874,0.5877
+"RBF SVM (C=1.0, gamma=scale, balanced, StandardScaler)",Bulk Data,0.2675,0.1461,0.189
+"RBF SVM (C=1.0, gamma=scale, balanced, StandardScaler)",Real-Time,0.5167,0.4293,0.469
+"RBF SVM (C=1.0, gamma=scale, balanced, StandardScaler)",Streaming,0.4408,0.8796,0.5873
+"RBF SVM (C=2.0, gamma=scale, balanced, StandardScaler)",Bulk Data,0.2742,0.147,0.1914
+"RBF SVM (C=2.0, gamma=scale, balanced, StandardScaler)",Real-Time,0.5266,0.4519,0.4864
+"RBF SVM (C=2.0, gamma=scale, balanced, StandardScaler)",Streaming,0.4507,0.8763,0.5952
+"RBF SVM (C=5.0, gamma=scale, balanced, StandardScaler)",Bulk Data,0.2812,0.1606,0.2044
+"RBF SVM (C=5.0, gamma=scale, balanced, StandardScaler)",Real-Time,0.5378,0.4628,0.4975
+"RBF SVM (C=5.0, gamma=scale, balanced, StandardScaler)",Streaming,0.4547,0.8606,0.595
+"RBF SVM (C=10.0, gamma=scale, balanced, StandardScaler)",Bulk Data,0.6388,0.7018,0.6688
+"RBF SVM (C=10.0, gamma=scale, balanced, StandardScaler)",Real-Time,0.8045,0.4694,0.5929
+"RBF SVM (C=10.0, gamma=scale, balanced, StandardScaler)",Streaming,0.4577,0.8495,0.5948
+"RBF SVM (C=20.0, gamma=scale, balanced, StandardScaler)",Bulk Data,0.6414,0.7035,0.671
+"RBF SVM (C=20.0, gamma=scale, balanced, StandardScaler)",Real-Time,0.8058,0.4694,0.5932
+"RBF SVM (C=20.0, gamma=scale, balanced, StandardScaler)",Streaming,0.456,0.8484,0.5931
+"RBF SVM (C=50.0, gamma=scale, balanced, StandardScaler)",Bulk Data,0.6394,0.7035,0.6699
+"RBF SVM (C=50.0, gamma=scale, balanced, StandardScaler)",Real-Time,0.8185,0.5123,0.6301
+"RBF SVM (C=50.0, gamma=scale, balanced, StandardScaler)",Streaming,0.4812,0.8439,0.613
+"RBF SVM (C=10.0, gamma=0.05, balanced, StandardScaler)",Bulk Data,0.2813,0.1546,0.1996
+"RBF SVM (C=10.0, gamma=0.05, balanced, StandardScaler)",Real-Time,0.5201,0.4321,0.4721
+"RBF SVM (C=10.0, gamma=0.05, balanced, StandardScaler)",Streaming,0.4434,0.8829,0.5904
+"RBF SVM (C=10.0, gamma=0.1, balanced, StandardScaler)",Bulk Data,0.2922,0.1708,0.2155
+"RBF SVM (C=10.0, gamma=0.1, balanced, StandardScaler)",Real-Time,0.5424,0.4637,0.5
+"RBF SVM (C=10.0, gamma=0.1, balanced, StandardScaler)",Streaming,0.451,0.8517,0.5897
+"RBF SVM (C=10.0, gamma=0.2, balanced, StandardScaler)",Bulk Data,0.639,0.6992,0.6677
+"RBF SVM (C=10.0, gamma=0.2, balanced, StandardScaler)",Real-Time,0.8049,0.4802,0.6015
+"RBF SVM (C=10.0, gamma=0.2, balanced, StandardScaler)",Streaming,0.4616,0.845,0.5971
+"RBF SVM (C=10.0, gamma=auto, balanced, StandardScaler)",Bulk Data,0.6388,0.7018,0.6688
+"RBF SVM (C=10.0, gamma=auto, balanced, StandardScaler)",Real-Time,0.8045,0.4694,0.5929
+"RBF SVM (C=10.0, gamma=auto, balanced, StandardScaler)",Streaming,0.4577,0.8495,0.5948
+"Linear SVM (C=1.0, balanced, LinearSVC)",Bulk Data,0.1832,0.0909,0.1215
+"Linear SVM (C=1.0, balanced, LinearSVC)",Real-Time,0.5373,0.4887,0.5118
+"Linear SVM (C=1.0, balanced, LinearSVC)",Streaming,0.4512,0.8462,0.5886
+"Linear SVM (C=10.0, balanced, LinearSVC)",Bulk Data,0.1848,0.0909,0.1219
+"Linear SVM (C=10.0, balanced, LinearSVC)",Real-Time,0.5385,0.491,0.5137
+"Linear SVM (C=10.0, balanced, LinearSVC)",Streaming,0.4512,0.8462,0.5886
+"Poly SVM (degree=2, C=5.0, balanced)",Bulk Data,0.2952,0.158,0.2059
+"Poly SVM (degree=2, C=5.0, balanced)",Real-Time,0.5309,0.4406,0.4816
+"Poly SVM (degree=2, C=5.0, balanced)",Streaming,0.4427,0.8907,0.5914
+"RBF SVM (C=10.0, RobustScaler)",Bulk Data,0.1304,0.1232,0.1267
+"RBF SVM (C=10.0, RobustScaler)",Real-Time,0.3391,0.1937,0.2466
+"RBF SVM (C=10.0, RobustScaler)",Streaming,0.4274,0.8919,0.5778
+"RBF SVM (C=10.0, MinMaxScaler)",Bulk Data,0.2943,0.158,0.2056
+"RBF SVM (C=10.0, MinMaxScaler)",Real-Time,0.5232,0.4359,0.4756
+"RBF SVM (C=10.0, MinMaxScaler)",Streaming,0.4454,0.8919,0.5941
+"RBF SVM (C=10.0, Causal 9-Feature, StandardScaler)",Bulk Data,0.2915,0.1716,0.216
+"RBF SVM (C=10.0, Causal 9-Feature, StandardScaler)",Real-Time,0.5419,0.4632,0.4995
+"RBF SVM (C=10.0, Causal 9-Feature, StandardScaler)",Streaming,0.4517,0.8506,0.5901
+"CatBoost Default (Depth 6, Iter 1000)",Bulk Data,0.4452,0.3246,0.3754
+"CatBoost Default (Depth 6, Iter 1000)",Real-Time,0.5664,0.6352,0.5988
+"CatBoost Default (Depth 6, Iter 1000)",Streaming,0.596,0.6366,0.6156
+"CatBoost Compact (Depth 4, Iter 250, l2=5)",Bulk Data,0.2851,0.1674,0.2109
+"CatBoost Compact (Depth 4, Iter 250, l2=5)",Real-Time,0.5234,0.6385,0.5752
+"CatBoost Compact (Depth 4, Iter 250, l2=5)",Streaming,0.6441,0.6577,0.6509
+"CatBoost Causal 9-Feature (Depth 5, Iter 300)",Bulk Data,0.325,0.1997,0.2474
+"CatBoost Causal 9-Feature (Depth 5, Iter 300)",Real-Time,0.532,0.6418,0.5818
+"CatBoost Causal 9-Feature (Depth 5, Iter 300)",Streaming,0.6648,0.6767,0.6707
+CatBoost + Bulk Boost 1.15x (Depth 5),Bulk Data,0.5266,0.5208,0.5237
+CatBoost + Bulk Boost 1.15x (Depth 5),Real-Time,0.6306,0.5688,0.5981
+CatBoost + Bulk Boost 1.15x (Depth 5),Streaming,0.5742,0.7157,0.6372
+HistGBDT Baseline (max_iter 100),Bulk Data,0.4465,0.3509,0.393
+HistGBDT Baseline (max_iter 100),Real-Time,0.5716,0.6263,0.5977
+HistGBDT Baseline (max_iter 100),Streaming,0.5782,0.6098,0.5936
+"HistGBDT Regularized (iter 150, depth 4, l2=2.0)",Bulk Data,0.3925,0.2685,0.3189
+"HistGBDT Regularized (iter 150, depth 4, l2=2.0)",Real-Time,0.5364,0.615,0.573
+"HistGBDT Regularized (iter 150, depth 4, l2=2.0)",Streaming,0.5866,0.6265,0.6059
+"HistGBDT Causal 9-Feature (iter 120, depth 5)",Bulk Data,0.4218,0.3322,0.3717
+"HistGBDT Causal 9-Feature (iter 120, depth 5)",Real-Time,0.5545,0.6013,0.577
+"HistGBDT Causal 9-Feature (iter 120, depth 5)",Streaming,0.5764,0.6221,0.5984
+HistGBDT + Bulk Boost 1.15x,Bulk Data,0.5597,0.5021,0.5293
+HistGBDT + Bulk Boost 1.15x,Real-Time,0.6241,0.59,0.6066
+HistGBDT + Bulk Boost 1.15x,Streaming,0.5591,0.7068,0.6243
+"XGBoost CFG-D Optimal (depth 5, lr 0.08, Bulk 1.15x)",Bulk Data,0.5365,0.5242,0.5303
+"XGBoost CFG-D Optimal (depth 5, lr 0.08, Bulk 1.15x)",Real-Time,0.6096,0.5217,0.5622
+"XGBoost CFG-D Optimal (depth 5, lr 0.08, Bulk 1.15x)",Streaming,0.526,0.7213,0.6084
+"XGBoost Causal 9-Feature (depth 5, lr 0.08, Bulk 1.15x)",Bulk Data,0.5365,0.5242,0.5303
+"XGBoost Causal 9-Feature (depth 5, lr 0.08, Bulk 1.15x)",Real-Time,0.6096,0.5217,0.5622
+"XGBoost Causal 9-Feature (depth 5, lr 0.08, Bulk 1.15x)",Streaming,0.526,0.7213,0.6084
+"XGBoost Subsampled (subsample 0.8, colsample 0.85, depth 4)",Bulk Data,0.5385,0.5115,0.5246
+"XGBoost Subsampled (subsample 0.8, colsample 0.85, depth 4)",Real-Time,0.6102,0.5231,0.5633
+"XGBoost Subsampled (subsample 0.8, colsample 0.85, depth 4)",Streaming,0.5226,0.7336,0.6104
+"LightGBM Tuned (Depth 5, Leaves 20, Bulk 1.15x)",Bulk Data,0.5821,0.5573,0.5694
+"LightGBM Tuned (Depth 5, Leaves 20, Bulk 1.15x)",Real-Time,0.6271,0.5627,0.5931
+"LightGBM Tuned (Depth 5, Leaves 20, Bulk 1.15x)",Streaming,0.5348,0.6945,0.6043
+"LightGBM Causal 9-Feature (Depth 5, Leaves 20)",Bulk Data,0.5821,0.5573,0.5694
+"LightGBM Causal 9-Feature (Depth 5, Leaves 20)",Real-Time,0.6271,0.5627,0.5931
+"LightGBM Causal 9-Feature (Depth 5, Leaves 20)",Streaming,0.5348,0.6945,0.6043
+RBF SVM on Set A: Base 6 Features,Bulk Data,0.2801,0.164,0.2069
+RBF SVM on Set A: Base 6 Features,Real-Time,0.539,0.4628,0.498
+RBF SVM on Set A: Base 6 Features,Streaming,0.4688,0.8807,0.6119
+XGBoost on Set A: Base 6 Features,Bulk Data,0.5352,0.5293,0.5323
+XGBoost on Set A: Base 6 Features,Real-Time,0.5876,0.4774,0.5268
+XGBoost on Set A: Base 6 Features,Streaming,0.4939,0.7202,0.5859
+RBF SVM on Set B: Champion 8 Features,Bulk Data,0.6388,0.7018,0.6688
+RBF SVM on Set B: Champion 8 Features,Real-Time,0.8045,0.4694,0.5929
+RBF SVM on Set B: Champion 8 Features,Streaming,0.4577,0.8495,0.5948
+XGBoost on Set B: Champion 8 Features,Bulk Data,0.5365,0.5242,0.5303
+XGBoost on Set B: Champion 8 Features,Real-Time,0.6096,0.5217,0.5622
+XGBoost on Set B: Champion 8 Features,Streaming,0.526,0.7213,0.6084
+RBF SVM on Set C: Causal 9 (+is_bidir),Bulk Data,0.2915,0.1716,0.216
+RBF SVM on Set C: Causal 9 (+is_bidir),Real-Time,0.5419,0.4632,0.4995
+RBF SVM on Set C: Causal 9 (+is_bidir),Streaming,0.4517,0.8506,0.5901
+XGBoost on Set C: Causal 9 (+is_bidir),Bulk Data,0.5365,0.5242,0.5303
+XGBoost on Set C: Causal 9 (+is_bidir),Real-Time,0.6096,0.5217,0.5622
+XGBoost on Set C: Causal 9 (+is_bidir),Streaming,0.526,0.7213,0.6084
+RBF SVM on Set D: Extended 14 Features,Bulk Data,0.4786,0.6644,0.5564
+RBF SVM on Set D: Extended 14 Features,Real-Time,0.7845,0.4769,0.5932
+RBF SVM on Set D: Extended 14 Features,Streaming,0.5118,0.7258,0.6003
+XGBoost on Set D: Extended 14 Features,Bulk Data,0.5631,0.5234,0.5425
+XGBoost on Set D: Extended 14 Features,Real-Time,0.6141,0.5226,0.5647
+XGBoost on Set D: Extended 14 Features,Streaming,0.5023,0.7258,0.5937
+RBF SVM on Set E: All Causal 18 Features,Bulk Data,0.4726,0.3585,0.4077
+RBF SVM on Set E: All Causal 18 Features,Real-Time,0.5991,0.476,0.5305
+RBF SVM on Set E: All Causal 18 Features,Streaming,0.4706,0.8484,0.6054
+XGBoost on Set E: All Causal 18 Features,Bulk Data,0.5349,0.5276,0.5312
+XGBoost on Set E: All Causal 18 Features,Real-Time,0.6109,0.5349,0.5704
+XGBoost on Set E: All Causal 18 Features,Streaming,0.5302,0.6957,0.6017
+Soft Voting Ensemble (SVM + CatBoost + XGBoost),Bulk Data,0.4494,0.3169,0.3717
+Soft Voting Ensemble (SVM + CatBoost + XGBoost),Real-Time,0.5664,0.6169,0.5906
+Soft Voting Ensemble (SVM + CatBoost + XGBoost),Streaming,0.5791,0.6812,0.626
+Soft Voting Ensemble (SVM + CatBoost + HistGBDT),Bulk Data,0.4633,0.3271,0.3835
+Soft Voting Ensemble (SVM + CatBoost + HistGBDT),Real-Time,0.5692,0.6376,0.6015
+Soft Voting Ensemble (SVM + CatBoost + HistGBDT),Streaming,0.583,0.6421,0.6111
+Soft Voting Multi-Family (5 Models),Bulk Data,0.4919,0.3628,0.4176
+Soft Voting Multi-Family (5 Models),Real-Time,0.5845,0.631,0.6068
+Soft Voting Multi-Family (5 Models),Streaming,0.5921,0.6845,0.635
+"Weighted Soft Voting (45% SVM, 35% CatBoost, 20% XGBoost)",Bulk Data,0.3743,0.2302,0.2851
+"Weighted Soft Voting (45% SVM, 35% CatBoost, 20% XGBoost)",Real-Time,0.5436,0.623,0.5806
+"Weighted Soft Voting (45% SVM, 35% CatBoost, 20% XGBoost)",Streaming,0.5798,0.6722,0.6226
+Stacking Meta-Classifier (Logistic Regression on OOF Probabilities),Bulk Data,0.5791,0.2642,0.3629
+Stacking Meta-Classifier (Logistic Regression on OOF Probabilities),Real-Time,0.5633,0.7648,0.6488
+Stacking Meta-Classifier (Logistic Regression on OOF Probabilities),Streaming,0.563,0.4883,0.523
+"MLP (64-32, alpha=0.01, early_stopping)",Bulk Data,0.124,0.0535,0.0748
+"MLP (64-32, alpha=0.01, early_stopping)",Real-Time,0.4756,0.6282,0.5413
+"MLP (64-32, alpha=0.01, early_stopping)",Streaming,0.548,0.5407,0.5443
+"MLP (32-16, alpha=0.1, early_stopping)",Bulk Data,0.1335,0.0552,0.0781
+"MLP (32-16, alpha=0.1, early_stopping)",Real-Time,0.4924,0.6701,0.5677
+"MLP (32-16, alpha=0.1, early_stopping)",Streaming,0.503,0.4604,0.4808
+MLP Causal 9-Feature (64-32),Bulk Data,0.1228,0.0535,0.0746
+MLP Causal 9-Feature (64-32),Real-Time,0.4963,0.6357,0.5574
+MLP Causal 9-Feature (64-32),Streaming,0.515,0.5541,0.5338
+"Logistic Regression (C=1.0, L2, balanced)",Bulk Data,0.2316,0.1283,0.1651
+"Logistic Regression (C=1.0, L2, balanced)",Real-Time,0.5432,0.4736,0.506
+"Logistic Regression (C=1.0, L2, balanced)",Streaming,0.4646,0.8774,0.6075
+"Logistic Regression (C=0.1, L2, balanced)",Bulk Data,0.1701,0.1206,0.1412
+"Logistic Regression (C=0.1, L2, balanced)",Real-Time,0.488,0.3841,0.4299
+"Logistic Regression (C=0.1, L2, balanced)",Streaming,0.4654,0.8774,0.6082
+"Logistic Regression (C=10.0, L2, balanced)",Bulk Data,0.2412,0.1274,0.1668
+"Logistic Regression (C=10.0, L2, balanced)",Real-Time,0.5498,0.4868,0.5164
+"Logistic Regression (C=10.0, L2, balanced)",Streaming,0.4643,0.8774,0.6073
+Gaussian Naive Bayes (StandardScaler),Bulk Data,0.1198,0.1215,0.1206
+Gaussian Naive Bayes (StandardScaler),Real-Time,0.3672,0.2639,0.3071
+Gaussian Naive Bayes (StandardScaler),Streaming,0.4787,0.7882,0.5956
+"k-NN (k=11, distance weights)",Bulk Data,0.442,0.3883,0.4134
+"k-NN (k=11, distance weights)",Real-Time,0.5594,0.6013,0.5796
+"k-NN (k=11, distance weights)",Streaming,0.5936,0.5831,0.5883
+"k-NN (k=21, distance weights)",Bulk Data,0.4417,0.3636,0.3989
+"k-NN (k=21, distance weights)",Real-Time,0.5627,0.6192,0.5896
+"k-NN (k=21, distance weights)",Streaming,0.6043,0.6009,0.6026

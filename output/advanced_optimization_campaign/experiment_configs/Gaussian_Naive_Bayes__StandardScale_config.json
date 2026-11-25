@@ -1,0 +1,10 @@
+{
+  "name": "Gaussian Naive Bayes (StandardScaler)",
+  "family": "Naive Bayes",
+  "params": {},
+  "metrics": {
+    "macro_f1": 0.3411,
+    "balanced_acc": 0.3912,
+    "overall_acc": 0.336
+  }
+}

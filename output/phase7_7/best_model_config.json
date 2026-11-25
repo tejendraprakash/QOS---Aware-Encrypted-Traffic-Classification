@@ -1,0 +1,62 @@
+{
+  "model_name": "Phase 7.7 Champion Early-5 Model",
+  "configuration_id": "CFG-03: Robust 8-Feat Vector",
+  "description": "XGBoost Default (8 feats: base + is_udp + fwd_ratio)",
+  "feature_count": 8,
+  "features": [
+    "early_5_complete",
+    "early_5_duration",
+    "early_5_bytes",
+    "early_5_fwd_pkts",
+    "early_5_bwd_pkts",
+    "early_5_avg_size",
+    "is_udp",
+    "early_5_fwd_ratio"
+  ],
+  "outer_evaluation": "29-Fold Leave-One-Group-Out (LOGO)",
+  "nested_evaluation_macro_f1": 0.5913232598130559,
+  "outer_macro_f1": 0.5895,
+  "baseline_macro_f1": 0.5734,
+  "delta_macro_f1": 0.0161,
+  "balanced_accuracy": 0.6054,
+  "overall_accuracy": 0.5922,
+  "per_class_metrics": {
+    "Bulk Data": {
+      "precision": 0.5815,
+      "recall": 0.5123,
+      "f1": 0.5447,
+      "support": 1177
+    },
+    "Real-Time": {
+      "precision": 0.628,
+      "recall": 0.5815,
+      "f1": 0.6039,
+      "support": 2122
+    },
+    "Streaming": {
+      "precision": 0.5427,
+      "recall": 0.7224,
+      "f1": 0.6198,
+      "support": 897
+    }
+  },
+  "mcnemar_test": {
+    "p_value": 0.2661,
+    "statistically_significant_005": false
+  },
+  "classes": [
+    "Bulk Data",
+    "Real-Time",
+    "Streaming"
+  ],
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "objective": "multi:softprob",
+    "eval_metric": "mlogloss",
+    "random_state": 42
+  }
+}

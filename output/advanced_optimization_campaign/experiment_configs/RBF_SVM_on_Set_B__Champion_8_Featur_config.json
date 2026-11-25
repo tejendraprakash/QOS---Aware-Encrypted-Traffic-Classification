@@ -1,0 +1,23 @@
+{
+  "name": "RBF SVM on Set B: Champion 8 Features",
+  "family": "Feature Ablation (SVM)",
+  "params": {
+    "C": 10.0,
+    "kernel": "rbf",
+    "features": [
+      "early_5_complete",
+      "early_5_duration",
+      "early_5_bytes",
+      "early_5_fwd_pkts",
+      "early_5_bwd_pkts",
+      "early_5_avg_size",
+      "is_udp",
+      "early_5_fwd_ratio"
+    ]
+  },
+  "metrics": {
+    "macro_f1": 0.6188,
+    "balanced_acc": 0.6736,
+    "overall_acc": 0.6158
+  }
+}

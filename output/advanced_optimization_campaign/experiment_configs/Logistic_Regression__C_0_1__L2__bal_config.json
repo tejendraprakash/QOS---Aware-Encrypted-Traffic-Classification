@@ -1,0 +1,16 @@
+{
+  "name": "Logistic Regression (C=0.1, L2, balanced)",
+  "family": "Logistic Regression",
+  "params": {
+    "C": 0.1,
+    "penalty": "l2",
+    "class_weight": "balanced",
+    "max_iter": 500,
+    "random_state": 42
+  },
+  "metrics": {
+    "macro_f1": 0.3931,
+    "balanced_acc": 0.4607,
+    "overall_acc": 0.4156
+  }
+}

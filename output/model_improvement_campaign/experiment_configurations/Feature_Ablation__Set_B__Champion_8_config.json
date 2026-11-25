@@ -1,0 +1,12 @@
+{
+  "name": "Feature Ablation: Set B: Champion 8 Features",
+  "family": "Feature Ablation",
+  "params": {
+    "description": "Set A + is_udp (L4 header) + early_5_fwd_ratio (directional symmetry)"
+  },
+  "metrics": {
+    "macro_f1": 0.5832,
+    "balanced_acc": 0.6017,
+    "overall_acc": 0.5837
+  }
+}

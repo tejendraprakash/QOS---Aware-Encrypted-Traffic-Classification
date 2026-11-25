@@ -1,0 +1,12 @@
+{
+  "name": "Feature Ablation: Set B + Log Transforms (10 Feats)",
+  "family": "Feature Ablation",
+  "params": {
+    "description": "Set B + log1p(bytes) + log1p(duration) to reduce skew"
+  },
+  "metrics": {
+    "macro_f1": 0.5776,
+    "balanced_acc": 0.5957,
+    "overall_acc": 0.5782
+  }
+}

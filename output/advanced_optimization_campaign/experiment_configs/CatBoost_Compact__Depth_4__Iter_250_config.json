@@ -1,0 +1,16 @@
+{
+  "name": "CatBoost Compact (Depth 4, Iter 250, l2=5)",
+  "family": "CatBoost",
+  "params": {
+    "depth": 4,
+    "iterations": 250,
+    "l2_leaf_reg": 5.0,
+    "verbose": 0,
+    "random_seed": 42
+  },
+  "metrics": {
+    "macro_f1": 0.479,
+    "balanced_acc": 0.4879,
+    "overall_acc": 0.5105
+  }
+}

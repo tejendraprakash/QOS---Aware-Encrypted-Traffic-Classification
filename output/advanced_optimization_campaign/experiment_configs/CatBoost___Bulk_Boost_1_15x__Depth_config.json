@@ -1,0 +1,15 @@
+{
+  "name": "CatBoost + Bulk Boost 1.15x (Depth 5)",
+  "family": "CatBoost",
+  "params": {
+    "depth": 5,
+    "iterations": 300,
+    "verbose": 0,
+    "random_seed": 42
+  },
+  "metrics": {
+    "macro_f1": 0.5863,
+    "balanced_acc": 0.6018,
+    "overall_acc": 0.5867
+  }
+}

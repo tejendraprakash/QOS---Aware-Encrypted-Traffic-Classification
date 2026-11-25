@@ -1,0 +1,16 @@
+{
+  "name": "RBF SVM (C=10.0, MinMaxScaler)",
+  "family": "SVM",
+  "params": {
+    "C": 10.0,
+    "kernel": "rbf",
+    "gamma": "scale",
+    "class_weight": "balanced",
+    "scaler": "MinMaxScaler"
+  },
+  "metrics": {
+    "macro_f1": 0.4251,
+    "balanced_acc": 0.4953,
+    "overall_acc": 0.4554
+  }
+}

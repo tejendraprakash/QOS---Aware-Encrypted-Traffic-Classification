@@ -1,0 +1,30 @@
+horizon,capture_group,application,dominant_class,sample_count,accuracy,macro_f1
+early_5,GRP_SCP_5,SCP Download,Bulk Data,2,1.0,1.0
+early_5,GRP_SCP_6,SCP Download,Bulk Data,1,1.0,1.0
+early_5,GRP_SCP_4,SCP Download,Bulk Data,1,1.0,1.0
+early_5,GRP_VPN_NETFLIX_A,Netflix,Streaming,133,1.0,1.0
+early_5,GRP_VPN_YOUTUBE_A,YouTube,Streaming,174,0.9598,0.3265
+early_5,GRP_FTPS_UP_2,FTPS Upload,Bulk Data,181,0.9392,0.4843
+early_5,GRP_SKYPE_VIDEO_1,Skype Video,Real-Time,26,0.8846,0.4694
+early_5,GRP_VPN_VIMEO_A,Vimeo,Streaming,48,0.875,0.4667
+early_5,GRP_VPN_SPOTIFY_A,Spotify,Streaming,134,0.8284,0.302
+early_5,GRP_VPN_SKYPE_AUDIO_1,Skype Audio,Real-Time,890,0.8101,0.2984
+early_5,GRP_VPN_FTPS_A,FTPS,Bulk Data,70,0.7857,0.2933
+early_5,GRP_HANGOUTS_AUDIO_1,Hangouts Audio,Real-Time,39,0.7692,0.4348
+early_5,GRP_VPN_FTPS_B,FTPS,Bulk Data,43,0.7674,0.2895
+early_5,GRP_SCP_3,SCP Download,Bulk Data,3,0.6667,0.4
+early_5,GRP_VPN_VOIPBUSTER_1,VoIP Buster,Real-Time,66,0.6515,0.263
+early_5,GRP_VPN_FB_AUDIO_2,Facebook Audio,Real-Time,363,0.6419,0.3909
+early_5,GRP_SPOTIFY_1,Spotify,Streaming,66,0.5909,0.3714
+early_5,GRP_YOUTUBE_1,YouTube,Streaming,56,0.5714,0.3636
+early_5,GRP_NETFLIX_1,Netflix,Streaming,102,0.5294,0.2308
+early_5,GRP_SCP_2,SCP Download,Bulk Data,2,0.5,0.3333
+early_5,GRP_SKYPE_AUDIO_1,Skype Audio,Real-Time,86,0.4186,0.1967
+early_5,GRP_VPN_HANGOUTS_AUDIO_1,Hangouts Audio,Real-Time,133,0.391,0.1874
+early_5,GRP_FTPS_DOWN_1,FTPS Download,Bulk Data,871,0.3731,0.1812
+early_5,GRP_VIMEO_1,Vimeo,Streaming,84,0.369,0.2696
+early_5,GRP_SCP_1,SCP Download,Bulk Data,3,0.3333,0.25
+early_5,GRP_HANGOUTS_VIDEO_1,Hangouts Video,Real-Time,67,0.3134,0.1591
+early_5,GRP_FB_VIDEO_1,Facebook Video,Streaming,100,0.16,0.1379
+early_5,GRP_FB_AUDIO_1,Facebook Audio,Real-Time,82,0.1585,0.1368
+early_5,GRP_VOIPBUSTER_1,VoIP Buster,Real-Time,370,0.0757,0.0469

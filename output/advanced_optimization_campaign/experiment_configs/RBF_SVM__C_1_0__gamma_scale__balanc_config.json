@@ -1,0 +1,16 @@
+{
+  "name": "RBF SVM (C=1.0, gamma=scale, balanced, StandardScaler)",
+  "family": "SVM",
+  "params": {
+    "C": 1.0,
+    "kernel": "rbf",
+    "gamma": "scale",
+    "class_weight": "balanced",
+    "scaler": "StandardScaler"
+  },
+  "metrics": {
+    "macro_f1": 0.4151,
+    "balanced_acc": 0.485,
+    "overall_acc": 0.4461
+  }
+}

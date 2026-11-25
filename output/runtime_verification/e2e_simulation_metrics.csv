@@ -1,0 +1,4 @@
+Scenario,Congestion_Regime,Seed,QoS_Class,Total_Tx_Pkts,Total_Rx_Pkts,Total_Dropped_Pkts,Packet_Loss_Rate_Pct,Mean_Delay_ms,P95_Delay_ms,P99_Delay_ms,Jitter_ms,Goodput_Mbps,Mean_Queue_Occupancy_Bytes,Conservation_Error
+Predicted_QoS,Moderate,42,Real-Time,140,140,0,0.0,20.008,20.016,20.016,0.005,0.071,0.0,0
+Predicted_QoS,Moderate,42,Streaming,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0
+Predicted_QoS,Moderate,42,Bulk Data,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0

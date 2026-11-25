@@ -1,0 +1,3 @@
+Setting,Total_Flows,Macro_F1,Balanced_Acc,Bulk_Recall,RT_Recall,Str_Recall
+Full Clean Dataset (29 Groups),4196,0.5734,0.5881,0.5021,0.5655,0.6968
+Excluding GRP_FTPS_DOWN_1 (28 Groups),3325,0.511,0.5432,0.3366,0.6041,0.689

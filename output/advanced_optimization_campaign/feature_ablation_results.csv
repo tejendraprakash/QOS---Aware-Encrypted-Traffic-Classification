@@ -1,0 +1,6 @@
+Feature_Set,Count,SVM_Macro_F1,SVM_Bal_Acc,SVM_Overall_Acc,XGB_Macro_F1,XGB_Bal_Acc,XGB_Overall_Acc
+Set A: Base 6 Features,6,0.4389,0.5025,0.4683,0.5483,0.5756,0.5439
+Set B: Champion 8 Features,8,0.6188,0.6736,0.6158,0.567,0.5891,0.5651
+Set C: Causal 9 (+is_bidir),9,0.4352,0.4952,0.4643,0.567,0.5891,0.5651
+Set D: Extended 14 Features,14,0.5833,0.6224,0.5827,0.567,0.5906,0.5663
+Set E: All Causal 18 Features,18,0.5145,0.561,0.5226,0.5678,0.586,0.5672

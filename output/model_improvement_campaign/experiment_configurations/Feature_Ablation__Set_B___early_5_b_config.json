@@ -1,0 +1,12 @@
+{
+  "name": "Feature Ablation: Set B + early_5_bwd_fwd_diff (9 Feats)",
+  "family": "Feature Ablation",
+  "params": {
+    "description": "Set B + forward minus backward packet count difference"
+  },
+  "metrics": {
+    "macro_f1": 0.576,
+    "balanced_acc": 0.5903,
+    "overall_acc": 0.5786
+  }
+}

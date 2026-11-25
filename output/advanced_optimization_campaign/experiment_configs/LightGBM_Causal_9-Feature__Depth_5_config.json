@@ -1,0 +1,18 @@
+{
+  "name": "LightGBM Causal 9-Feature (Depth 5, Leaves 20)",
+  "family": "LightGBM",
+  "params": {
+    "max_depth": 5,
+    "num_leaves": 20,
+    "n_estimators": 100,
+    "learning_rate": 0.08,
+    "random_state": 42,
+    "n_jobs": 2,
+    "verbose": -1
+  },
+  "metrics": {
+    "macro_f1": 0.589,
+    "balanced_acc": 0.6049,
+    "overall_acc": 0.5894
+  }
+}

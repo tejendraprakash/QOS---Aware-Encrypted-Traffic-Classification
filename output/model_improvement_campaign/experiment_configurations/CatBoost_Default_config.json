@@ -1,0 +1,15 @@
+{
+  "name": "CatBoost Default",
+  "family": "CatBoost",
+  "params": {
+    "iterations": 100,
+    "learning_rate": 0.1,
+    "depth": 6,
+    "weights": "standard"
+  },
+  "metrics": {
+    "macro_f1": 0.606,
+    "balanced_acc": 0.6273,
+    "overall_acc": 0.6072
+  }
+}

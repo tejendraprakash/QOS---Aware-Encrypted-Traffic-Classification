@@ -1,0 +1,56 @@
+Model,Family,Feature_Set,Feature_Count,Accuracy,Macro_F1,Balanced_Accuracy,Bulk_Data_Recall,Real_Time_Recall,Streaming_Recall,Bulk_Data_F1,Real_Time_F1,Streaming_F1,McNemar_p_vs_Champion,Runtime_Sec
+"RBF SVM (C=50.0, gamma=scale, balanced, StandardScaler)",SVM,Champion 8,8,0.6368,0.6377,0.6866,0.7035,0.5123,0.8439,0.6699,0.6301,0.613,0.0,48.0
+"RBF SVM (C=10.0, gamma=0.2, balanced, StandardScaler)",SVM,Champion 8,8,0.6196,0.6221,0.6748,0.6992,0.4802,0.845,0.6677,0.6015,0.5971,0.0,50.0
+"RBF SVM (C=20.0, gamma=scale, balanced, StandardScaler)",SVM,Champion 8,8,0.6161,0.6191,0.6737,0.7035,0.4694,0.8484,0.671,0.5932,0.5931,0.0,48.0
+"RBF SVM (C=10.0, gamma=scale, balanced, StandardScaler)",SVM,Champion 8,8,0.6158,0.6188,0.6736,0.7018,0.4694,0.8495,0.6688,0.5929,0.5948,0.0,48.0
+"RBF SVM (C=10.0, gamma=auto, balanced, StandardScaler)",SVM,Champion 8,8,0.6158,0.6188,0.6736,0.7018,0.4694,0.8495,0.6688,0.5929,0.5948,0.0,50.0
+RBF SVM on Set B: Champion 8 Features,Feature Ablation (SVM),Set B: Champion 8 Features,8,0.6158,0.6188,0.6736,0.7018,0.4694,0.8495,0.6688,0.5929,0.5948,0.0,168.97
+"LightGBM Tuned (Depth 5, Leaves 20, Bulk 1.15x)",LightGBM,Champion 8,8,0.5894,0.589,0.6049,0.5573,0.5627,0.6945,0.5694,0.5931,0.6043,0.0,7.25
+"LightGBM Causal 9-Feature (Depth 5, Leaves 20)",LightGBM,Causal 9,9,0.5894,0.589,0.6049,0.5573,0.5627,0.6945,0.5694,0.5931,0.6043,0.0,7.38
+HistGBDT + Bulk Boost 1.15x,HistGBDT,Champion 8,8,0.5903,0.5867,0.5996,0.5021,0.59,0.7068,0.5293,0.6066,0.6243,0.0,35.96
+CatBoost + Bulk Boost 1.15x (Depth 5),CatBoost,Champion 8,8,0.5867,0.5863,0.6018,0.5208,0.5688,0.7157,0.5237,0.5981,0.6372,0.0,51.65
+RBF SVM on Set D: Extended 14 Features,Feature Ablation (SVM),Set D: Extended 14 Features,14,0.5827,0.5833,0.6224,0.6644,0.4769,0.7258,0.5564,0.5932,0.6003,0.0,112.37
+XGBoost on Set E: All Causal 18 Features,Feature Ablation (XGBoost),Set E: All Causal 18 Features,18,0.5672,0.5678,0.586,0.5276,0.5349,0.6957,0.5312,0.5704,0.6017,0.0,15.2
+"XGBoost Causal 9-Feature (depth 5, lr 0.08, Bulk 1.15x)",XGBoost,Causal 9,9,0.5651,0.567,0.5891,0.5242,0.5217,0.7213,0.5303,0.5622,0.6084,0.0,11.13
+XGBoost on Set C: Causal 9 (+is_bidir),Feature Ablation (XGBoost),Set C: Causal 9 (+is_bidir),9,0.5651,0.567,0.5891,0.5242,0.5217,0.7213,0.5303,0.5622,0.6084,0.0,9.62
+XGBoost on Set D: Extended 14 Features,Feature Ablation (XGBoost),Set D: Extended 14 Features,14,0.5663,0.567,0.5906,0.5234,0.5226,0.7258,0.5425,0.5647,0.5937,0.0,11.72
+XGBoost on Set B: Champion 8 Features,Feature Ablation (XGBoost),Set B: Champion 8 Features,8,0.5651,0.567,0.5891,0.5242,0.5217,0.7213,0.5303,0.5622,0.6084,0.0,12.56
+"XGBoost CFG-D Optimal (depth 5, lr 0.08, Bulk 1.15x)",XGBoost,Champion 8,8,0.5651,0.567,0.5891,0.5242,0.5217,0.7213,0.5303,0.5622,0.6084,0.0,10.91
+"XGBoost Subsampled (subsample 0.8, colsample 0.85, depth 4)",XGBoost,Champion 8,8,0.5648,0.5661,0.5894,0.5115,0.5231,0.7336,0.5246,0.5633,0.6104,0.0,12.56
+Soft Voting Multi-Family (5 Models),Ensemble (Soft Voting),Ensemble (Multi-Model),8,0.5672,0.5531,0.5594,0.3628,0.631,0.6845,0.4176,0.6068,0.635,1.0,1.0
+XGBoost on Set A: Base 6 Features,Feature Ablation (XGBoost),Set A: Base 6 Features,6,0.5439,0.5483,0.5756,0.5293,0.4774,0.7202,0.5323,0.5268,0.5859,0.0,18.99
+Soft Voting Ensemble (SVM + CatBoost + HistGBDT),Ensemble (Soft Voting),Ensemble (Multi-Model),8,0.5515,0.532,0.5356,0.3271,0.6376,0.6421,0.3835,0.6015,0.6111,1.0,1.0
+"k-NN (k=21, distance weights)",k-Nearest Neighbors,Champion 8,8,0.5436,0.5304,0.5279,0.3636,0.6192,0.6009,0.3989,0.5896,0.6026,0.0,0.7
+"CatBoost Default (Depth 6, Iter 1000)",CatBoost,Champion 8,8,0.5484,0.53,0.5321,0.3246,0.6352,0.6366,0.3754,0.5988,0.6156,0.0,140.69
+Soft Voting Ensemble (SVM + CatBoost + XGBoost),Ensemble (Soft Voting),Ensemble (Multi-Model),8,0.5465,0.5294,0.5383,0.3169,0.6169,0.6812,0.3717,0.5906,0.626,1.0,1.0
+HistGBDT Baseline (max_iter 100),HistGBDT,Champion 8,8,0.5455,0.5281,0.529,0.3509,0.6263,0.6098,0.393,0.5977,0.5936,0.0,60.98
+"k-NN (k=11, distance weights)",k-Nearest Neighbors,Champion 8,8,0.5377,0.5271,0.5242,0.3883,0.6013,0.5831,0.4134,0.5796,0.5883,0.0,0.64
+"HistGBDT Causal 9-Feature (iter 120, depth 5)",HistGBDT,Causal 9,9,0.5303,0.5157,0.5185,0.3322,0.6013,0.6221,0.3717,0.577,0.5984,0.0,36.64
+RBF SVM on Set E: All Causal 18 Features,Feature Ablation (SVM),Set E: All Causal 18 Features,18,0.5226,0.5145,0.561,0.3585,0.476,0.8484,0.4077,0.5305,0.6054,0.0,121.55
+Stacking Meta-Classifier (Logistic Regression on OOF Probabilities),Ensemble (Stacking),Ensemble (Multi-Model),8,0.5653,0.5116,0.5058,0.2642,0.7648,0.4883,0.3629,0.6488,0.523,1.0,1.0
+"CatBoost Causal 9-Feature (Depth 5, Iter 300)",CatBoost,Causal 9,9,0.5253,0.5,0.5061,0.1997,0.6418,0.6767,0.2474,0.5818,0.6707,0.0,50.11
+"HistGBDT Regularized (iter 150, depth 4, l2=2.0)",HistGBDT,Champion 8,8,0.5203,0.4993,0.5033,0.2685,0.615,0.6265,0.3189,0.573,0.6059,0.0,28.32
+"Weighted Soft Voting (45% SVM, 35% CatBoost, 20% XGBoost)",Ensemble (Weighted Voting),Ensemble (Multi-Model),8,0.5234,0.4961,0.5085,0.2302,0.623,0.6722,0.2851,0.5806,0.6226,1.0,1.0
+"CatBoost Compact (Depth 4, Iter 250, l2=5)",CatBoost,Champion 8,8,0.5105,0.479,0.4879,0.1674,0.6385,0.6577,0.2109,0.5752,0.6509,0.0,33.51
+RBF SVM on Set A: Base 6 Features,Feature Ablation (SVM),Set A: Base 6 Features,6,0.4683,0.4389,0.5025,0.164,0.4628,0.8807,0.2069,0.498,0.6119,0.0,181.07
+RBF SVM on Set C: Causal 9 (+is_bidir),Feature Ablation (SVM),Set C: Causal 9 (+is_bidir),9,0.4643,0.4352,0.4952,0.1716,0.4632,0.8506,0.216,0.4995,0.5901,0.0,142.72
+"RBF SVM (C=10.0, Causal 9-Feature, StandardScaler)",SVM,Causal 9-Feature (+is_bidir),9,0.4643,0.4352,0.4952,0.1716,0.4632,0.8506,0.216,0.4995,0.5901,0.0,37.73
+"RBF SVM (C=10.0, gamma=0.1, balanced, StandardScaler)",SVM,Champion 8,8,0.4645,0.4351,0.4954,0.1708,0.4637,0.8517,0.2155,0.5,0.5897,0.0,50.0
+"RBF SVM (C=5.0, gamma=scale, balanced, StandardScaler)",SVM,Champion 8,8,0.4631,0.4323,0.4947,0.1606,0.4628,0.8606,0.2044,0.4975,0.595,0.0,48.0
+"Logistic Regression (C=10.0, L2, balanced)",Logistic Regression,Champion 8,8,0.4695,0.4301,0.4972,0.1274,0.4868,0.8774,0.1668,0.5164,0.6073,0.0,2.17
+"Poly SVM (degree=2, C=5.0, balanced)",SVM (Polynomial),Champion 8,8,0.4576,0.4263,0.4965,0.158,0.4406,0.8907,0.2059,0.4816,0.5914,0.0,26.99
+"Logistic Regression (C=1.0, L2, balanced)",Logistic Regression,Champion 8,8,0.4631,0.4262,0.4931,0.1283,0.4736,0.8774,0.1651,0.506,0.6075,0.0,2.1
+"RBF SVM (C=10.0, MinMaxScaler)",SVM,Champion 8,8,0.4554,0.4251,0.4953,0.158,0.4359,0.8919,0.2056,0.4756,0.5941,0.0,38.49
+"RBF SVM (C=2.0, gamma=scale, balanced, StandardScaler)",SVM,Champion 8,8,0.4571,0.4243,0.4917,0.147,0.4519,0.8763,0.1914,0.4864,0.5952,0.0,48.0
+"RBF SVM (C=10.0, gamma=0.05, balanced, StandardScaler)",SVM,Champion 8,8,0.4507,0.4207,0.4899,0.1546,0.4321,0.8829,0.1996,0.4721,0.5904,0.0,50.0
+"RBF SVM (C=1.0, gamma=scale, balanced, StandardScaler)",SVM,Champion 8,8,0.4461,0.4151,0.485,0.1461,0.4293,0.8796,0.189,0.469,0.5873,0.0,48.0
+"RBF SVM (C=0.5, gamma=scale, balanced, StandardScaler)",SVM,Champion 8,8,0.4423,0.4118,0.4838,0.1444,0.4194,0.8874,0.1856,0.4622,0.5877,0.0,48.0
+"Linear SVM (C=10.0, balanced, LinearSVC)",SVM (Linear),Champion 8,8,0.4547,0.408,0.476,0.0909,0.491,0.8462,0.1219,0.5137,0.5886,0.0,0.92
+"Linear SVM (C=1.0, balanced, LinearSVC)",SVM (Linear),Champion 8,8,0.4535,0.4073,0.4753,0.0909,0.4887,0.8462,0.1215,0.5118,0.5886,0.0,1.01
+"Logistic Regression (C=0.1, L2, balanced)",Logistic Regression,Champion 8,8,0.4156,0.3931,0.4607,0.1206,0.3841,0.8774,0.1412,0.4299,0.6082,0.0,1.8
+MLP Causal 9-Feature (64-32),Neural Network (MLP),Causal 9,9,0.455,0.3886,0.4144,0.0535,0.6357,0.5541,0.0746,0.5574,0.5338,0.0,39.84
+"RBF SVM (C=0.1, gamma=scale, balanced, StandardScaler)",SVM,Champion 8,8,0.4209,0.3873,0.4669,0.1147,0.3897,0.8963,0.1507,0.4333,0.5778,0.0,48.0
+"MLP (64-32, alpha=0.01, early_stopping)",Neural Network (MLP),Champion 8,8,0.4483,0.3868,0.4075,0.0535,0.6282,0.5407,0.0748,0.5413,0.5443,0.0,63.78
+"MLP (32-16, alpha=0.1, early_stopping)",Neural Network (MLP),Champion 8,8,0.4528,0.3755,0.3953,0.0552,0.6701,0.4604,0.0781,0.5677,0.4808,0.0,39.0
+Gaussian Naive Bayes (StandardScaler),Naive Bayes,Champion 8,8,0.336,0.3411,0.3912,0.1215,0.2639,0.7882,0.1206,0.3071,0.5956,0.0,0.21
+"RBF SVM (C=10.0, RobustScaler)",SVM,Champion 8,8,0.3232,0.317,0.4029,0.1232,0.1937,0.8919,0.1267,0.2466,0.5778,0.0,56.52

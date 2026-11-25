@@ -1,0 +1,16 @@
+{
+  "name": "LightGBM Shallow (Depth 3, Leaves 8)",
+  "family": "LightGBM",
+  "params": {
+    "n_estimators": 100,
+    "learning_rate": 0.1,
+    "max_depth": 3,
+    "num_leaves": 8,
+    "weights": "standard"
+  },
+  "metrics": {
+    "macro_f1": 0.5574,
+    "balanced_acc": 0.5759,
+    "overall_acc": 0.5622
+  }
+}

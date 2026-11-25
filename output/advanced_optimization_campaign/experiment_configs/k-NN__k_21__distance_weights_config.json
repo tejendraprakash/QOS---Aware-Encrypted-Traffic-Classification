@@ -1,0 +1,13 @@
+{
+  "name": "k-NN (k=21, distance weights)",
+  "family": "k-Nearest Neighbors",
+  "params": {
+    "n_neighbors": 21,
+    "weights": "distance"
+  },
+  "metrics": {
+    "macro_f1": 0.5304,
+    "balanced_acc": 0.5279,
+    "overall_acc": 0.5436
+  }
+}

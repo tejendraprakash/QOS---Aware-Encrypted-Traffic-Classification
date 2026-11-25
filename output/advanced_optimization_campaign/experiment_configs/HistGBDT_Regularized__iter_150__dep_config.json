@@ -1,0 +1,15 @@
+{
+  "name": "HistGBDT Regularized (iter 150, depth 4, l2=2.0)",
+  "family": "HistGBDT",
+  "params": {
+    "max_iter": 150,
+    "max_depth": 4,
+    "l2_regularization": 2.0,
+    "random_state": 42
+  },
+  "metrics": {
+    "macro_f1": 0.4993,
+    "balanced_acc": 0.5033,
+    "overall_acc": 0.5203
+  }
+}

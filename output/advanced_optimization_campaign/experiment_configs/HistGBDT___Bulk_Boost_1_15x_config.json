@@ -1,0 +1,14 @@
+{
+  "name": "HistGBDT + Bulk Boost 1.15x",
+  "family": "HistGBDT",
+  "params": {
+    "max_iter": 120,
+    "max_depth": 5,
+    "random_state": 42
+  },
+  "metrics": {
+    "macro_f1": 0.5867,
+    "balanced_acc": 0.5996,
+    "overall_acc": 0.5903
+  }
+}

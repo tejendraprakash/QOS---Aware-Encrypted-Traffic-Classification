@@ -1,0 +1,19 @@
+{
+  "name": "Soft Voting Multi-Family (5 Models)",
+  "family": "Ensemble (Soft Voting)",
+  "params": {
+    "models": [
+      "SVM",
+      "CatBoost",
+      "HistGBDT",
+      "XGBoost",
+      "LightGBM"
+    ],
+    "weights": "equal"
+  },
+  "metrics": {
+    "macro_f1": 0.5531,
+    "balanced_acc": 0.5594,
+    "overall_acc": 0.5672
+  }
+}

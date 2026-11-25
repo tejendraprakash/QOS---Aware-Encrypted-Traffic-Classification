@@ -1,0 +1,15 @@
+{
+  "name": "Random Forest Default (100 trees, balanced)",
+  "family": "RandomForest",
+  "params": {
+    "n_estimators": 100,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "class_weight": "balanced"
+  },
+  "metrics": {
+    "macro_f1": 0.5264,
+    "balanced_acc": 0.5251,
+    "overall_acc": 0.5429
+  }
+}

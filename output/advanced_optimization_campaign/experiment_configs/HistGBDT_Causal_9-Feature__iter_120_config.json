@@ -1,0 +1,14 @@
+{
+  "name": "HistGBDT Causal 9-Feature (iter 120, depth 5)",
+  "family": "HistGBDT",
+  "params": {
+    "max_iter": 120,
+    "max_depth": 5,
+    "random_state": 42
+  },
+  "metrics": {
+    "macro_f1": 0.5157,
+    "balanced_acc": 0.5185,
+    "overall_acc": 0.5303
+  }
+}

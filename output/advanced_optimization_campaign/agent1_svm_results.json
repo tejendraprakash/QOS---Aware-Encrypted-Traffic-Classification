@@ -1,0 +1,1289 @@
+[
+  {
+    "name": "RBF SVM (C=0.1, gamma=scale, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 0.1,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.3873,
+    "balanced_acc": 0.4669,
+    "overall_acc": 0.4209,
+    "per_class_f1": [
+      0.1507,
+      0.4333,
+      0.5778
+    ],
+    "per_class_rec": [
+      0.1147,
+      0.3897,
+      0.8963
+    ],
+    "per_class_prec": [
+      0.2195,
+      0.4879,
+      0.4263
+    ],
+    "confusion_matrix": [
+      [
+        0.11469838572642312,
+        0.659303313508921,
+        0.2259983007646559
+      ],
+      [
+        0.22573044297832234,
+        0.38972667295004715,
+        0.38454288407163056
+      ],
+      [
+        0.0011148272017837235,
+        0.10256410256410256,
+        0.8963210702341137
+      ]
+    ],
+    "runtime_sec": 48.0,
+    "oof_pred_file": "oof_pred_svm_rbf_c_0_1.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c_0_1.npy"
+  },
+  {
+    "name": "RBF SVM (C=0.5, gamma=scale, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 0.5,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.4118,
+    "balanced_acc": 0.4838,
+    "overall_acc": 0.4423,
+    "per_class_f1": [
+      0.1856,
+      0.4622,
+      0.5877
+    ],
+    "per_class_rec": [
+      0.1444,
+      0.4194,
+      0.8874
+    ],
+    "per_class_prec": [
+      0.2595,
+      0.5147,
+      0.4393
+    ],
+    "confusion_matrix": [
+      [
+        0.14443500424808836,
+        0.6414613423959218,
+        0.2141036533559898
+      ],
+      [
+        0.22054665409990576,
+        0.4194156456173421,
+        0.3600377002827521
+      ],
+      [
+        0.0189520624303233,
+        0.09364548494983277,
+        0.887402452619844
+      ]
+    ],
+    "runtime_sec": 48.0,
+    "oof_pred_file": "oof_pred_svm_rbf_c_0_5.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c_0_5.npy"
+  },
+  {
+    "name": "RBF SVM (C=1.0, gamma=scale, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 1.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.4151,
+    "balanced_acc": 0.485,
+    "overall_acc": 0.4461,
+    "per_class_f1": [
+      0.189,
+      0.469,
+      0.5873
+    ],
+    "per_class_rec": [
+      0.1461,
+      0.4293,
+      0.8796
+    ],
+    "per_class_prec": [
+      0.2675,
+      0.5167,
+      0.4408
+    ],
+    "confusion_matrix": [
+      [
+        0.14613423959218352,
+        0.6465590484282073,
+        0.20730671197960918
+      ],
+      [
+        0.21394910461828465,
+        0.4293119698397738,
+        0.3567389255419416
+      ],
+      [
+        0.0189520624303233,
+        0.10144927536231885,
+        0.8795986622073578
+      ]
+    ],
+    "runtime_sec": 48.0,
+    "oof_pred_file": "oof_pred_svm_rbf_c_1_0.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c_1_0.npy"
+  },
+  {
+    "name": "RBF SVM (C=2.0, gamma=scale, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 2.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.4243,
+    "balanced_acc": 0.4917,
+    "overall_acc": 0.4571,
+    "per_class_f1": [
+      0.1914,
+      0.4864,
+      0.5952
+    ],
+    "per_class_rec": [
+      0.147,
+      0.4519,
+      0.8763
+    ],
+    "per_class_prec": [
+      0.2742,
+      0.5266,
+      0.4507
+    ],
+    "confusion_matrix": [
+      [
+        0.1469838572642311,
+        0.6525063721325404,
+        0.20050977060322855
+      ],
+      [
+        0.20782280867106503,
+        0.45193213949104616,
+        0.3402450518378888
+      ],
+      [
+        0.0189520624303233,
+        0.10479375696767002,
+        0.8762541806020067
+      ]
+    ],
+    "runtime_sec": 48.0,
+    "oof_pred_file": "oof_pred_svm_rbf_c_2_0.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c_2_0.npy"
+  },
+  {
+    "name": "RBF SVM (C=5.0, gamma=scale, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 5.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.4323,
+    "balanced_acc": 0.4947,
+    "overall_acc": 0.4631,
+    "per_class_f1": [
+      0.2044,
+      0.4975,
+      0.595
+    ],
+    "per_class_rec": [
+      0.1606,
+      0.4628,
+      0.8606
+    ],
+    "per_class_prec": [
+      0.2812,
+      0.5378,
+      0.4547
+    ],
+    "confusion_matrix": [
+      [
+        0.16057774001699235,
+        0.6389124893797791,
+        0.20050977060322855
+      ],
+      [
+        0.21206409048067862,
+        0.46277097078228085,
+        0.32516493873704055
+      ],
+      [
+        0.03678929765886288,
+        0.10256410256410256,
+        0.8606465997770345
+      ]
+    ],
+    "runtime_sec": 48.0,
+    "oof_pred_file": "oof_pred_svm_rbf_c_5_0.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c_5_0.npy"
+  },
+  {
+    "name": "RBF SVM (C=10.0, gamma=scale, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.6188,
+    "balanced_acc": 0.6736,
+    "overall_acc": 0.6158,
+    "per_class_f1": [
+      0.6688,
+      0.5929,
+      0.5948
+    ],
+    "per_class_rec": [
+      0.7018,
+      0.4694,
+      0.8495
+    ],
+    "per_class_prec": [
+      0.6388,
+      0.8045,
+      0.4577
+    ],
+    "confusion_matrix": [
+      [
+        0.7017841971112999,
+        0.1070518266779949,
+        0.1911639762107052
+      ],
+      [
+        0.2111215834118756,
+        0.46936852026390197,
+        0.31950989632422244
+      ],
+      [
+        0.021181716833890748,
+        0.12931995540691194,
+        0.8494983277591973
+      ]
+    ],
+    "runtime_sec": 48.0,
+    "oof_pred_file": "oof_pred_svm_rbf_c_10_0.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c_10_0.npy"
+  },
+  {
+    "name": "RBF SVM (C=20.0, gamma=scale, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 20.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.6191,
+    "balanced_acc": 0.6737,
+    "overall_acc": 0.6161,
+    "per_class_f1": [
+      0.671,
+      0.5932,
+      0.5931
+    ],
+    "per_class_rec": [
+      0.7035,
+      0.4694,
+      0.8484
+    ],
+    "per_class_prec": [
+      0.6414,
+      0.8058,
+      0.456
+    ],
+    "confusion_matrix": [
+      [
+        0.703483432455395,
+        0.10535259133389975,
+        0.1911639762107052
+      ],
+      [
+        0.20876531573986806,
+        0.46936852026390197,
+        0.32186616399622997
+      ],
+      [
+        0.022296544035674472,
+        0.12931995540691194,
+        0.8483835005574136
+      ]
+    ],
+    "runtime_sec": 48.0,
+    "oof_pred_file": "oof_pred_svm_rbf_c_20_0.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c_20_0.npy"
+  },
+  {
+    "name": "RBF SVM (C=50.0, gamma=scale, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 50.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.6377,
+    "balanced_acc": 0.6866,
+    "overall_acc": 0.6368,
+    "per_class_f1": [
+      0.6699,
+      0.6301,
+      0.613
+    ],
+    "per_class_rec": [
+      0.7035,
+      0.5123,
+      0.8439
+    ],
+    "per_class_prec": [
+      0.6394,
+      0.8185,
+      0.4812
+    ],
+    "confusion_matrix": [
+      [
+        0.703483432455395,
+        0.10365335598980459,
+        0.19286321155480035
+      ],
+      [
+        0.21017907634307256,
+        0.5122525918944392,
+        0.27756833176248824
+      ],
+      [
+        0.023411371237458192,
+        0.1326644370122631,
+        0.8439241917502787
+      ]
+    ],
+    "runtime_sec": 48.0,
+    "oof_pred_file": "oof_pred_svm_rbf_c_50_0.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c_50_0.npy"
+  },
+  {
+    "name": "RBF SVM (C=10.0, gamma=0.05, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": 0.05,
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.4207,
+    "balanced_acc": 0.4899,
+    "overall_acc": 0.4507,
+    "per_class_f1": [
+      0.1996,
+      0.4721,
+      0.5904
+    ],
+    "per_class_rec": [
+      0.1546,
+      0.4321,
+      0.8829
+    ],
+    "per_class_prec": [
+      0.2813,
+      0.5201,
+      0.4434
+    ],
+    "confusion_matrix": [
+      [
+        0.1546304163126593,
+        0.6440101954120646,
+        0.20135938827527614
+      ],
+      [
+        0.2111215834118756,
+        0.4321394910461828,
+        0.3567389255419416
+      ],
+      [
+        0.0189520624303233,
+        0.09810479375696766,
+        0.882943143812709
+      ]
+    ],
+    "runtime_sec": 50.0,
+    "oof_pred_file": "oof_pred_svm_rbf_gamma_0.05.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_gamma_0.05.npy"
+  },
+  {
+    "name": "RBF SVM (C=10.0, gamma=0.1, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": 0.1,
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.4351,
+    "balanced_acc": 0.4954,
+    "overall_acc": 0.4645,
+    "per_class_f1": [
+      0.2155,
+      0.5,
+      0.5897
+    ],
+    "per_class_rec": [
+      0.1708,
+      0.4637,
+      0.8517
+    ],
+    "per_class_prec": [
+      0.2922,
+      0.5424,
+      0.451
+    ],
+    "confusion_matrix": [
+      [
+        0.1707731520815633,
+        0.6287170773152082,
+        0.20050977060322855
+      ],
+      [
+        0.20923656927426956,
+        0.4637134778510839,
+        0.32704995287464655
+      ],
+      [
+        0.04793756967670011,
+        0.10033444816053512,
+        0.8517279821627648
+      ]
+    ],
+    "runtime_sec": 50.0,
+    "oof_pred_file": "oof_pred_svm_rbf_gamma_0.1.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_gamma_0.1.npy"
+  },
+  {
+    "name": "RBF SVM (C=10.0, gamma=0.2, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": 0.2,
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.6221,
+    "balanced_acc": 0.6748,
+    "overall_acc": 0.6196,
+    "per_class_f1": [
+      0.6677,
+      0.6015,
+      0.5971
+    ],
+    "per_class_rec": [
+      0.6992,
+      0.4802,
+      0.845
+    ],
+    "per_class_prec": [
+      0.639,
+      0.8049,
+      0.4616
+    ],
+    "confusion_matrix": [
+      [
+        0.6992353440951572,
+        0.10875106202209006,
+        0.19201359388275277
+      ],
+      [
+        0.20970782280867106,
+        0.48020735155513666,
+        0.3100848256361923
+      ],
+      [
+        0.022296544035674472,
+        0.1326644370122631,
+        0.8450390189520625
+      ]
+    ],
+    "runtime_sec": 50.0,
+    "oof_pred_file": "oof_pred_svm_rbf_gamma_0.2.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_gamma_0.2.npy"
+  },
+  {
+    "name": "RBF SVM (C=10.0, gamma=auto, balanced, StandardScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": "auto",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    },
+    "macro_f1": 0.6188,
+    "balanced_acc": 0.6736,
+    "overall_acc": 0.6158,
+    "per_class_f1": [
+      0.6688,
+      0.5929,
+      0.5948
+    ],
+    "per_class_rec": [
+      0.7018,
+      0.4694,
+      0.8495
+    ],
+    "per_class_prec": [
+      0.6388,
+      0.8045,
+      0.4577
+    ],
+    "confusion_matrix": [
+      [
+        0.7017841971112999,
+        0.1070518266779949,
+        0.1911639762107052
+      ],
+      [
+        0.2111215834118756,
+        0.46936852026390197,
+        0.31950989632422244
+      ],
+      [
+        0.021181716833890748,
+        0.12931995540691194,
+        0.8494983277591973
+      ]
+    ],
+    "runtime_sec": 50.0,
+    "oof_pred_file": "oof_pred_svm_rbf_gamma_auto.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_gamma_auto.npy"
+  },
+  {
+    "macro_f1": 0.4073,
+    "balanced_acc": 0.4753,
+    "overall_acc": 0.4535,
+    "per_class_f1": [
+      0.1215,
+      0.5118,
+      0.5886
+    ],
+    "per_class_rec": [
+      0.0909,
+      0.4887,
+      0.8462
+    ],
+    "per_class_prec": [
+      0.1832,
+      0.5373,
+      0.4512
+    ],
+    "confusion_matrix": [
+      [
+        0.09090909090909091,
+        0.6601529311809685,
+        0.24893797790994052
+      ],
+      [
+        0.21442035815268615,
+        0.48868991517436383,
+        0.29688972667295005
+      ],
+      [
+        0.024526198439241916,
+        0.12931995540691194,
+        0.8461538461538461
+      ]
+    ],
+    "per_group_f1s": [
+      0.5854,
+      0.15,
+      0.0597,
+      0.3039,
+      0.0256,
+      0.1493,
+      0.9804,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2674,
+      0.4615,
+      0.9545,
+      0.9762,
+      0.1514,
+      0.6171,
+      0.0,
+      0.0,
+      0.0,
+      0.985,
+      0.6944,
+      0.8134,
+      1.0,
+      0.6818,
+      0.8966,
+      0.9821
+    ],
+    "per_group_accs": [
+      0.5854,
+      0.15,
+      0.0597,
+      0.3039,
+      0.0256,
+      0.1493,
+      0.9804,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2674,
+      0.4615,
+      0.9545,
+      0.9762,
+      0.1514,
+      0.6171,
+      0.0,
+      0.0,
+      0.0,
+      0.985,
+      0.6944,
+      0.8134,
+      1.0,
+      0.6818,
+      0.8966,
+      0.9821
+    ],
+    "runtime_sec": 1.01,
+    "oof_pred_file": "oof_pred_svm_linearsvc_c_1_0.npy",
+    "oof_prob_file": "oof_prob_svm_linearsvc_c_1_0.npy",
+    "name": "Linear SVM (C=1.0, balanced, LinearSVC)",
+    "family": "SVM (Linear)",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 1.0,
+      "kernel": "linear",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    }
+  },
+  {
+    "macro_f1": 0.408,
+    "balanced_acc": 0.476,
+    "overall_acc": 0.4547,
+    "per_class_f1": [
+      0.1219,
+      0.5137,
+      0.5886
+    ],
+    "per_class_rec": [
+      0.0909,
+      0.491,
+      0.8462
+    ],
+    "per_class_prec": [
+      0.1848,
+      0.5385,
+      0.4512
+    ],
+    "confusion_matrix": [
+      [
+        0.09090909090909091,
+        0.6601529311809685,
+        0.24893797790994052
+      ],
+      [
+        0.21206409048067862,
+        0.49104618284637136,
+        0.29688972667295005
+      ],
+      [
+        0.024526198439241916,
+        0.12931995540691194,
+        0.8461538461538461
+      ]
+    ],
+    "per_group_f1s": [
+      0.5854,
+      0.15,
+      0.0597,
+      0.3039,
+      0.0256,
+      0.1493,
+      0.9804,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2674,
+      0.4615,
+      0.9545,
+      0.9762,
+      0.1514,
+      0.6171,
+      0.0,
+      0.0,
+      0.0,
+      0.985,
+      0.7,
+      0.8134,
+      1.0,
+      0.6818,
+      0.8966,
+      0.9821
+    ],
+    "per_group_accs": [
+      0.5854,
+      0.15,
+      0.0597,
+      0.3039,
+      0.0256,
+      0.1493,
+      0.9804,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2674,
+      0.4615,
+      0.9545,
+      0.9762,
+      0.1514,
+      0.6171,
+      0.0,
+      0.0,
+      0.0,
+      0.985,
+      0.7,
+      0.8134,
+      1.0,
+      0.6818,
+      0.8966,
+      0.9821
+    ],
+    "runtime_sec": 0.92,
+    "oof_pred_file": "oof_pred_svm_linearsvc_c_10_0.npy",
+    "oof_prob_file": "oof_prob_svm_linearsvc_c_10_0.npy",
+    "name": "Linear SVM (C=10.0, balanced, LinearSVC)",
+    "family": "SVM (Linear)",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 10.0,
+      "kernel": "linear",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    }
+  },
+  {
+    "macro_f1": 0.4263,
+    "balanced_acc": 0.4965,
+    "overall_acc": 0.4576,
+    "per_class_f1": [
+      0.2059,
+      0.4816,
+      0.5914
+    ],
+    "per_class_rec": [
+      0.158,
+      0.4406,
+      0.8907
+    ],
+    "per_class_prec": [
+      0.2952,
+      0.5309,
+      0.4427
+    ],
+    "confusion_matrix": [
+      [
+        0.1580288870008496,
+        0.6355140186915887,
+        0.2064570943075616
+      ],
+      [
+        0.1998114985862394,
+        0.44062205466541,
+        0.3595664467483506
+      ],
+      [
+        0.022296544035674472,
+        0.08695652173913043,
+        0.8907469342251951
+      ]
+    ],
+    "per_group_f1s": [
+      0.6098,
+      0.41,
+      0.1366,
+      0.3702,
+      0.0769,
+      0.1194,
+      0.9706,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2791,
+      0.4615,
+      0.9394,
+      1.0,
+      0.1108,
+      0.2782,
+      0.0,
+      0.0,
+      0.0301,
+      0.9925,
+      0.736,
+      0.8358,
+      0.9792,
+      0.5606,
+      0.9598,
+      0.9821
+    ],
+    "per_group_accs": [
+      0.6098,
+      0.41,
+      0.1366,
+      0.3702,
+      0.0769,
+      0.1194,
+      0.9706,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2791,
+      0.4615,
+      0.9394,
+      1.0,
+      0.1108,
+      0.2782,
+      0.0,
+      0.0,
+      0.0301,
+      0.9925,
+      0.736,
+      0.8358,
+      0.9792,
+      0.5606,
+      0.9598,
+      0.9821
+    ],
+    "runtime_sec": 26.99,
+    "oof_pred_file": "oof_pred_svm_poly_deg2.npy",
+    "oof_prob_file": "oof_prob_svm_poly_deg2.npy",
+    "name": "Poly SVM (degree=2, C=5.0, balanced)",
+    "family": "SVM (Polynomial)",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 5.0,
+      "kernel": "poly",
+      "degree": 2,
+      "class_weight": "balanced"
+    }
+  },
+  {
+    "macro_f1": 0.317,
+    "balanced_acc": 0.4029,
+    "overall_acc": 0.3232,
+    "per_class_f1": [
+      0.1267,
+      0.2466,
+      0.5778
+    ],
+    "per_class_rec": [
+      0.1232,
+      0.1937,
+      0.8919
+    ],
+    "per_class_prec": [
+      0.1304,
+      0.3391,
+      0.4274
+    ],
+    "confusion_matrix": [
+      [
+        0.1231945624468989,
+        0.6185216652506372,
+        0.2582837723024639
+      ],
+      [
+        0.44439208294062205,
+        0.19368520263901978,
+        0.36192271442035817
+      ],
+      [
+        0.026755852842809364,
+        0.08138238573021182,
+        0.8918617614269788
+      ]
+    ],
+    "per_group_f1s": [
+      0.5854,
+      0.56,
+      0.0907,
+      0.3646,
+      0.0,
+      0.1194,
+      0.9902,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2442,
+      0.3846,
+      0.9242,
+      1.0,
+      0.0757,
+      0.2782,
+      0.0,
+      0.0,
+      0.0,
+      0.8872,
+      0.1787,
+      0.9478,
+      0.9792,
+      0.5455,
+      0.8678,
+      0.9821
+    ],
+    "per_group_accs": [
+      0.5854,
+      0.56,
+      0.0907,
+      0.3646,
+      0.0,
+      0.1194,
+      0.9902,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2442,
+      0.3846,
+      0.9242,
+      1.0,
+      0.0757,
+      0.2782,
+      0.0,
+      0.0,
+      0.0,
+      0.8872,
+      0.1787,
+      0.9478,
+      0.9792,
+      0.5455,
+      0.8678,
+      0.9821
+    ],
+    "runtime_sec": 56.52,
+    "oof_pred_file": "oof_pred_svm_rbf_robustscaler.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_robustscaler.npy",
+    "name": "RBF SVM (C=10.0, RobustScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "RobustScaler"
+    }
+  },
+  {
+    "macro_f1": 0.4251,
+    "balanced_acc": 0.4953,
+    "overall_acc": 0.4554,
+    "per_class_f1": [
+      0.2056,
+      0.4756,
+      0.5941
+    ],
+    "per_class_rec": [
+      0.158,
+      0.4359,
+      0.8919
+    ],
+    "per_class_prec": [
+      0.2943,
+      0.5232,
+      0.4454
+    ],
+    "confusion_matrix": [
+      [
+        0.1580288870008496,
+        0.6482582837723024,
+        0.1937128292268479
+      ],
+      [
+        0.20216776625824695,
+        0.43590951932139493,
+        0.36192271442035817
+      ],
+      [
+        0.0189520624303233,
+        0.08918617614269789,
+        0.8918617614269788
+      ]
+    ],
+    "per_group_f1s": [
+      0.6098,
+      0.41,
+      0.1366,
+      0.3702,
+      0.0769,
+      0.1194,
+      0.9706,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2674,
+      0.4615,
+      0.9394,
+      0.9881,
+      0.1135,
+      0.2782,
+      0.0,
+      0.0,
+      0.0226,
+      0.9925,
+      0.7258,
+      0.8358,
+      1.0,
+      0.5606,
+      0.9655,
+      0.9821
+    ],
+    "per_group_accs": [
+      0.6098,
+      0.41,
+      0.1366,
+      0.3702,
+      0.0769,
+      0.1194,
+      0.9706,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2674,
+      0.4615,
+      0.9394,
+      0.9881,
+      0.1135,
+      0.2782,
+      0.0,
+      0.0,
+      0.0226,
+      0.9925,
+      0.7258,
+      0.8358,
+      1.0,
+      0.5606,
+      0.9655,
+      0.9821
+    ],
+    "runtime_sec": 38.49,
+    "oof_pred_file": "oof_pred_svm_rbf_minmaxscaler.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_minmaxscaler.npy",
+    "name": "RBF SVM (C=10.0, MinMaxScaler)",
+    "family": "SVM",
+    "features": "Champion 8",
+    "feature_count": 8,
+    "params": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "MinMaxScaler"
+    }
+  },
+  {
+    "macro_f1": 0.4352,
+    "balanced_acc": 0.4952,
+    "overall_acc": 0.4643,
+    "per_class_f1": [
+      0.216,
+      0.4995,
+      0.5901
+    ],
+    "per_class_rec": [
+      0.1716,
+      0.4632,
+      0.8506
+    ],
+    "per_class_prec": [
+      0.2915,
+      0.5419,
+      0.4517
+    ],
+    "confusion_matrix": [
+      [
+        0.17162276975361088,
+        0.6287170773152082,
+        0.19966015293118097
+      ],
+      [
+        0.2111215834118756,
+        0.4632422243166824,
+        0.325636192271442
+      ],
+      [
+        0.04793756967670011,
+        0.10144927536231885,
+        0.850613154960981
+      ]
+    ],
+    "per_group_f1s": [
+      0.3171,
+      0.14,
+      0.1538,
+      0.3757,
+      0.2308,
+      0.2687,
+      0.9706,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.3256,
+      0.5385,
+      0.9545,
+      0.9762,
+      0.0784,
+      0.2865,
+      0.0,
+      0.0,
+      0.0602,
+      0.985,
+      0.7978,
+      0.8358,
+      0.8542,
+      0.5606,
+      0.9655,
+      0.9464
+    ],
+    "per_group_accs": [
+      0.3171,
+      0.14,
+      0.1538,
+      0.3757,
+      0.2308,
+      0.2687,
+      0.9706,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.3256,
+      0.5385,
+      0.9545,
+      0.9762,
+      0.0784,
+      0.2865,
+      0.0,
+      0.0,
+      0.0602,
+      0.985,
+      0.7978,
+      0.8358,
+      0.8542,
+      0.5606,
+      0.9655,
+      0.9464
+    ],
+    "runtime_sec": 37.73,
+    "oof_pred_file": "oof_pred_svm_rbf_c10_causal9.npy",
+    "oof_prob_file": "oof_prob_svm_rbf_c10_causal9.npy",
+    "name": "RBF SVM (C=10.0, Causal 9-Feature, StandardScaler)",
+    "family": "SVM",
+    "features": "Causal 9-Feature (+is_bidir)",
+    "feature_count": 9,
+    "params": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": "scale",
+      "class_weight": "balanced",
+      "scaler": "StandardScaler"
+    }
+  }
+]
